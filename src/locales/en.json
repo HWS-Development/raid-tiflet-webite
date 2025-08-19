@@ -408,28 +408,23 @@
       }
     ]
   },
+"dining": {
+  "title": "The Table of Dar Tiflet",
+  "table_desc": "On the rooftop terrace, overlooking the medina and the Koutoubia’s minaret, we serve a simple, welcoming home-cooked table.",
+  "menu": "Daily set menu — seasonal tagines, couscous, pastilla, zaalouk, harira…",
+  "fresh": "Fresh bread baked on site, ripe fruit, Moroccan sweets",
+  "vegetarian": "Vegetarian and allergy-friendly options available on request",
+  "notice": "Meals are served by reservation only (minimum 6 hours in advance).",
 
-  "dining": {
-    "title": "🍴 The Table of Dar Tiflet",
-    "subtitle": "Homemade flavors with a view of the Koutoubia",
-    "intro": "At the top of the riad, the panoramic terrace offers an exceptional view over the medina rooftops — with a direct line of sight to the Koutoubia’s minaret, especially magical at sunset. In this calm, sunlit setting, we created a simple, warm and authentic dining space that reflects our home.",
-    "bullets": [
-      "Daily set menu, homemade: seasonal tagines, couscous, pastilla, zaalouk, harira…",
-      "Fresh bread baked on site, fresh fruit, Moroccan desserts",
-      "Vegetarian and allergy-friendly options on request"
-    ],
-    "reserve_note": "📌 Meals are served by reservation only (minimum 6 hours in advance).",
-    "bar_title": "🌿 The Tiflet Counter — terrace refreshments",
-    "bar_body": "Our alcohol-free bar offers a selection of fresh, local drinks to enjoy on the terrace with a clear view of Marrakech:",
-    "bar_list": [
-      "Mint tea and traditional infusions",
-      "Fresh orange juice, homemade lemonade, fresh fruit juices",
-      "Mineral water, soft drinks, coffee",
-      "House smoothies made with market fruit",
-      "No alcohol here, out of respect for the spirit of the house and the medina — just the pleasure of natural flavors in an intimate, restful setting."
-    ],
-    "closing": "🌇 A suspended moment above the medina — More than a service, the Table of Dar Tiflet invites you to experience Marrakech differently: away from the noise, close to the heart, in a living house where you take time to share a meal, tea, a conversation… or simply a sunset over the Koutoubia."
-  },
+  "counter_title": "The Tiflet Counter — terrace refreshments",
+  "counter_desc": "Our alcohol-free bar serves fresh, local drinks to enjoy with a wide view over Marrakech.",
+  "bar_teas": "Mint tea and traditional Moroccan infusions",
+  "bar_juices": "Fresh orange juice, homemade lemonade, seasonal fruit juices",
+  "bar_soft": "Mineral water, soft drinks, coffee",
+  "bar_smoothies": "House smoothies made with market fruit",
+  "bar_note": "No alcohol is served — only the joy of natural flavors in a calm, intimate setting."
+},
+
 
   "dining_page": {
     "title": "Dining",
@@ -502,7 +497,6 @@
       { "id": "g14", "src": "/images/details1.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
       { "id": "g15", "src": "/images/details2.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
       { "id": "g16", "src": "/images/rooftop3.jpg", "alt": "Sunset on the terrace", "category": "terrace", "category_label": "Terrace", "tags": ["sunset", "koutoubia"] },
-      { "id": "g16", "src": "/images/rooftop4.jpg", "alt": "Sunset on the terrace", "category": "terrace", "category_label": "Terrace", "tags": ["sunset", "koutoubia"] },
       { "id": "g17", "src": "/images/details3.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
       { "id": "g18", "src": "/images/rooms/Yellow Room1.jpg", "alt": "Yellow room detail", "category": "rooms", "category_label": "Rooms"},
       { "id": "g19", "src": "/images/rooms/Yellow Room2.jpg", "alt": "Yellow room detail", "category": "rooms", "category_label": "Rooms"},

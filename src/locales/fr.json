@@ -463,24 +463,19 @@
 
   "dining": {
     "title": "La Table de Dar Tiflet",
-    "subtitle": "Saveurs maison avec vue sur la Koutoubia",
-    "intro": "Au sommet du riad, la terrasse panoramique de Dar Tiflet vous offre une vue exceptionnelle sur les toits de la médina… et en ligne directe sur l’emblématique minaret de la Koutoubia, surtout magique au coucher du soleil. Dans ce décor paisible, baigné de lumière, nous avons créé un espace de restauration simple, chaleureux et authentique, à l’image de notre maison.",
-    "bullets": [
-      "Menu unique du jour, fait maison : tajines de saison, couscous aux légumes, pastilla, zaalouk, harira…",
-      "Pain cuit sur place, fruits frais, desserts marocains",
-      "Options végétariennes et sans allergènes sur demande"
-    ],
-    "reserve_note": "📌 Les repas sont servis sur réservation uniquement (minimum 6 heures à l’avance).",
-    "bar_title": "Le Comptoir Tiflet — rafraîchissements en terrasse",
-    "bar_body": "Notre bar sans alcool vous propose une sélection de boissons fraîches et locales, à savourer sur la terrasse avec une vue dégagée sur Marrakech :",
-    "bar_list": [
-      "Thés à la menthe et infusions traditionnelles",
-      "Jus d’orange pressé, citronnade maison, jus de fruits frais",
-      "Eau minérale, boissons gazeuses, cafés",
-      "Smoothies maison à base de fruits du marché",
-      "Ici, pas d’alcool, par respect pour l’esprit du lieu et de la médina, mais tout le plaisir des saveurs naturelles, dans un cadre intime et reposant."
-    ],
-    "closing": "🌇 Un moment suspendu sur les toits de la médina — Plus qu’un service, la Table de Dar Tiflet est une invitation à vivre Marrakech autrement : Loin du bruit, près du cœur, dans une maison vivante où l’on prend le temps de partager un repas, un thé, une discussion... ou simplement un coucher de soleil sur la Koutoubia."
+    "table_desc": "Sur la terrasse panoramique, face à la médina et au minaret de la Koutoubia, nous servons une table maison simple et chaleureuse.",
+    "menu": "Menu du jour — tajines de saison, couscous, pastilla, zaalouk, harira…",
+    "fresh": "Pain cuit sur place, fruits frais, douceurs marocaines",
+    "vegetarian": "Options végétariennes et adaptées aux allergies sur demande",
+    "notice": "Repas servis uniquement sur réservation (minimum 6 h à l’avance).",
+
+    "counter_title": "Le Comptoir Tiflet — rafraîchissements en terrasse",
+    "counter_desc": "Notre bar sans alcool propose des boissons fraîches et locales à savourer avec une vue dégagée sur Marrakech.",
+    "bar_teas": "Thé à la menthe et infusions marocaines traditionnelles",
+    "bar_juices": "Jus d’orange frais, citronnade maison, jus de fruits de saison",
+    "bar_soft": "Eau minérale, sodas, café",
+    "bar_smoothies": "Smoothies maison préparés avec les fruits du marché",
+    "bar_note": "Aucun alcool n’est servi — seulement le plaisir de saveurs naturelles dans une ambiance intime et apaisée."
   },
 
   "dining_page": {

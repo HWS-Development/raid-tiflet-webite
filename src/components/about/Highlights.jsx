@@ -1,34 +1,45 @@
 import { useTranslation } from "react-i18next";
 
-const icons = {
-  patio: "🌿",
+// Matches your i18n: spark, patio, salon, rooftop
+const ICON = {
+  spark: "✨",
+  patio: "🏡",
+  salon: "🗣️",
   rooftop: "🌇",
-  salon: "🧉",
-  hospitality: "🤝",
 };
 
+/**
+ * Cards-only highlights grid (no heading/section/curves).
+ * Use inside your green band in About.tsx.
+ */
 export default function Highlights() {
   const { t } = useTranslation();
-  const items = t("about_page.highlights", { returnObjects: true }) || [];
+
+  const items =
+    t("about_page.highlights", { returnObjects: true })?.filter(Boolean) || [];
 
   return (
-    <section className="py-8 sm:py-10 bg-brand-ivory">
-      <div className="container-grid">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {items.map((it) => (
-            <article
-              key={it.id}
-              className="bg-white rounded-2xl border border-black/5 shadow-soft p-4"
-            >
-              <div className="flex items-center gap-2">
-                <div className="text-xl">{icons[it.icon] || "✦"}</div>
-                <h3 className="text-sm font-semibold text-brand-charcoal">{it.title}</h3>
+    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {items.map(
+        (
+          h,
+          idx
+        ) => (
+          <div
+            key={h.id || idx}
+            className="group rounded-2xl border border-white/15 bg-white/[0.06] px-5 py-4 text-white/90 shadow-sm backdrop-blur
+                       transition hover:bg-white/[0.10]"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">{ICON[h.icon || "spark"]}</span>
+              <div>
+                <h3 className="font-medium">{h.title}</h3>
+                <p className="mt-1 text-sm text-white/80">{h.body}</p>
               </div>
-              <p className="mt-2 text-sm text-gray-700">{it.body}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        )
+      )}
+    </div>
   );
 }

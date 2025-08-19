@@ -1,38 +1,64 @@
 import { useTranslation } from "react-i18next";
-import { safeArray } from "../../utils/safeArray";
 
+function MotifBG() {
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07]"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 20% 30%, #000 1px, transparent 1.2px), radial-gradient(circle at 70% 60%, #000 1px, transparent 1.2px)",
+        backgroundSize: "28px 28px, 32px 32px",
+      }}
+    />
+  );
+}
+
+/**
+ * Content-only story block (no section/tone/curves).
+ * Fits into the staged band you already defined in About.tsx.
+ */
 export default function Story() {
   const { t } = useTranslation();
 
-  const paras = safeArray(t("about_page.story.paragraphs", { returnObjects: true }));
-  const bullets = safeArray(t("about_page.story.heritage", { returnObjects: true }));
+  const paras =
+    t("about_page.story.paragraphs", { returnObjects: true }) || [];
+
+  const heritageTitle = t("about_page.story.heritage_title");
+  const heritage =
+    t("about_page.story.heritage", { returnObjects: true }) || [];
 
   return (
-    <section className="py-8 sm:py-10">
-      <div className="container-grid grid lg:grid-cols-2 gap-8 items-start">
+    <div className="relative">
+      <MotifBG />
+
+      <div className="grid gap-10 md:grid-cols-[1.2fr_.9fr] items-start">
+        {/* Left: title + paragraphs */}
         <div>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-brand-charcoal">
+          <h2 className="display-title text-ink mb-4">
             {t("about_page.story.title")}
           </h2>
-          <div className="mt-4 space-y-4 text-sm sm:text-base text-gray-800">
-            {paras.map((p, i) => <p key={i}>{p}</p>)}
+
+          <div className="space-y-4 text-[15px] leading-7 text-ink/90">
+            {paras.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
         </div>
 
-        <aside className="bg-white rounded-2xl border border-black/5 shadow-soft p-5">
-          <div className="text-sm font-semibold text-brand-charcoal">
-            {t("about_page.story.heritage_title")}
-          </div>
-          <ul className="mt-3 space-y-2 text-sm text-gray-800">
-            {bullets.map((b, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-terracotta shrink-0" />
-                <span>{b}</span>
-              </li>
+        {/* Right: heritage list */}
+        <aside className="bg-white rounded-2xl shadow-soft border border-black/5 p-5 md:p-6">
+          <h3 className="font-serif text-lg tracking-wide text-ink">
+            {heritageTitle}
+          </h3>
+
+          <ul className="mt-3 space-y-2 text-[15px] text-ink/90">
+            {heritage.map((line, i) => (
+              <li key={i}>• {line}</li>
             ))}
           </ul>
         </aside>
       </div>
-    </section>
+    </div>
   );
 }

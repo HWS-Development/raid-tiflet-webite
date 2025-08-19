@@ -1,51 +1,66 @@
+// components/services/DiningSection.jsx
 import { useTranslation } from "react-i18next";
 
 export default function DiningSection() {
   const { t } = useTranslation();
-  const bullets = t("dining.bullets", { returnObjects: true }) || [];
 
   return (
-    <section className="py-12 sm:py-16">
-      <div className="container-grid grid lg:grid-cols-2 gap-8 items-center">
-        {/* Restaurant block */}
-        <div className="order-2 lg:order-1">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-brand-charcoal">
-            {t("dining.title")}
-          </h2>
-          <p className="mt-3 text-gray-700">{t("dining.subtitle")}</p>
+    <section className="relative bg-ivory py-16">
+      <div className="container-grid gap-12 md:gap-20">
+        {/* The Table of Dar Tiflet */}
+        <div className="grid md:grid-cols-2 items-center gap-8 md:gap-12">
+          {/* text with soft background band */}
+          <div className="relative">
+            <div className="absolute inset-0 -left-4 bg-[#fdf1e7] rounded-3xl -z-10" />
+            <h3 className="font-serif text-2xl md:text-3xl mb-4 flex items-center gap-2">
+              <span className="text-rose-600">🍴</span>
+              {t("dining.title")}
+            </h3>
+            <p className="text-lg text-gray-700 mb-4">
+              {t("dining.table_desc")}
+            </p>
+            <ul className="list-disc pl-6 space-y-1 text-gray-800">
+              <li>{t("dining.menu")}</li>
+              <li>{t("dining.fresh")}</li>
+              <li>{t("dining.vegetarian")}</li>
+            </ul>
+            <p className="mt-2 text-rose-600 text-sm">
+              {t("dining.notice")}
+            </p>
+          </div>
 
-          <ul className="mt-4 space-y-2 text-sm text-gray-800 list-disc pl-5">
-            {bullets.map((b, i) => <li key={i}>{b}</li>)}
-          </ul>
-
-          <p className="mt-4 text-sm text-gray-600">
-            {t("dining.reserve_note")}
-          </p>
+          {/* organic image */}
+          <div className="relative">
+            <img
+              src="/images/rooftop.jpg"
+              alt="Dar Tiflet Table"
+              className="w-full h-80 object-cover rounded-[50%_30%_40%_60%/50%_60%_40%_50%]"
+            />
+          </div>
         </div>
 
-        <div className="relative order-1 lg:order-2 aspect-[16/10] rounded-2xl overflow-hidden shadow-soft border border-black/5">
-          <img
-            src="/images/rooftop.jpg"
-            alt="Terrace dining"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
-      </div>
+        {/* The Tiflet Counter */}
+        <div className="grid md:grid-cols-2 items-center gap-8 md:gap-12 md:flex-row-reverse">
+          {/* organic image */}
+          <div className="relative">
+            <img
+              src="/images/riad-8.jpg"
+              alt="Tiflet Counter"
+              className="w-full h-80 object-cover rounded-[40%_60%_60%_40%/60%_40%_50%_50%]"
+            />
+          </div>
 
-      {/* Bar */}
-      <div className="container-grid mt-10 grid lg:grid-cols-2 gap-8 items-center">
-        <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-soft border border-black/5">
-          <img
-            src="/images/riad-8.jpg"
-            alt="Non-alcoholic bar"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
-        <div>
-          <h3 className="text-xl sm:text-2xl font-semibold text-brand-charcoal">
-            {t("dining.bar_title")}
-          </h3>
-          <p className="mt-3 text-gray-700">{t("dining.bar_body")}</p>
+          {/* text with mint background band */}
+          <div className="relative">
+            <div className="absolute inset-0 -left-4 bg-[#e7f8f3] rounded-3xl -z-10" />
+            <h3 className="font-serif text-2xl md:text-3xl mb-4 flex items-center gap-2">
+              <span className="text-emerald-600">🌿</span>
+              {t("dining.counter_title")}
+            </h3>
+            <p className="text-lg text-gray-700">
+              {t("dining.counter_desc")}
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -41,6 +41,7 @@ export default function ServicesPage() {
         <div className="container-grid section">
           <DiningSection/>
         </div>
+        <CurveBand position="bottom" from="#F6F1E8" to="#254E3E" height={140} />
       </section>
     </main>
   );

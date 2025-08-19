@@ -1,22 +1,35 @@
 import { useTranslation } from "react-i18next";
 
-export default function AboutHero() {
+const FALLBACK =
+  "/images/riad-8.jpg"; // swap with a good rooftop/patio photo in your repo
+
+export default function AboutHero({ src = FALLBACK }) {
   const { t } = useTranslation();
+
   return (
-    <section className="relative h-[44vh] min-h-[340px] flex items-center justify-center overflow-hidden">
+    <header className="relative h-[44vh] min-h-[320px] w-full overflow-hidden">
       <img
-        src="/images/riad-8.jpg"
-        alt={t("about_page.title")}
-        className="absolute inset-0 w-full h-full object-cover"
+        src={src}
+        alt={t("about_page.title", "About")}
+        className="absolute inset-0 h-full w-full object-cover"
         loading="eager"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,.55),rgba(17,24,39,.25))]" />
-      <div className="relative z-10 text-center text-white px-4">
-        <h1 className="display-title text-white">
-          {t("about_page.title")}
-        </h1>
-        <p className="mt-3 text-white/90">{t("about_page.subtitle")}</p>
+      {/* warm overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,41,34,.35)_0%,rgba(16,41,34,.45)_60%,rgba(16,41,34,.55)_100%)]" />
+
+      <div className="relative z-10 h-full container-grid flex items-end pb-10">
+        <div>
+          <h1 className="display-title text-white text-4xl md:text-5xl drop-shadow">
+            {t("about_page.title", "About")}
+          </h1>
+          <p className="mt-2 text-white/90">
+            {t(
+              "about_page.subtitle",
+              "A traditional Berber house with a living soul."
+            )}
+          </p>
+        </div>
       </div>
-    </section>
+    </header>
   );
 }

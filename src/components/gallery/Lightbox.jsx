@@ -1,57 +1,57 @@
-import { useEffect, useRef } from "react";
+// components/gallery/Lightbox.jsx
+import { useEffect } from "react";
 
 export default function Lightbox({ item, onClose, onPrev, onNext }) {
-  const startX = useRef(null);
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") onClose?.();
       if (e.key === "ArrowLeft") onPrev?.();
       if (e.key === "ArrowRight") onNext?.();
     };
-    document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", onKey);
-    };
+    return () => window.removeEventListener("keydown", onKey);
   }, [onClose, onPrev, onNext]);
 
-  return (
-    <div className="fixed inset-0 z-[70]">
-      <button className="absolute inset-0 bg-black/70" onClick={onClose} aria-label="Close" />
-      <div
-        className="relative z-10 w-full h-full flex items-center justify-center p-4"
-        onTouchStart={(e) => (startX.current = e.touches[0].clientX)}
-        onTouchEnd={(e) => {
-          const dx = e.changedTouches[0].clientX - (startX.current ?? 0);
-          if (dx > 40) onPrev?.();
-          if (dx < -40) onNext?.();
-          startX.current = null;
-        }}
-      >
-        <img
-          src={item?.src}
-          alt={item?.alt || ""}
-          className="max-h-[88vh] max-w-[92vw] object-contain rounded-xl shadow-lg"
-        />
+  if (!item) return null;
 
-        {/* Controls */}
-        <button
-          onClick={onPrev}
-          aria-label="Previous"
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 text-brand-charcoal hover:bg-white shadow"
-        >‹</button>
-        <button
-          onClick={onNext}
-          aria-label="Next"
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 text-brand-charcoal hover:bg-white shadow"
-        >›</button>
-        <button
-          onClick={onClose}
-          aria-label="Close"
-          className="absolute right-4 top-4 w-11 h-11 rounded-full bg-white/90 text-brand-charcoal hover:bg-white shadow"
-        >✕</button>
-      </div>
+  return (
+    <div className="fixed inset-0 z-[80] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 ">
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 rounded-full bg-white/90 px-3 py-1 text-sm hover:bg-white"
+        aria-label="Close"
+      >
+        ✕
+      </button>
+
+      <button
+        onClick={onPrev}
+        aria-label="Previous"
+        className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 rounded-full bg-white/80 px-3 py-2 hover:bg-white"
+      >
+        ‹
+      </button>
+
+      <figure className="max-w-[92vw] max-h-[82vh]">
+        <img
+          src={item.src}
+          alt={item.alt || ""}
+          className="w-auto h-auto max-w-full max-h-[82vh] rounded-[24px] shadow-xl"
+        />
+        {item.alt && (
+          <figcaption className="mt-3 text-center text-white/90 text-sm">
+            {item.alt}
+          </figcaption>
+        )}
+      </figure>
+
+      <button
+        onClick={onNext}
+        aria-label="Next"
+        className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 rounded-full bg-white/80 px-3 py-2 hover:bg-white"
+      >
+        ›
+      </button>
     </div>
   );
 }

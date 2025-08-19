@@ -3,11 +3,13 @@ import ContactHero from "../components/contact/ContactHero";
 import ContactForm from "../components/contact/ContactForm";
 import ContactCards from "../components/contact/ContactCards";
 import ContactMap from "../components/contact/ContactMap";
+import CurveBand from "../components/ui/CurveBand";
 
 export default function Contact() {
   const { t } = useTranslation();
 
   return (
+    <>
     <main id="contact" className="pt-16 pb-10 sm:pb-12">
       <ContactHero />
 
@@ -32,5 +34,7 @@ export default function Contact() {
         </div>
       </section>
     </main>
+      <CurveBand position="bottom" from="#F6F1E8" to="#254E3E" height={140} />
+      </>
   );
 }
