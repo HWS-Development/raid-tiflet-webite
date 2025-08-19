@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 
 const FALLBACK =
   "https://images.unsplash.com/photo-1562259949-e8e7689d7821?q=80&w=1600&auto=format&fit=crop";
@@ -10,9 +11,22 @@ function RoomTile({ room, onView }) {
     (Array.isArray(room.images) && typeof room.images[0] === "string" && room.images[0]) ||
     FALLBACK;
 
+  const handleKey = (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onView?.();
+    }
+  };
 
   return (
-    <article className="relative overflow-hidden rounded-[28px] shadow-2xl group aspect-[4/5]">
+    <article
+      className="relative overflow-hidden rounded-[28px] shadow-2xl group aspect-[4/5] cursor-pointer"
+      role="button"
+      tabIndex={0}
+      onClick={onView}
+      onKeyDown={handleKey}
+      aria-label={`${t("rooms.view")} — ${room.name}`}
+    >
       {/* image */}
       <img
         src={img}
@@ -28,47 +42,54 @@ function RoomTile({ room, onView }) {
           {room.name}
         </h3>
 
-        <button
-          onClick={onView}
+        <a
+          // onClick={(e) => {
+          //   e.stopPropagation();
+          //   onView?.();
+          // }}
+          href={`/rooms/${room.id}`}
           aria-label={`${t("rooms.view")} — ${room.name}`}
-          className="rounded-full border border-white/70 text-white/90 hover:bg-white hover:text-black px-4 py-1.5 text-sm transition"
+          className="rounded-full text-center border border-white/70 text-white/90 hover:bg-white hover:text-black px-4 py-1.5 text-sm transition"
         >
           {t("rooms.view")}
-        </button>
+        </a>
       </div>
     </article>
   );
 }
 
-export default function RoomsTeaser({ onViewRoom }) {
+export default function RoomsTeaser() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const rooms = useMemo(() => t("rooms.items", { returnObjects: true }) || [], [t]);
 
   return (
     <>
       <header className="mb-8">
-        <h2 className="font-serif text-ink text-3xl md:text-4xl tracking-wider">
+        <h2 className="font-serif text-ink text-3xl md:text-4xl tracking-wider display-title">
           {t("rooms.title")}
         </h2>
         {/* <p className="mt-1 text-black">{t("rooms.legend")}</p> */}
       </header>
 
       <div className="grid gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-3">
-        {(rooms.slice(0, 3)).map((r) => (
-          <RoomTile key={r.id} room={r} onView={() => onViewRoom?.(r)} />
+        {rooms.slice(0, 3).map((r) => (
+          <RoomTile
+            key={r.id}
+            room={r}
+            onView={() => navigate(`/rooms/${r.id}`)}
+          />
         ))}
       </div>
 
       {/* Show more → /rooms */}
-      <div className="mt-6 flex justify-center">
-        <a
-          href="/rooms"
-          className="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 text-sm
-                    hover:bg-black hover:text-white transition"
-          aria-label={t("rooms.show_all")}
+      <div className="mt-6 text-center">
+        <button
+          onClick={() => navigate("/rooms")}
+          className="rounded-full border border-black/15 px-4 py-2 text-sm hover:bg-black/5 transition"
         >
-          {t("rooms.show_all")}
-        </a>
+          {t("rooms.show_all", "See all rooms")}
+        </button>
       </div>
     </>
   );

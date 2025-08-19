@@ -37,9 +37,9 @@ export default function Reviews() {
   const item = items[i];
 
   return (
-    <section className="my-16">
+    <section className="my-0">
       <header className="mb-6">
-        <h2 className="font-serif tracking-wider text-3xl md:text-4xl text-ink">{t("reviews.title")}</h2>
+        <h2 className="display-title">{t("reviews.title")}</h2>
       </header>
 
       <div

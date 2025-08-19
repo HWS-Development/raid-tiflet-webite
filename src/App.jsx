@@ -9,6 +9,7 @@ import Dining from "./pages/Dining";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import RoomShow from "./pages/RoomShow";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/rooms/:id" element={<RoomShow />} />
         </Routes>
       </Layout>
     </BrowserRouter>

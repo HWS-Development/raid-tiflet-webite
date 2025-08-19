@@ -12,7 +12,7 @@ export default function AboutHero() {
       />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,24,39,.55),rgba(17,24,39,.25))]" />
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">
+        <h1 className="display-title text-white">
           {t("about_page.title")}
         </h1>
         <p className="mt-3 text-white/90">{t("about_page.subtitle")}</p>

@@ -1,72 +1,94 @@
-// src/pages/Rooms.jsx
-import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from "react-router-dom";
-import { safeArray } from "../utils/safeArray";
-
+import { useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import RoomsHero from "../components/rooms/RoomsHero";
-import RoomCard from "../components/rooms/RoomCard";
-import RoomModal from "../components/rooms/RoomModal";
 
-export default function Rooms() {
-  const { t, i18n } = useTranslation();
-  const [params, setParams] = useSearchParams();
+const FALLBACK =
+  "https://images.unsplash.com/photo-1562259949-e8e7689d7821?q=80&w=1600&auto=format&fit=crop";
 
-  // Stable rooms array keyed by language (prevents effects from re-firing)
-  const rooms = useMemo(
-    () => safeArray(t("rooms.items", { returnObjects: true })),
-    [i18n.language]
-  );
+/** Ratios to create varied heights (looped across cards) */
+const RATIOS = ["aspect-[4/5]", "aspect-[3/4]", "aspect-[5/4]", "aspect-square"];
 
-  const [openRoom, setOpenRoom] = useState(null);
-  const rid = useMemo(() => params.get("room") || "", [params]);
+function RoomTile({ room, onView, ratioClass }) {
+  const { t } = useTranslation();
+  const img =
+    (Array.isArray(room.images) && typeof room.images[0] === "string" && room.images[0]) ||
+    FALLBACK;
 
-  // 👉 Open from deep-link only when rid or rooms change
-  useEffect(() => {
-    if (!rid) return;
-    const r = rooms.find((x) => x.id === rid);
-    if (r) setOpenRoom((prev) => (prev?.id === r.id ? prev : r));
-  }, [rid, rooms]); // ⬅️ no openRoom in deps
-
-  const openModal = (room) => {
-    if (!room) return;
-    const next = new URLSearchParams(params);
-    next.set("room", room.id);
-    setParams(next, { replace: false });
-    setOpenRoom(room);
+  const handleKey = (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onView?.();
+    }
   };
-
-  const closeModal = () => {
-    // Clear the URL first, then clear state on the next tick
-    const next = new URLSearchParams(params);
-    next.delete("room");
-    setParams(next, { replace: false });
-    setTimeout(() => setOpenRoom(null), 0); // avoids race where rid is still the old value
-  };
-
-  const ordered = useMemo(
-    () =>
-      [...rooms].sort(
-        (a, b) => (a.capacity || 0) - (b.capacity || 0) || a.name.localeCompare(b.name)
-      ),
-    [rooms]
-  );
 
   return (
-    <main id="rooms" className="pt-16 pb-12 sm:pb-16">
-      <RoomsHero />
+    <article className="mb-6 break-inside-avoid">
+      <div
+        className={`relative overflow-hidden rounded-[28px] ${ratioClass} cursor-pointer`}
+        role="button"
+        tabIndex={0}
+        onClick={onView}
+        onKeyDown={handleKey}
+        aria-label={`${t("rooms.view")} — ${room.name}`}
+      >
+        {/* photo (no shadow, no overlays) */}
+        <img
+          src={img}
+          alt={room.name}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+        />
 
-      <section className="pt-8 sm:pt-10">
+        {/* bottom in-card bar with name + CTA (still no global wash/gradient) */}
+        <div className="absolute bottom-5 left-6 right-6 flex items-center justify-between gap-4">
+        <h3 className="text-white drop-shadow-2xl font-serif text-2xl sm:text-3xl tracking-wide uppercase">
+          {room.name}
+        </h3>
+
+        <a
+          // onClick={(e) => {
+          //   e.stopPropagation();
+          //   onView?.();
+          // }}
+          href={`/rooms/${room.id}`}
+          aria-label={`${t("rooms.view")} — ${room.name}`}
+          className="rounded-full text-center border border-white/70 text-white/90 hover:bg-white hover:text-black px-4 py-1.5 text-sm transition"
+        >
+          {t("rooms.view")}
+        </a>
+      </div>
+      </div>
+    </article>
+  );
+}
+
+export default function RoomsPage() {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const rooms = useMemo(() => t("rooms.items", { returnObjects: true }) || [], [t]);
+
+  return (
+    <main id="rooms">
+       <RoomsHero />
+      <section className="tone-ivory">
         <div className="container-grid">
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            {ordered.map((room) => (
-              <RoomCard key={room.id} room={room} onView={() => openModal(room)} />
+
+          {/* Masonry using CSS columns */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
+            {rooms.map((r, idx) => (
+              <RoomTile
+                key={r.id}
+                room={r}
+                ratioClass={RATIOS[idx % RATIOS.length]}
+                onView={() => navigate(`/rooms/${r.id}`)}
+              />
             ))}
           </div>
         </div>
       </section>
-
-      {openRoom && <RoomModal room={openRoom} onClose={closeModal} />}
     </main>
   );
 }

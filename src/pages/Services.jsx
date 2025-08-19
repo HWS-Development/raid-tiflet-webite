@@ -18,6 +18,7 @@ export default function Services() {
           </p>
         </div>
       </section>
+      
       <Activities />
 
       <ServicesList />
