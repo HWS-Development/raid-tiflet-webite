@@ -3,18 +3,23 @@ import { useTranslation } from "react-i18next";
 const FALLBACK =
   "https://images.unsplash.com/photo-1562259949-e8e7689d7821?q=80&w=1600&auto=format&fit=crop";
 
+
 export default function RoomCard({ room, onView }) {
   const { t } = useTranslation();
   const firstImage =
-    (Array.isArray(room.images) && typeof room.images[0] === "string" && room.images[0]) || FALLBACK;
+    (Array.isArray(room.images) && typeof room.images[0] === "string" && room.images[0]) ||
+    FALLBACK;
+
+  const tint = room?.color || "#C94F44";
+  const strength = 0.55; // 0.45–0.65 works nicely
 
   return (
     <article className="group bg-white rounded-2xl shadow-soft overflow-hidden border border-black/5 hover:-translate-y-1 hover:shadow-lg transition">
-      <div className="h-1" style={{ backgroundColor: room.color || "#C94F44" }} />
+      <div className="h-1" style={{ backgroundColor: tint }} />
 
       <button
         onClick={onView}
-        className="relative w-full block overflow-hidden aspect-[16/10]" /* keeps a clean ratio */
+        className="relative w-full block overflow-hidden aspect-[16/10]"
         aria-label={`${t("rooms.view")} — ${room.name}`}
       >
         <img
@@ -23,14 +28,29 @@ export default function RoomCard({ room, onView }) {
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/5 to-transparent" />
+
+        {/* FULL-COVER tinted overlay (room color) */}
+        <div
+          className="absolute inset-0 mix-blend-multiply pointer-events-none transition-opacity duration-300"
+          style={{ backgroundColor: tint, opacity: strength }}
+        />
+
+        {/* Optional subtle vignette for depth/legibility (keeps full cover) */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(120% 80% at 50% 60%, transparent 40%, rgba(0,0,0,0.10) 100%)",
+          }}
+        />
+
         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
           <div className="flex items-center gap-2 text-white drop-shadow">
             <span className="font-semibold">{room.name}</span>
-            {room.color && <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: room.color }} />}
+            {tint && <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: tint }} />}
           </div>
           {room.type && (
-            <span className="hidden sm:inline text-xs text-white/90 drop-shadow px-2 py-1 rounded-full bg-black/30">
+            <span className="hidden sm:inline text-xs text-white/95 drop-shadow px-2 py-1 rounded-full bg-black/20">
               {room.type}
             </span>
           )}
@@ -44,13 +64,19 @@ export default function RoomCard({ room, onView }) {
               {t("rooms.capacity")}: {room.capacity} {t("rooms.guests")}
             </span>
           )}
-          {room.size && <span className="px-2 py-1 rounded-full bg-brand-ivory border border-black/10">{room.size}</span>}
+          {room.size && (
+            <span className="px-2 py-1 rounded-full bg-brand-ivory border border-black/10">{room.size}</span>
+          )}
           {room.floor && (
             <span className="px-2 py-1 rounded-full bg-brand-ivory border border-black/10">
               {room.floor === "rdc" ? t("rooms.ground_floor") : t("rooms.first_floor")}
             </span>
           )}
-          {room.ac && <span className="px-2 py-1 rounded-full bg-brand-ivory border border-black/10">{t("rooms.ac")}</span>}
+          {room.ac && (
+            <span className="px-2 py-1 rounded-full bg-brand-ivory border border-black/10">
+              {t("rooms.ac")}
+            </span>
+          )}
         </div>
 
         <div className="mt-4 flex gap-3">

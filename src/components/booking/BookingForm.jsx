@@ -5,7 +5,9 @@ import RangeCalendar from "./RangeCalendar"; // keep if you import types from it
 // ---- helpers in-file ----
 const ENGINE_BASE = "https://riad-dar-tiflet-1.hotelrunner.com/bv3/search";
 function toISODate(d){ const x=new Date(d); return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}-${String(x.getDate()).padStart(2,"0")}`;}
-function buildHotelRunnerUrl({ checkin, checkout, adults, children, rooms = 1 }) {
+
+// NOTE: accepts optional `promo`
+function buildHotelRunnerUrl({ checkin, checkout, adults, children, rooms = 1, promo }) {
   const dayCount = Math.max(1, Math.floor((new Date(checkout) - new Date(checkin)) / 86400000));
   const payload = {
     checkin_date: checkin, checkout_date: checkout, day_count: dayCount,
@@ -13,7 +15,9 @@ function buildHotelRunnerUrl({ checkin, checkout, adults, children, rooms = 1 })
     rooms: [{ adult_count: adults, guest_count: adults + children, child_count: children, child_ages: [] }],
     guest_rooms: { "0": { adult_count: adults, guest_count: adults + children, child_count: children, child_ages: [] } }
   };
-  return `${ENGINE_BASE}?search=${encodeURIComponent(JSON.stringify(payload))}`;
+  let url = `${ENGINE_BASE}?search=${encodeURIComponent(JSON.stringify(payload))}`;
+  if (promo && promo.trim()) url += `&promo=${encodeURIComponent(promo.trim())}`;
+  return url;
 }
 
 export default function BookingForm() {
@@ -30,9 +34,17 @@ export default function BookingForm() {
   const [draft, setDraft] = useState({ start: new Date(checkin), end: new Date(checkout) });
   const anchorRef = useRef(null); // wraps the two date inputs
 
+  // --- NEW: promo toggle + value ---
+  const [showPromo, setShowPromo] = useState(false);
+  const [promo, setPromo] = useState("");
+
   const onSubmit = (e) => {
     e.preventDefault();
-    window.open(buildHotelRunnerUrl({ checkin, checkout, adults, children }), "_blank", "noopener,noreferrer");
+    window.open(
+      buildHotelRunnerUrl({ checkin, checkout, adults, children, promo }),
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
@@ -40,7 +52,6 @@ export default function BookingForm() {
       <div className="col-span-2">
         <h3 className="font-semibold text-brand-charcoal">Availability</h3>
       </div>
-
       {/* Date inputs wrapper = anchor for popover */}
       <div ref={anchorRef} className="col-span-2 grid grid-cols-2 gap-3">
         <label className="text-sm text-gray-700">
@@ -93,6 +104,47 @@ export default function BookingForm() {
                onChange={(e)=>setChildren(parseInt(e.target.value||"0",10))}
                className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2" />
       </label>
+
+{/* --- NEW: Promo toggle/field placed on top (under title) --- */}
+<div className="col-span-2">
+  {!showPromo ? (
+    <button
+      type="button"
+      onClick={() => setShowPromo(true)}
+      aria-expanded={showPromo}
+      className="text-sm text-brand-terracotta hover:text-brand-terracottaDark underline underline-offset-2"
+    >
+      promo code?
+    </button>
+  ) : (
+    <div className="grid grid-cols-2 gap-3">
+      <label className="text-sm text-gray-700 col-span-2 sm:col-span-1">
+        Promo code
+        <input
+          name="promo"
+          type="text"
+          inputMode="text"
+          autoComplete="off"
+          placeholder="e.g. TIFLET10"
+          value={promo}
+          onChange={(e)=>setPromo(e.target.value)}
+          className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2"
+        />
+      </label>
+      <div className="col-span-2 sm:col-span-1 flex items-end">
+        <button
+          type="button"
+          onClick={() => { setPromo(""); setShowPromo(false); }}
+          className="text-sm text-gray-600 hover:text-brand-terracotta underline underline-offset-2"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  )}
+</div>
+{/* --- end promo block --- */}
+
 
       <div className="col-span-2">
         <button

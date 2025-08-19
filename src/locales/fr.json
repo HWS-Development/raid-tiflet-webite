@@ -498,26 +498,19 @@
       "members": [
         {
           "id": "yassine",
+          "photo": "/images/person1.jpg",
           "name": "Yassine",
           "bio": "Hôte résident et cœur de Dar Tiflet. Gardien des traditions berbères, toujours aux petits soins. Aime les souks de campagne — et lire vos avis."
         },
         {
           "id": "mohamed",
+          "photo": "/images/person2.jpg",
           "name": "Mohamed",
           "bio": "Discret et attentif, avec un accueil particulier pour les familles. Toujours un grand sourire sincère."
         },
         {
-          "id": "marc",
-          "name": "Marc",
-          "bio": "Dans le tourisme depuis de nombreuses années ; premier propriétaire de Dar Tiflet (depuis 2007) et concepteur de la maison. Passionné par le Maroc non touristique, les animaux, l’histoire de l’art et la cueillette des olives et des oranges."
-        },
-        {
-          "id": "patrice",
-          "name": "Patrice",
-          "bio": "Coordinateur et grand bavard, en plusieurs langues (dont l’arabe marocain). Partage sa musique marocaine, aime l’Atlas et l’oasis de Fint, et ne rate jamais une baignade d’été."
-        },
-        {
           "id": "ibrahim",
+          "photo": "/images/person5.jpg",
           "name": "Ibrahim",
           "bio": "Originaire du Haut Atlas au-delà de la vallée du Dadès. Aime transmettre la culture amazighe et peut écrire votre nom en arabe et en tifinagh — avec un immense sourire."
         }

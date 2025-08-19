@@ -49,9 +49,9 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           {/* swap src to your real logo url when ready */}
           <img
-            src="/images/logo.svg"
+            src="/images/dar-tiflet-logo-transparent.png"
             alt="Dar Tiflet"
-            className="h-12 w-48 rounded-xl"
+            className="h-28 w-28 rounded-xl"
           />
         </Link>
 
