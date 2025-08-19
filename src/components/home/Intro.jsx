@@ -1,23 +1,19 @@
 import { useTranslation } from "react-i18next";
-import SectionHeading from "./SectionHeading";
 
-export default function Intro() {
+export default function Intro(){
   const { t } = useTranslation();
   return (
-    <section className="py-12 sm:py-16 bg-brand-ivory">
-      <div className="container-grid grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <SectionHeading>{t("about.title")}</SectionHeading>
-          <p className="text-gray-700 leading-7 mb-4">{t("about.lead")}</p>
-          <p className="text-gray-700 leading-7 mb-4">{t("about.body")}</p>
-          <p className="text-gray-800 font-medium">{t("about.hospitality")}</p>
-        </div>
-        <img
-          src="/images/rooftop2.jpg"
-          alt="Riad Dar Tiflet patio"
-          className="rounded-2xl shadow-soft"
-        />
+    <div className="grid md:grid-cols-2 gap-10 pt-10 items-center">
+      <div>
+        <h2 className="display-title">{t("about.title")}</h2>
+        <p className="mt-3 text-[16px] leading-7">{t("about.lead")}</p>
+        <p className="mt-2 text-[16px] leading-7">{t("about.hospitality")}</p>
       </div>
-    </section>
+      <img
+        src="/images/rooftop2.jpg"
+        alt={t("about.title")}
+        className="rounded-[24px] shadow-2xl w-full object-cover aspect-[4/3]"
+      />
+    </div>
   );
 }

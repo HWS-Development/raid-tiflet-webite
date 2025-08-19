@@ -1,69 +1,75 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import SectionHeading from "./SectionHeading";
-import { safeArray } from "../../utils/safeArray";
-import RoomModal from "../rooms/RoomModal";
+import { useMemo } from "react";
 
-export default function RoomsTeaser() {
+const FALLBACK =
+  "https://images.unsplash.com/photo-1562259949-e8e7689d7821?q=80&w=1600&auto=format&fit=crop";
+
+function RoomTile({ room, onView }) {
   const { t } = useTranslation();
-  const rooms = safeArray(t("rooms.items", { returnObjects: true })).slice(0, 3);
-  const [openRoom, setOpenRoom] = useState(null);
+  const img =
+    (Array.isArray(room.images) && typeof room.images[0] === "string" && room.images[0]) ||
+    FALLBACK;
+
 
   return (
-    <section className="py-12 sm:py-16">
-      <div className="container-grid">
-        <SectionHeading>{t("rooms.title")}</SectionHeading>
-        <p className="text-sm text-gray-600 mb-8">{t("rooms.legend")}</p>
+    <article className="relative overflow-hidden rounded-[28px] shadow-2xl group aspect-[4/5]">
+      {/* image */}
+      <img
+        src={img}
+        alt={room.name}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        loading="lazy"
+      />
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {rooms.map((room) => (
-            <article key={room.id}
-              className="bg-white rounded-2xl shadow-soft overflow-hidden border border-black/5 hover:-translate-y-1 hover:shadow-lg transition">
-              <div className="h-1" style={{ backgroundColor: room.color || "#C94F44" }}></div>
-              <img
-                src={
-                  room.id === "green"   ? "/images/rooms/Green Room1.jpg" :
-                  room.id === "bigarree"? "/images/rooms/Bigarree room1.jpg" :
-                  "/images/rooms/Yellow Room1.jpg"
-                }
-                alt={room.name}
-                className="h-48 w-full object-cover"
-              />
-              <div className="p-5">
-                <h3 className="font-semibold text-brand-charcoal flex items-center gap-2">
-                  {room.name}
-                  {room.color && <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: room.color }} />}
-                </h3>
-                {room.type && <p className="text-sm text-gray-600 mt-1">{room.type}</p>}
 
-                <div className="mt-4 flex gap-3">
-                  <button
-                    onClick={() => setOpenRoom(room)}
-                    className="inline-flex px-4 py-2 rounded-xl border border-brand-terracotta text-brand-terracotta hover:bg-brand-terracotta hover:text-white transition"
-                  >
-                    {t("rooms.view")}
-                  </button>
-                  <a
-                    href="https://riad-dar-tiflet-1.hotelrunner.com/bv3/search"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex px-4 py-2 rounded-xl bg-brand-terracotta text-white hover:bg-brand-terracottaDark transition"
-                  >
-                    {t("rooms.book")}
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+      {/* bottom title + CTA */}
+      <div className="absolute bottom-5 left-6 right-6 flex items-center justify-between gap-4">
+        <h3 className="text-white drop-shadow-2xl font-serif text-2xl sm:text-3xl tracking-wide uppercase">
+          {room.name}
+        </h3>
+
+        <button
+          onClick={onView}
+          aria-label={`${t("rooms.view")} — ${room.name}`}
+          className="rounded-full border border-white/70 text-white/90 hover:bg-white hover:text-black px-4 py-1.5 text-sm transition"
+        >
+          {t("rooms.view")}
+        </button>
+      </div>
+    </article>
+  );
+}
+
+export default function RoomsTeaser({ onViewRoom }) {
+  const { t } = useTranslation();
+  const rooms = useMemo(() => t("rooms.items", { returnObjects: true }) || [], [t]);
+
+  return (
+    <>
+      <header className="mb-8">
+        <h2 className="font-serif text-ink text-3xl md:text-4xl tracking-wider">
+          {t("rooms.title")}
+        </h2>
+        {/* <p className="mt-1 text-black">{t("rooms.legend")}</p> */}
+      </header>
+
+      <div className="grid gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-3">
+        {(rooms.slice(0, 3)).map((r) => (
+          <RoomTile key={r.id} room={r} onView={() => onViewRoom?.(r)} />
+        ))}
       </div>
 
-      {openRoom && (
-        <RoomModal
-          room={openRoom}
-          onClose={() => setOpenRoom(null)}
-        />
-      )}
-    </section>
+      {/* Show more → /rooms */}
+      <div className="mt-6 flex justify-center">
+        <a
+          href="/rooms"
+          className="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 text-sm
+                    hover:bg-black hover:text-white transition"
+          aria-label={t("rooms.show_all")}
+        >
+          {t("rooms.show_all")}
+        </a>
+      </div>
+    </>
   );
 }

@@ -1,34 +1,79 @@
+// components/home/ServicesTeaser.jsx
 import { useTranslation } from "react-i18next";
-import SectionHeading from "./SectionHeading";
-import { safeArray } from "../../utils/safeArray";
 
-const icons = {
-  shuttle: <svg viewBox="0 0 24 24" className="w-6 h-6"><path fill="currentColor" d="M3 5h13a5 5 0 0 1 5 5v7h-2a2 2 0 1 1-4 0H9a2 2 0 1 1-4 0H3V7a2 2 0 0 1 2-2Zm0 9h18v-4a3 3 0 0 0-3-3H5a2 2 0 0 0-2 2v5Z"/></svg>,
-  breakfast: <svg viewBox="0 0 24 24" className="w-6 h-6"><path fill="currentColor" d="M4 19h16v2H4v-2Zm1-8h12a4 4 0 1 1 0 8H5a4 4 0 0 1 0-8Zm14-6H5V3h14v2Z"/></svg>,
-  tips: <svg viewBox="0 0 24 24" className="w-6 h-6"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7c0 2.76-1.5 4.09-3 5.24V17a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-2.76C6.5 13.09 5 11.76 5 9a7 7 0 0 1 7-7Zm-2 18h4v2h-4v-2Z"/></svg>,
-  luggage: <svg viewBox="0 0 24 24" className="w-6 h-6"><path fill="currentColor" d="M9 3h6v2H9V3Zm-3 4h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Zm2 2v10h2V9H8Zm6 0v10h2V9h-2Z"/></svg>
-};
+function Wave({ position = "top" }) {
+  const base = "absolute left-0 w-full h-14 md:h-16 lg:h-20 text-brand-ivory";
+  const pos =
+    position === "top"
+      ? "top-0 -translate-y-full"
+      : "bottom-0 translate-y-full";
+
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 1440 80"
+      preserveAspectRatio="none"
+      className={`${base} ${pos}`}
+    >
+      <path
+        d="M0,64 C180,24 360,24 540,48 C720,72 900,72 1080,48 C1260,24 1440,24 1440,24 L1440,80 L0,80 Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
 
 export default function ServicesTeaser() {
   const { t } = useTranslation();
-  const services = safeArray(t("services.items", { returnObjects: true }));
+  const items = t("services.items", { returnObjects: true }) || [];
 
   return (
-    <section className="py-12 sm:py-16 bg-brand-ivory">
-      <div className="container-grid">
-        <SectionHeading>{t("services.title")}</SectionHeading>
+    /**
+     * NOTE:
+     * - bg is transparent; no extra top/bottom padding (those were the “empty ivory bars”)
+     * - spacing is now inside the band itself (py-12)
+     */
+    <section className="relative bg-transparent">
+      {/* Full-bleed band with toned-down green */}
+      <div
+        className="relative overflow-hidden"
+        style={{
+          // softer forest green (adjust to taste)
+          backgroundColor: "#0f5b4a",
+        }}
+      >
+        <Wave position="top" />
+        <Wave position="bottom" />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((s) => (
-            <div key={s.id} className="bg-white rounded-2xl shadow-soft p-5 flex flex-col items-start gap-3 border border-black/5 hover:-translate-y-1 hover:shadow-lg transition">
-              <div className="text-brand-terracotta">{icons[s.id] || icons.tips}</div>
-              <div>
-                <h3 className="font-semibold text-brand-charcoal">{s.name}</h3>
-                {s.from && <p className="text-sm text-gray-600">{s.from}</p>}
-                {s.price && <p className="text-sm text-gray-600">{s.price}</p>}
+        {/* content */}
+        <div className="container-grid relative z-10 py-12 md:py-16">
+          <h2 className="display-art text-white text-3xl md:text-4xl">
+            {t("services.title")}
+          </h2>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {items.map((s) => (
+              <div
+                key={s.id}
+                className="group relative overflow-hidden rounded-2xl border border-white/15
+                           bg-white/[0.06] px-5 py-4 text-white/90 shadow-sm backdrop-blur
+                           transition hover:bg-white/[0.10] hover:shadow-md"
+              >
+                {/* the sweeping line (left -> right on hover) */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute left-0 top-0 h-[2px] w-0
+                             bg-white/70 transition-[width] duration-500 ease-out
+                             group-hover:w-full"
+                />
+                <div className="flex items-start gap-3">
+                  <span className="mt-2 inline-block h-2 w-2 rounded-full bg-white/80" />
+                  <span className="font-medium leading-snug">{s.name}</span>
+                </div>
               </div>
-            </div>
-          ))}
+              
+            ))}
+          </div>
         </div>
       </div>
     </section>

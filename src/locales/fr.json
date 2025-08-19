@@ -10,6 +10,17 @@
     "book": "Réserver"
   },
 
+  "brand": {
+    "identity": {
+      "title": "Identité visuelle",
+      "paras": [
+        "Le riad se distingue par ses chambres aux noms de couleurs. Je souhaite un site au style coloré, vivant, et chaleureux pour refléter cette ambiance unique.",
+        "En contraste, le futur patio aura une décoration plus épurée, dans des tons ivoire et naturels, qui sera révélée à l’ouverture des chambres. Le site pourrait suggérer cette surprise visuelle à travers un design qui marie ces deux ambiances."
+      ]
+    },
+    "logo_note": "Logo : Je vous le joins en pièce jointe."
+  },
+
   "hero": {
     "subtitle": "Une authentique maison berbère au cœur de Marrakech",
     "cta": "Voir les disponibilités"
@@ -38,6 +49,15 @@
     "floor": "Étage",
     "ground_floor": "Rez-de-chaussée",
     "first_floor": "1er étage",
+    "show_all": "Voir toutes les chambres",
+
+    "intro": {
+      "title": "🛏️ Nos Chambres",
+      "paras": [
+        "Au cœur de la médina, Dar Tiflet vous invite à découvrir un lieu où authenticité berbère, simplicité et confort se mêlent pour offrir un séjour apaisant. Chaque chambre est une parenthèse tranquille, décorée avec soin dans le respect des traditions locales et pensée pour préserver la fraîcheur naturelle grâce à ses murs épais en pisé."
+      ]
+    },
+
     "items": [
       {
         "id": "green",
@@ -53,6 +73,15 @@
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
         "amenities": ["Wi-Fi", "Linge & serviettes", "Rangements", "Climatisation"],
         "color": "#2F8F5B",
+        "features": [
+          "Chambre double classique située au rez-de-chaussée",
+          "Lit double",
+          "Salle de bains privative",
+          "12 m² avec espace de rangement",
+          "Climatisation",
+          "Murs épais en pisé assurant une fraîcheur naturelle",
+          "Fenêtre donnant sur l’intérieur de la maison"
+        ],
         "images": [
           "/images/rooms/Green Room1.jpg",
           "/images/rooms/Green Room2.jpg",
@@ -73,6 +102,15 @@
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#B7322C",
+        "features": [
+          "Chambre triple classique au rez-de-chaussée",
+          "Lit double + lit simple ou canapé convertible",
+          "Salle de bains privative",
+          "22 m² avec espace de rangement",
+          "Climatisation",
+          "Murs épais en pisé pour une fraîcheur naturelle",
+          "Fenêtre donnant sur l’intérieur de la maison"
+        ],
         "images": [
           "/images/rooms/Bigarree room1.jpg",
           "/images/rooms/Bigarree room2.jpg",
@@ -93,6 +131,14 @@
         "windows": "Deux fenêtres donnant sur la cour",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
         "color": "#F2B705",
+        "features": [
+          "Chambre twin supérieure au 1er étage",
+          "Deux lits jumeaux ou lit double",
+          "Salle de bains privative",
+          "14 m² avec espace de rangement",
+          "Climatisation",
+          "Deux fenêtres donnant sur la cour extérieure"
+        ],
         "images": [
           "/images/rooms/Yellow Room1.jpg",
           "/images/rooms/Yellow Room2.jpg",
@@ -113,6 +159,14 @@
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#B7322C",
+        "features": [
+          "Chambre triple supérieure au 1er étage",
+          "Lit double + lit simple ou canapé convertible",
+          "Salle de bains privative",
+          "25 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur l’intérieur de la maison"
+        ],
         "images": [
           "/images/rooms/Red Room1.jpg",
           "/images/rooms/Red Room2.jpg",
@@ -133,6 +187,14 @@
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
         "color": "#1E5A8A",
+        "features": [
+          "Chambre double supérieure au 1er étage",
+          "Lit double",
+          "Salle de bains privative",
+          "14 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur l’intérieur de la maison"
+        ],
         "images": [
           "/images/rooms/Blue Room1.jpg",
           "/images/rooms/Blue Room2.jpg",
@@ -153,6 +215,16 @@
         "windows": "Fenêtres donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#0C4A6E",
+        "features": [
+          "Chambre quadruple classique au rez-de-chaussée",
+          "Deux pièces contiguës",
+          "Lit double + lits simples ou canapés convertibles",
+          "Salle de bains privative",
+          "25 m² avec espace de rangement",
+          "Climatisation",
+          "Murs épais en pisé assurant une fraîcheur naturelle",
+          "Fenêtres donnant sur le jardin intérieur"
+        ],
         "images": [
           "/images/rooms/Safi Suite1.jpg",
           "/images/rooms/Safi Suite2.jpg",
@@ -173,6 +245,14 @@
         "windows": "Fenêtre donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
         "color": "#C94F44",
+        "features": [
+          "Chambre double supérieure au 1er étage",
+          "Lit double",
+          "Salle de bains privative",
+          "11 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur le jardin intérieur"
+        ],
         "images": [
           "/images/rooms/Zina Room1.jpg",
           "/images/rooms/Zina Room2.jpg",
@@ -193,6 +273,14 @@
         "windows": "Fenêtre donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
         "color": "#8A352D",
+        "features": [
+          "Chambre twin au 1er étage",
+          "Deux lits jumeaux",
+          "Salle de bains privative",
+          "12 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur le jardin intérieur"
+        ],
         "images": [
           "/images/rooms/Baraka room1.jpg",
           "/images/rooms/Baraka room2.jpg",
@@ -201,7 +289,6 @@
       }
     ]
   },
-
 
   "services": {
     "title": "Services & Expériences",
@@ -230,7 +317,6 @@
       ]
     }
   },
-
 
   "policies": {
     "title": "Conditions",
@@ -263,7 +349,6 @@
     "made_with_love": "Fait avec amour."
   },
 
-
   "contact": {
     "title": "Contact",
     "address_hint": "Situé à 50 m de la place Ben Salah ; accès voiture impossible jusqu’à la porte.",
@@ -275,6 +360,7 @@
       "send": "Envoyer"
     }
   },
+
   "location": {
     "title": "Localisation",
     "desc": "Au cœur de la médina de Marrakech, quartier Ben Salah — ruelle calme et vie de quartier authentique.",
@@ -287,11 +373,13 @@
     ],
     "open_maps": "Ouvrir dans Google Maps"
   },
+
   "ui": {
     "close": "Fermer",
     "next": "Suivante",
     "prev": "Précédente"
   },
+
   "reviews": {
     "title": "Avis des Voyageurs",
     "items": [
@@ -333,6 +421,7 @@
       }
     ]
   },
+
   "services_page": {
     "title": "Services & Expériences",
     "subtitle": "Confort, conseils et savoir-faire local — pour vivre Marrakech comme chez des amis.",
@@ -371,18 +460,29 @@
       }
     ]
   },
+
   "dining": {
     "title": "La Table de Dar Tiflet",
-    "subtitle": "Cuisine berbère & marocaine faite maison sur la terrasse — avec vue directe sur la Koutoubia au coucher du soleil.",
+    "subtitle": "Saveurs maison avec vue sur la Koutoubia",
+    "intro": "Au sommet du riad, la terrasse panoramique de Dar Tiflet vous offre une vue exceptionnelle sur les toits de la médina… et en ligne directe sur l’emblématique minaret de la Koutoubia, surtout magique au coucher du soleil. Dans ce décor paisible, baigné de lumière, nous avons créé un espace de restauration simple, chaleureux et authentique, à l’image de notre maison.",
     "bullets": [
-      "Menu unique du jour, fait maison : tajines, couscous, pastilla, zaalouk, harira…",
-      "Pain cuit sur place, fruits et desserts marocains",
+      "Menu unique du jour, fait maison : tajines de saison, couscous aux légumes, pastilla, zaalouk, harira…",
+      "Pain cuit sur place, fruits frais, desserts marocains",
       "Options végétariennes et sans allergènes sur demande"
     ],
-    "reserve_note": "Repas sur réservation uniquement (minimum 6 h à l’avance).",
-    "bar_title": "Le Comptoir Tiflet — Bar sans alcool",
-    "bar_body": "Thé à la menthe et infusions, jus d’orange pressé, citronnade, smoothies, eau minérale, sodas et café. Un moment paisible au-dessus de la médina."
+    "reserve_note": "📌 Les repas sont servis sur réservation uniquement (minimum 6 heures à l’avance).",
+    "bar_title": "Le Comptoir Tiflet — rafraîchissements en terrasse",
+    "bar_body": "Notre bar sans alcool vous propose une sélection de boissons fraîches et locales, à savourer sur la terrasse avec une vue dégagée sur Marrakech :",
+    "bar_list": [
+      "Thés à la menthe et infusions traditionnelles",
+      "Jus d’orange pressé, citronnade maison, jus de fruits frais",
+      "Eau minérale, boissons gazeuses, cafés",
+      "Smoothies maison à base de fruits du marché",
+      "Ici, pas d’alcool, par respect pour l’esprit du lieu et de la médina, mais tout le plaisir des saveurs naturelles, dans un cadre intime et reposant."
+    ],
+    "closing": "🌇 Un moment suspendu sur les toits de la médina — Plus qu’un service, la Table de Dar Tiflet est une invitation à vivre Marrakech autrement : Loin du bruit, près du cœur, dans une maison vivante où l’on prend le temps de partager un repas, un thé, une discussion... ou simplement un coucher de soleil sur la Koutoubia."
   },
+
   "dining_page": {
     "title": "Dining",
     "subtitle": "Cuisine berbère & marocaine faite maison sur la terrasse.",
@@ -421,6 +521,7 @@
       "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop"
     ]
   },
+
   "gallery_page": {
     "title": "Galerie",
     "subtitle": "Un aperçu de la maison, de la terrasse et de la vie à Marrakech.",
@@ -430,7 +531,7 @@
         { "id": "rooms", "label": "Chambres" },
         { "id": "terrace", "label": "Terrasse" },
         { "id": "details", "label": "Détails" },
-        { "id": "dining", "label": "Dining" },
+        { "id": "dining", "label": "Restauration" },
         { "id": "neighborhood", "label": "Quartier" }
       ]
     },
@@ -465,34 +566,42 @@
       { "id": "g25", "src": "/images/rooms/Blue Room1.jpg", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" },
       { "id": "g26", "src": "/images/rooms/Blue Room2.jpg", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" }
     ]
-
   },
+
   "about_page": {
     "title": "À propos",
     "subtitle": "Une maison berbère traditionnelle, habitée et vivante.",
     "intro": "Dar Tiflet est un riad centenaire ancré dans la médina. Nous préservons son architecture authentique et une hospitalité simple et chaleureuse.",
+
     "story": {
-      "title": "Ambiance & Histoire",
+      "title": "✨ Ambiance & Histoire",
       "paragraphs": [
-        "Riad Dar Tiflet est une véritable maison berbère traditionnelle, nichée au cœur vibrant de la médina de Marrakech. Ancienne demeure familiale d’un épicier berbère, le riad a su garder l’âme de son passé.",
-        "Zelliges artisanaux, plâtre sculpté, murs en pisé : chaque détail raconte un savoir-faire ancestral. Le mobilier et les tapis, confectionnés localement, prolongent cet héritage vivant.",
-        "« Dar » signifie maison en arabe ; « Tiflet » signifie porte en tamazight — un clin d’œil à une identité double : un lieu à la fois ouvert et intime.",
-        "Aujourd’hui, l’atmosphère est intime et conviviale : le patio central invite au repos, le salon berbère aux échanges, et la terrasse s’ouvre sur la médina. Ici, on est reçu comme des amis."
+        "Riad Dar Tiflet est une véritable maison berbère traditionnelle, nichée au cœur vibrant de la médina de Marrakech. Ancienne demeure familiale d’un épicier berbère, ce riad centenaire a su préserver l’authenticité de son architecture et l’âme de son passé.",
+        "Zelliges artisanaux, plâtre sculpté, sols et murs décorés à la main… chaque détail témoigne d’un savoir-faire ancestral. Le mobilier et les tapis, confectionnés localement, prolongent cet héritage vivant, fidèle à l’esthétique sobre et chaleureuse de la culture berbère."
       ],
-      "heritage_title": "Héritage de la maison",
+      "heritage_title": "Le nom Dar Tiflet",
       "heritage": [
-        "Zelliges et plâtre sculpté",
-        "Murs en pisé pour une fraîcheur naturelle",
-        "Sols et détails faits main",
-        "Mobilier et tapis locaux"
+        "Le nom Dar Tiflet est un clin d’œil à cette double identité :",
+        "« Dar » signifie maison en arabe,",
+        "« Tiflet » signifie porte en tamazight (berbère).",
+        "Un hommage direct à ses racines, et à l’idée d’un lieu à la fois ouvert, intime, et profondément enraciné."
       ]
     },
+
     "highlights": [
-      { "id": "patio", "icon": "patio", "title": "Patio central", "body": "Le cœur calme de la maison pour un thé et le repos." },
-      { "id": "rooftop", "icon": "rooftop", "title": "Vue en terrasse", "body": "Un ciel ouvert et une ligne vers la Koutoubia au coucher du soleil." },
-      { "id": "salon", "icon": "salon", "title": "Salon berbère", "body": "Un espace vivant pour la discussion et le partage." },
-      { "id": "hospitality", "icon": "hospitality", "title": "Hospitalité berbère", "body": "Sincère, simple, attentive — comme entre amis." }
+      { "id": "today-intro", "icon": "spark", "title": "Aujourd’hui", "body": "Tel un passeur entre passé et présent, chaque recoin murmure une histoire. Ici, on entre dans un espace habité – pas seulement décoré." },
+      { "id": "patio", "icon": "patio", "title": "Patio central", "body": "Invite au repos." },
+      { "id": "salon", "icon": "salon", "title": "Salon berbère", "body": "Moments d’échange." },
+      { "id": "terrasse", "icon": "rooftop", "title": "Terrasse ensoleillée", "body": "Vue sur les toits de la médina, espace de partage et de détente." }
     ],
+
+    "invite": {
+      "paragraphs": [
+        "Chez Dar Tiflet, on est reçu comme des amis. L’hospitalité berbère se révèle dans un thé à la menthe, un sourire sincère et l’attention portée aux moindres détails.",
+        "Dar Tiflet, c’est une invitation à vivre Marrakech autrement : au rythme de ses habitants, au cœur de ses traditions, et dans une maison où chaque pierre raconte une histoire."
+      ]
+    },
+
     "team": {
       "title": "L’équipe",
       "members": [
@@ -516,12 +625,14 @@
         }
       ]
     },
+
     "map": {
       "title": "Où nous trouver",
       "body": "Quartier Ben Saleh, à quelques minutes des souks et des principaux sites. Nous vous guidons volontiers pour l’arrivée.",
       "cta": "Ouvrir dans Google Maps"
     }
   },
+
   "contact_page": {
     "title": "Contact",
     "subtitle": "Nous répondons avec plaisir — envoyez-nous un message.",
@@ -547,6 +658,7 @@
       "note": "En cliquant, votre e-mail ou WhatsApp s’ouvrira avec le message prérempli (aucun compte supplémentaire nécessaire)."
     }
   },
+
   "booking": {
     "form": {
       "date_range": "Dates",
@@ -554,11 +666,10 @@
       "children": "Enfants",
       "rooms": "Chambres",
       "submit": "Voir les disponibilités",
-      "placeholder_dates": "Choisir des dates"
+      "placeholder_dates": "Choisir des dates",
+      "promo_toggle": "Vous avez un code promo ?",
+      "promo_label": "Code promo",
+      "promo_remove": "Retirer le code"
     }
   }
-
-
-
-
 }
