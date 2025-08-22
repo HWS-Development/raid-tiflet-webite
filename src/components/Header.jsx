@@ -24,7 +24,7 @@ export default function Header() {
     { to: "/", label: t("nav.home") },
     { to: "/rooms", label: t("nav.rooms") },
     { to: "/services", label: t("nav.services") },
-    { to: "/dining", label: t("nav.dining") },
+    // { to: "/dining", label: t("nav.dining") },
     { to: "/gallery", label: t("nav.gallery") },
     { to: "/about", label: t("nav.about") },
     { to: "/contact", label: t("nav.contact") }

@@ -59,7 +59,7 @@ export default function ServicePillsEnhanced() {
             <div className="flex items-start gap-4 px-5 py-6 min-h-[112px]">
               <Icon className="mt-1 h-6 w-6 shrink-0" />
               <div className="space-y-1">
-                <h3 className="font-medium leading-snug">{s.name}</h3>
+                <h3 className="font-medium leading-snug text-white">{s.name}</h3>
                 {s.tag && (
                   <span className="inline-block text-[11px] tracking-wide rounded-full px-2 py-0.5 bg-white/10">
                     {s.tag}

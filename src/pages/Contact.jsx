@@ -9,32 +9,53 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <>
-    <main id="contact" className="pt-16 pb-10 sm:pb-12">
+    <main id="contact">
+      {/* HERO */}
       <ContactHero />
 
-      <section className="py-8 sm:py-10">
-        <div className="container-grid">
-          <p className="max-w-3xl text-gray-700 text-sm sm:text-base">
-            {t("contact_page.intro")}
-          </p>
+      {/* INTRO — sage field with an editorial card and a curve to ivory */}
+      <section className="relative tone-sage">
+        <div className="container-grid section">
+          <header className="mb-5">
+            <h1 className="display-title text-ink/90">
+              {/* {t("contact_page.title", "Contact")} */}
+            </h1>
+          </header>
+
+          {/* editorial card */}
+          <div className="relative max-w-3xl">
+            <div className="absolute inset-0 -left-4 rounded-3xl bg-white/60 backdrop-blur-sm -z-10" />
+            <p className="text-[15px] sm:text-base leading-7 text-ink/80">
+              {t("contact_page.intro")}
+            </p>
+          </div>
         </div>
+
+        <CurveBand position="bottom" from="#DCE5D9" to="#F6F1E8" height={140} />
       </section>
 
-      <section className="pb-10 sm:pb-12">
-        <div className="container-grid grid lg:grid-cols-2 gap-8 items-start">
-          {/* Left: Form */}
-          <ContactForm />
+      {/* CONTENT — ivory field with form + info (cards + map) */}
+      <section className="relative tone-ivory">
+        <div className="container-grid section grid lg:grid-cols-2 gap-10 items-start">
+          {/* Left: Form in a layered soft card */}
+          <div className="relative">
+            <div className="absolute -inset-2 rounded-[28px] bg-white/60 backdrop-blur-sm -z-10" />
+            <div className="rounded-[24px] bg-white shadow-soft p-4 sm:p-6">
+              <ContactForm />
+            </div>
+          </div>
 
-          {/* Right: Cards + Map */}
+          {/* Right: Contact cards + map, stacked and sticky on large screens */}
           <div className="space-y-6 lg:sticky lg:top-20">
-            <ContactCards />
-            <ContactMap />
+            <div className="rounded-[24px] bg-white shadow-soft p-4 sm:p-6">
+              <ContactCards />
+            </div>
+            <div className="rounded-[24px] bg-white shadow-soft overflow-hidden">
+              <ContactMap />
+            </div>
           </div>
         </div>
       </section>
     </main>
-      <CurveBand position="bottom" from="#F6F1E8" to="#254E3E" height={140} />
-      </>
   );
 }

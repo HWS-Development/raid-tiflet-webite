@@ -312,8 +312,20 @@
     }
   },
 
-  "contact": { "title": "Contact" },
-
+  "contact": { 
+    "title": "Contact",
+    "whatsapp_hint_label": "WhatsApp invitation",
+    "whatsapp_hint_title": "Join us on WhatsApp",
+    "whatsapp_hint_body": "Quick questions or arrival help? Tap the green bubble.",
+    "whatsapp_cta": "Chat on WhatsApp" 
+  },
+  "whatsappPromo": {
+    "title": "Book direct with us",
+    "line1": "Best rates guaranteed",
+    "line2": "Traditional hammam & massage",
+    "line3": "2 pools & solariums",
+    "line4": "Perks for direct bookings"
+  },  
   "policies": {
     "title": "Policies",
     "included": "Breakfast & city taxes included.",
@@ -369,7 +381,7 @@
       { "name": "Lena S.", "country": "Germany", "date": "2025-02-10", "text": "Peaceful, tasteful, and comfortable. We’ll be back!" }
     ]
   },
-
+"common": { "close": "Close" },
   "services_page": {
     "title": "Services & Experiences",
     "subtitle": "Comfort, guidance and local know-how — so you can enjoy Marrakech like a friend of the house.",
@@ -553,6 +565,41 @@
       "body": "Ben Saleh quarter, a few minutes from the souks and the main sights. We’re happy to guide your arrival.",
       "cta": "Open in Google Maps"
     }
+  },
+  "ratings": {
+    "title": "Loved by Guests",
+    "subtitle": "Independent ratings & awards — proof that the charm is real.",
+    "badge": "Award",
+    "items": [
+      {
+        "id": "hotels",
+        "src": "/images/rating4.jpeg",
+        "alt": "Hotels.com Loved by Guests 9.6/10",
+        "score": "9.6/10",
+        "label": "Hotels.com"
+      },
+      {
+        "id": "tripadvisor",
+        "src": "/images/rating1.jpeg",
+        "alt": "Tripadvisor Excellent 4.8/5",
+        "score": "4.8/5",
+        "label": "Tripadvisor"
+      },
+      {
+        "id": "booking",
+        "src": "/images/rating2.jpeg",
+        "alt": "Booking.com 9.4/10",
+        "score": "9.4/10",
+        "label": "Booking.com"
+      },
+      {
+        "id": "kayak",
+        "src": "/images/rating3.jpeg",
+        "alt": "Kayak Travel Awards Winner",
+        "score": "9.4/10",
+        "label": "Kayak Travel Awards"
+      }
+    ]
   },
 
   "contact_page": {

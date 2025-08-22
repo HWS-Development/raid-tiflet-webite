@@ -34,6 +34,11 @@
   }
 }
 @layer utilities {
+  .shadow-paper {
+    box-shadow:
+      0 18px 40px rgba(0,0,0,.10),
+      0 2px 8px rgba(0,0,0,.06);
+  }
   .masonry { column-gap: 1rem; }
   .masonry > * { break-inside: avoid; margin-bottom: 1rem; }
   .blob-shadow {
@@ -142,3 +147,6 @@
 .wave-bottom{
   background-image: radial-gradient(120% 130% at 50% -20%, transparent 60%, rgba(0,0,0,.08) 61%, transparent 62%);
 }
+
+@keyframes bob { from { transform: translateY(0) } 50% { transform: translateY(-4px) } to { transform: translateY(0) } }
+.bob { animation: bob 4s ease-in-out infinite }

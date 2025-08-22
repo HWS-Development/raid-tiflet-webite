@@ -39,7 +39,7 @@ export default function ArtFooter() {
 
           {/* Explore */}
           <nav className="text-white">
-            <h4 className="font-semibold mb-3">{t("footer.links_title")}</h4>
+            <h4 className="font-semibold mb-3 text-white">{t("footer.links_title")}</h4>
             <ul className="space-y-2">
               {links.map((l) => (
                 <li key={l.to}>
@@ -51,7 +51,7 @@ export default function ArtFooter() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-3">{t("footer.contact_title")}</h4>
+            <h4 className="font-semibold mb-3 text-white">{t("footer.contact_title")}</h4>
             <address className="not-italic text-white/85 space-y-1">
               {address.map((line, i) => (
                 <div key={i}>{line}</div>

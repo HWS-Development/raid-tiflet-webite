@@ -6,6 +6,7 @@ import Highlights from "../components/about/Highlights";
 import Team from "../components/about/Team";
 import MapBlock from "../components/about/MapBlock";
 import CurveBand from "../components/ui/CurveBand";
+import RatingsAwards from "../components/about/RatingsAwards";
 
 export default function About() {
   const { t } = useTranslation();
@@ -64,6 +65,9 @@ export default function About() {
           <Team />
         </div>
       </section>
+      <CurveBand position="top" from="#DCE5D9" to="#F6F1E8" height={160} />
+          <RatingsAwards />
+          <CurveBand position="bottom" from="#DCE5D9" to="#F6F1E8" height={160} />
 
       {/* MAP on IVORY (kept) */}
       <section className="relative tone-ivory pb-16">

@@ -15,7 +15,7 @@ export default function AboutHero({ src = FALLBACK }) {
         loading="eager"
       />
       {/* warm overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,41,34,.35)_0%,rgba(16,41,34,.45)_60%,rgba(16,41,34,.55)_100%)]" />
+      <div className="absolute inset-0 bg-black/20 bg-[linear-gradient(180deg,rgba(16,41,34,.35)_0%,rgba(16,41,34,.45)_60%,rgba(16,41,34,.55)_100%)]" />
 
       <div className="relative z-10 h-full container-grid flex items-end pb-10">
         <div>

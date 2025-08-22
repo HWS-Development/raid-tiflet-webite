@@ -32,7 +32,7 @@ export default function RoomsHero({
             alt={'hero image'}
             className="absolute inset-0 h-full w-full object-cover"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             sizes="100vw"
           />
         </picture>

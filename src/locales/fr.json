@@ -358,9 +358,20 @@
       "subject": "Objet",
       "message": "Votre message",
       "send": "Envoyer"
-    }
+    },
+    "whatsapp_hint_label": "Invitation WhatsApp",
+    "whatsapp_hint_title": "Rejoignez-nous sur WhatsApp",
+    "whatsapp_hint_body": "Une question ou de l’aide pour l’arrivée ? Touchez la bulle verte.",
+    "whatsapp_cta": "Discuter sur WhatsApp"
   },
-
+  "whatsappPromo": {
+    "title": "Réservez en direct avec nous",
+    "line1": "Meilleurs tarifs garantis",
+    "line2": "Hammam traditionnel & massage",
+    "line3": "2 piscines & solariums",
+    "line4": "Avantages exclusifs"
+  },
+  "common": { "close": "Fermer" },
   "location": {
     "title": "Localisation",
     "desc": "Au cœur de la médina de Marrakech, quartier Ben Salah — ruelle calme et vie de quartier authentique.",
@@ -626,6 +637,41 @@
       "body": "Quartier Ben Saleh, à quelques minutes des souks et des principaux sites. Nous vous guidons volontiers pour l’arrivée.",
       "cta": "Ouvrir dans Google Maps"
     }
+  },
+  "ratings": {
+    "title": "Plébiscité par nos voyageurs",
+    "subtitle": "Notes et récompenses indépendantes — la preuve que le charme opère.",
+    "badge": "Distinction",
+    "items": [
+      {
+        "id": "hotels",
+        "src": "/images/rating4.jpeg",
+        "alt": "Hotels.com Loved by Guests 9,6/10",
+        "score": "9,6/10",
+        "label": "Hotels.com"
+      },
+      {
+        "id": "tripadvisor",
+        "src": "/images/rating1.jpeg",
+        "alt": "Tripadvisor Excellent 4,8/5",
+        "score": "4,8/5",
+        "label": "Tripadvisor"
+      },
+      {
+        "id": "booking",
+        "src": "/images/rating2.jpeg",
+        "alt": "Booking.com 9,4/10",
+        "score": "9,4/10",
+        "label": "Booking.com"
+      },
+      {
+        "id": "kayak",
+        "src": "/images/rating3.jpeg",
+        "alt": "Kayak Travel Awards Winner",
+        "score": "9.4/10",
+        "label": "Kayak Travel Awards"
+      }
+    ]
   },
 
   "contact_page": {
