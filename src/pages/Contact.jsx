@@ -14,15 +14,13 @@ export default function Contact() {
       <ContactHero />
 
       {/* INTRO — sage field with an editorial card and a curve to ivory */}
-      <section className="relative tone-sage">
+      {/* <section className="relative tone-sage">
         <div className="container-grid section">
           <header className="mb-5">
             <h1 className="display-title text-ink/90">
-              {/* {t("contact_page.title", "Contact")} */}
             </h1>
           </header>
 
-          {/* editorial card */}
           <div className="relative max-w-3xl">
             <div className="absolute inset-0 -left-4 rounded-3xl bg-white/60 backdrop-blur-sm -z-10" />
             <p className="text-[15px] sm:text-base leading-7 text-ink/80">
@@ -32,10 +30,10 @@ export default function Contact() {
         </div>
 
         <CurveBand position="bottom" from="#DCE5D9" to="#F6F1E8" height={140} />
-      </section>
+      </section> */}
 
       {/* CONTENT — ivory field with form + info (cards + map) */}
-      <section className="relative tone-ivory">
+      <section className="relative bg-ec">
         <div className="container-grid section grid lg:grid-cols-2 gap-10 items-start">
           {/* Left: Form in a layered soft card */}
           <div className="relative">

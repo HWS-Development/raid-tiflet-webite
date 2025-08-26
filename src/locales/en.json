@@ -309,6 +309,57 @@
           "img": "/images/ourika.avif"
         }
       ]
+    },
+    "excursions_title": "Excursions & Day Trips",
+    "excursions_intro": "Curated outings with trusted partners. No prices shown here—just choose what you like and we’ll arrange the rest.",
+    "duration_label": "Duration",
+    "transport_included": "Transport included",
+    "arrange": "Ask us to arrange",
+    "show_details": "Show details",
+    "hide_details": "Hide details",
+    "open_link": "Partner page",
+
+    "excursions": {
+      "agafay": {
+        "title": "Agafay Desert — activities",
+        "desc": "A stony desert near Marrakech: open horizons, golden light, and an easy escape for half-day or sunset experiences.",
+        "options": [
+          "Quad or buggy ride",
+          "Camel ride",
+          "With or without meal on site (sunset option possible)"
+        ],
+        "duration": "Half-day or full day, depending on the option"
+      },
+      "ourika": {
+        "title": "A day in the Ourika Valley — hiking",
+        "desc": "Green valley at the foot of the High Atlas: small walkways, waterfalls in season, villages and orchards.",
+        "options": [
+          "Easy guided walk in the valley",
+          "Stops in villages and viewpoints",
+          "Lunch in a local restaurant (optional)"
+        ],
+        "duration": "Full day"
+      },
+      "atlas": {
+        "title": "Atlas foothills adventure",
+        "desc": "A scenic loop along the foothills: Berber villages, panoramic roads and fresh air—ideal for a first glimpse of the mountains.",
+        "options": [
+          "Photo stops and viewpoints",
+          "Short village strolls",
+          "Lunch stop possible (optional)"
+        ],
+        "duration": "Full day"
+      },
+      "puratlas": {
+        "title": "Pure Atlas — 1 day",
+        "desc": "A day focused on the High Atlas: more altitude, more nature, and time to breathe in the mountain rhythm.",
+        "options": [
+          "Immersive route through Atlas valleys",
+          "Village pauses and short walks",
+          "Lunch in a typical inn (optional)"
+        ],
+        "duration": "Full day"
+      }
     }
   },
 
@@ -622,18 +673,18 @@
       "note": "By using the buttons above your email/WhatsApp will open with your message prefilled (no account creation needed)."
     }
   },
-
   "booking": {
-    "form": {
-      "date_range": "Dates",
-      "adults": "Adults",
-      "children": "Children",
-      "rooms": "Rooms",
-      "submit": "Check availability",
-      "placeholder_dates": "Select dates",
-      "promo_toggle": "Have a promo code?",
-      "promo_label": "Promo code",
-      "promo_remove": "Remove code"
+    "ariaForm": "Booking search form",
+    "titleShort": "Availability",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "adults": "Adults",
+    "children": "Children",
+    "search": "Search",
+    "promo": {
+      "toggle": "promo code?",
+      "label": "Promo code",
+      "placeholder": "e.g. TIFLET10"
     }
   }
 }

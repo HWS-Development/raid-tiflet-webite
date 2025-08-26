@@ -1,28 +1,38 @@
+// src/components/BookingForm.jsx
 import { useMemo, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import CalendarPopover from "./CalendarPopover";
-import RangeCalendar from "./RangeCalendar"; // keep if you import types from it (not required here)
 
 // ---- helpers in-file ----
 const ENGINE_BASE = "https://riad-dar-tiflet-1.hotelrunner.com/bv3/search";
-function toISODate(d){ const x=new Date(d); return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}-${String(x.getDate()).padStart(2,"0")}`;}
+function toISODate(d) {
+  const x = new Date(d);
+  return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
+}
 
 // NOTE: accepts optional `promo`
 function buildHotelRunnerUrl({ checkin, checkout, adults, children, rooms = 1, promo }) {
   const dayCount = Math.max(1, Math.floor((new Date(checkout) - new Date(checkin)) / 86400000));
   const payload = {
-    checkin_date: checkin, checkout_date: checkout, day_count: dayCount,
-    room_count: rooms, total_adult: adults, total_child: children,
+    checkin_date: checkin,
+    checkout_date: checkout,
+    day_count: dayCount,
+    room_count: rooms,
+    total_adult: adults,
+    total_child: children,
     rooms: [{ adult_count: adults, guest_count: adults + children, child_count: children, child_ages: [] }],
     guest_rooms: { "0": { adult_count: adults, guest_count: adults + children, child_count: children, child_ages: [] } }
   };
   let url = `${ENGINE_BASE}?search=${encodeURIComponent(JSON.stringify(payload))}`;
-  if (promo && promo.trim()) url += `&promo=${encodeURIComponent(promo.trim())}`;
+  if (promo && promo.trim()) url += `&coupon_code=${encodeURIComponent(promo.trim())}`;
   return url;
 }
 
 export default function BookingForm() {
+  const { t } = useTranslation();
+
   const today = useMemo(() => toISODate(new Date()), []);
-  const tomorrow = useMemo(() => { const d=new Date(); d.setDate(d.getDate()+1); return toISODate(d); }, []);
+  const tomorrow = useMemo(() => { const d = new Date(); d.setDate(d.getDate() + 1); return toISODate(d); }, []);
 
   const [checkin, setCheckin] = useState(today);
   const [checkout, setCheckout] = useState(tomorrow);
@@ -34,7 +44,7 @@ export default function BookingForm() {
   const [draft, setDraft] = useState({ start: new Date(checkin), end: new Date(checkout) });
   const anchorRef = useRef(null); // wraps the two date inputs
 
-  // --- NEW: promo toggle + value ---
+  // promo
   const [showPromo, setShowPromo] = useState(false);
   const [promo, setPromo] = useState("");
 
@@ -48,27 +58,48 @@ export default function BookingForm() {
   };
 
   return (
-    <form onSubmit={onSubmit} className="grid grid-cols-2 gap-3">
+    <form
+      onSubmit={onSubmit}
+      className="grid grid-cols-2 gap-3 rounded-2xl bg-white p-4 shadow-soft ring-1 ring-ink/10"
+      aria-label={t("booking.ariaForm")}
+    >
       <div className="col-span-2">
-        <h3 className="font-semibold text-brand-charcoal">Availability</h3>
+        <h3 className="font-semibold text-ink">{t("booking.titleShort")}</h3>
       </div>
+
       {/* Date inputs wrapper = anchor for popover */}
       <div ref={anchorRef} className="col-span-2 grid grid-cols-2 gap-3">
-        <label className="text-sm text-gray-700">
-          Check-in
+        <label htmlFor="checkin" className="text-sm text-ink">
+          {t("booking.checkin")}
           <input
-            type="text" readOnly value={checkin}
-            onClick={() => { setDraft({ start: new Date(checkin), end: new Date(checkout) }); setOpenCal(true); }}
-            className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 cursor-pointer" required
+            id="checkin"
+            type="text"
+            readOnly
+            value={checkin}
+            onClick={() => {
+              setDraft({ start: new Date(checkin), end: new Date(checkout) });
+              setOpenCal(true);
+            }}
+            className="mt-1 w-full cursor-pointer rounded-xl border border-black/10 px-3 py-2"
+            required
+            aria-label={t("booking.checkin")}
           />
         </label>
 
-        <label className="text-sm text-gray-700">
-          Check-out
+        <label htmlFor="checkout" className="text-sm text-ink">
+          {t("booking.checkout")}
           <input
-            type="text" readOnly value={checkout}
-            onClick={() => { setDraft({ start: new Date(checkin), end: new Date(checkout) }); setOpenCal(true); }}
-            className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2 cursor-pointer" required
+            id="checkout"
+            type="text"
+            readOnly
+            value={checkout}
+            onClick={() => {
+              setDraft({ start: new Date(checkin), end: new Date(checkout) });
+              setOpenCal(true);
+            }}
+            className="mt-1 w-full cursor-pointer rounded-xl border border-black/10 px-3 py-2"
+            required
+            aria-label={t("booking.checkout")}
           />
         </label>
       </div>
@@ -91,67 +122,79 @@ export default function BookingForm() {
         minDate={new Date()}
       />
 
-      <label className="text-sm text-gray-700">
-        Adults
-        <input type="number" min="1" value={adults}
-               onChange={(e)=>setAdults(parseInt(e.target.value||"1",10))}
-               className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2" required />
-      </label>
-
-      <label className="text-sm text-gray-700">
-        Children
-        <input type="number" min="0" value={children}
-               onChange={(e)=>setChildren(parseInt(e.target.value||"0",10))}
-               className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2" />
-      </label>
-
-{/* --- NEW: Promo toggle/field placed on top (under title) --- */}
-<div className="col-span-2">
-  {!showPromo ? (
-    <button
-      type="button"
-      onClick={() => setShowPromo(true)}
-      aria-expanded={showPromo}
-      className="text-sm text-brand-terracotta hover:text-brand-terracottaDark underline underline-offset-2"
-    >
-      promo code?
-    </button>
-  ) : (
-    <div className="grid grid-cols-2 gap-3">
-      <label className="text-sm text-gray-700 col-span-2 sm:col-span-1">
-        Promo code
+      <label htmlFor="adults" className="text-sm text-ink">
+        {t("booking.adults")}
         <input
-          name="promo"
-          type="text"
-          inputMode="text"
-          autoComplete="off"
-          placeholder="e.g. TIFLET10"
-          value={promo}
-          onChange={(e)=>setPromo(e.target.value)}
+          id="adults"
+          type="number"
+          min="1"
+          value={adults}
+          onChange={(e) => setAdults(parseInt(e.target.value || "1", 10))}
           className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2"
+          required
+          aria-label={t("booking.adults")}
         />
       </label>
-      <div className="col-span-2 sm:col-span-1 flex items-end">
-        <button
-          type="button"
-          onClick={() => { setPromo(""); setShowPromo(false); }}
-          className="text-sm text-gray-600 hover:text-brand-terracotta underline underline-offset-2"
-        >
-          Cancel
-        </button>
-      </div>
-    </div>
-  )}
-</div>
-{/* --- end promo block --- */}
 
+      <label htmlFor="children" className="text-sm text-ink">
+        {t("booking.children")}
+        <input
+          id="children"
+          type="number"
+          min="0"
+          value={children}
+          onChange={(e) => setChildren(parseInt(e.target.value || "0", 10))}
+          className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2"
+          aria-label={t("booking.children")}
+        />
+      </label>
+
+      {/* Promo toggle/field */}
+      <div className="col-span-2">
+        {!showPromo ? (
+          <button
+            type="button"
+            onClick={() => setShowPromo(true)}
+            aria-expanded={showPromo}
+            className="text-sm text-fcd underline underline-offset-2 hover:text-accent-terracottaDark"
+          >
+            {t("booking.promo.toggle")}
+          </button>
+        ) : (
+          <div className="grid grid-cols-2 gap-3">
+            <label htmlFor="promo" className="col-span-2 text-sm text-ink sm:col-span-1">
+              {t("booking.promo.label")}
+              <input
+                id="promo"
+                name="promo"
+                type="text"
+                inputMode="text"
+                autoComplete="off"
+                placeholder={t("booking.promo.placeholder")}
+                value={promo}
+                onChange={(e) => setPromo(e.target.value)}
+                className="mt-1 w-full rounded-xl border border-black/10 px-3 py-2"
+              />
+            </label>
+            <div className="col-span-2 flex items-end sm:col-span-1">
+              <button
+                type="button"
+                onClick={() => { setPromo(""); setShowPromo(false); }}
+                className="text-sm text-ink/70 underline underline-offset-2 hover:text-fcd"
+              >
+                {t("common.cancel")}
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
 
       <div className="col-span-2">
         <button
           type="submit"
-          className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-2xl bg-brand-terracotta text-white font-medium shadow-soft hover:bg-brand-terracottaDark transition"
+          className="inline-flex w-full items-center justify-center rounded-blob bg-fcd px-4 py-3 font-medium text-white transition hover:bg-accent-terracottaDark focus:outline-none focus:ring-4 focus:ring-terracotta/30"
         >
-          Search
+          {t("booking.search")}
         </button>
       </div>
     </form>

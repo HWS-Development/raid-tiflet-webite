@@ -315,6 +315,57 @@
           "img": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop"
         }
       ]
+    },
+    "excursions_title": "Excursions & Journées",
+    "excursions_intro": "Des sorties sélectionnées avec des partenaires de confiance. Aucun prix affiché ici — choisissez ce qui vous plaît et nous nous chargeons de l’organisation.",
+    "duration_label": "Durée",
+    "transport_included": "Transferts inclus",
+    "arrange": "Nous organiser",
+    "show_details": "Afficher les détails",
+    "hide_details": "Masquer les détails",
+    "open_link": "Page du partenaire",
+
+    "excursions": {
+      "agafay": {
+        "title": "Désert d’Agafay — activités",
+        "desc": "Désert de pierres aux portes de Marrakech : horizons ouverts, lumière dorée et échappée facile en demi-journée ou au coucher du soleil.",
+        "options": [
+          "Balade en quad ou buggy",
+          "Promenade à dos de chameau",
+          "Avec ou sans repas sur place (option coucher de soleil possible)"
+        ],
+        "duration": "Demi-journée ou journée selon l’option"
+      },
+      "ourika": {
+        "title": "Une journée dans la vallée de l’Ourika — marche à pied",
+        "desc": "Vallée verdoyante au pied du Haut Atlas : sentiers doux, cascades selon la saison, villages et vergers.",
+        "options": [
+          "Balade guidée facile dans la vallée",
+          "Arrêts dans les villages et points de vue",
+          "Déjeuner en restaurant local (en option)"
+        ],
+        "duration": "Journée complète"
+      },
+      "atlas": {
+        "title": "Aventure au pied de l’Atlas",
+        "desc": "Boucle panoramique le long des contreforts : villages berbères, routes scéniques et grand air — idéal pour une première découverte.",
+        "options": [
+          "Arrêts photos et points de vue",
+          "Courtes marches dans les villages",
+          "Pause déjeuner possible (en option)"
+        ],
+        "duration": "Journée complète"
+      },
+      "puratlas": {
+        "title": "Pur Atlas — 1 journée",
+        "desc": "Une journée centrée sur le Haut Atlas : plus d’altitude, plus de nature et du temps pour respirer au rythme de la montagne.",
+        "options": [
+          "Parcours immersif à travers les vallées de l’Atlas",
+          "Pauses villageoises et petites marches",
+          "Déjeuner en auberge typique (en option)"
+        ],
+        "duration": "Journée complète"
+      }
     }
   },
 
@@ -699,18 +750,18 @@
       "note": "En cliquant, votre e-mail ou WhatsApp s’ouvrira avec le message prérempli (aucun compte supplémentaire nécessaire)."
     }
   },
-
   "booking": {
-    "form": {
-      "date_range": "Dates",
-      "adults": "Adultes",
-      "children": "Enfants",
-      "rooms": "Chambres",
-      "submit": "Voir les disponibilités",
-      "placeholder_dates": "Choisir des dates",
-      "promo_toggle": "Vous avez un code promo ?",
-      "promo_label": "Code promo",
-      "promo_remove": "Retirer le code"
+    "ariaForm": "Formulaire de recherche de réservation",
+    "titleShort": "Disponibilités",
+    "checkin": "Arrivée",
+    "checkout": "Départ",
+    "adults": "Adultes",
+    "children": "Enfants",
+    "search": "Rechercher",
+    "promo": {
+      "toggle": "code promo ?",
+      "label": "Code promo",
+      "placeholder": "ex. TIFLET10"
     }
   }
 }

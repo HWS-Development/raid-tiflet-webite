@@ -46,7 +46,7 @@ export default function BookingForm() {
   };
 
   return (
-    <form onSubmit={onSubmit} className="grid grid-cols-2 gap-3">
+    <form onSubmit={onSubmit} className="grid grid-cols-2 gap-3 bg-white shadow-soft ring-1 ring-ink/10">
       <div className="col-span-2">
         <h3 className="font-semibold text-brand-charcoal">Availability & Prices</h3>
       </div>
@@ -77,7 +77,7 @@ export default function BookingForm() {
 
       <div className="col-span-2">
         <button type="submit"
-                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-2xl bg-brand-terracotta text-white font-medium shadow-soft hover:bg-brand-terracottaDark transition">
+                className="bg-accent-terracotta hover:bg-accent-terracottaDark text-white">
           Search
         </button>
       </div>

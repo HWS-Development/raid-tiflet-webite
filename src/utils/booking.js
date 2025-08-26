@@ -18,6 +18,6 @@ export function buildBookingUrl({ checkin, checkout, adults = 2, promoCode = '' 
   if (checkin)  p.set('checkin_date', checkin);
   if (checkout) p.set('checkout_date', checkout);
   if (adults)   p.set('total_adult', String(adults));
-  if (promoCode) p.set('promoCode', promoCode);
+  if (promoCode) p.set('coupon_code', promoCode);
   return `${HOTELRUNNER_BASE}?${p.toString()}`;
 }

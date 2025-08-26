@@ -56,7 +56,7 @@ export default function ServicesTeaser() {
 
   return (
     <section className="relative bg-transparent">
-      <div className="relative overflow-hidden" style={{ backgroundColor: "#0f5b4a" }}>
+      <div className="relative overflow-hidden" >
         <Wave position="top" />
         <Wave position="bottom" />
 

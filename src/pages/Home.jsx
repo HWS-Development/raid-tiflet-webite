@@ -8,37 +8,36 @@ export default function Home() {
       <Hero />
 
       {/* ABOUT with curve to ROOMS */}
-      <section className="relative tone-sage">
+      <section className="relative bg-chb">
         <div className="container-grid section">
           <Intro />
         </div>
-        <CurveBand position="bottom" from="#DCE5D9" to="#F6F1E8" height={140} />
+        <CurveBand position="bottom" from="#D6C4A8" to="#F5EFE4" height={140} />
       </section>
 
       {/* ROOMS with curve to SERVICES */}
-      <section className="relative tone-ivory">
+      <section className="relative bg-ec">
         <div className="container-grid section">
           <RoomsTeaser />
         </div>
-        <CurveBand position="bottom" from="#F6F1E8" to="#0f5b4a" height={160} />
+        <CurveBand position="bottom" from="#F5EFE4" to="#D6C4A8" height={160} />
       </section>
 
       {/* SERVICES on dark band with curve back to IVORY */}
-      <section className="relative" style={{ backgroundColor: "#0f5b4a" }}>
-        <div className="container-grid py-6 md:py-8">
+      <section className="relative bg-chb">
+        <div className="container-grid pb-6 md:pb-8">
           <ServicesTeaser />
         </div>
-        <CurveBand position="bottom" from="#0f5b4a" to="#F6F1E8" height={160} />
+        <CurveBand position="bottom" from="#D6C4A8" to="#F5EFE4" height={160} />
       </section>
 
       {/* REVIEWS + MAP on ivory, curving into footer (palm) */}
-      <section className="relative tone-ivory">
+      <section className="relative bg-ec">
         <div className="container-grid section">
           <Reviews />
           {/* <MapEmbed /> */}
         </div>
         {/* curve out to footer color */}
-        <CurveBand position="bottom" from="#F6F1E8" to="#254E3E" height={140} />
       </section>
 
     </main>

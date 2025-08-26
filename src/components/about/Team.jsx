@@ -39,7 +39,7 @@ export default function Team() {
     [];
 
   return (
-    <section className="relative tone-ivory">
+    <section className="relative bg-ec">
       <div className="container-grid section">
         <h2 className="display-title text-ink mb-8">{title}</h2>
 

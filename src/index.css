@@ -150,3 +150,17 @@
 
 @keyframes bob { from { transform: translateY(0) } 50% { transform: translateY(-4px) } to { transform: translateY(0) } }
 .bob { animation: bob 4s ease-in-out infinite }
+/* --- Artistic blob masks (clip-path polygons) --- */
+.blob-mask {
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+.blob-1 img { clip-path: polygon(7% 13%, 22% 5%, 45% 3%, 68% 8%, 84% 19%, 93% 37%, 92% 59%, 83% 75%, 66% 88%, 45% 94%, 21% 90%, 8% 77%, 4% 58%, 5% 35%); }
+.blob-2 img { clip-path: polygon(9% 27%, 25% 10%, 50% 5%, 72% 12%, 88% 28%, 95% 48%, 90% 71%, 75% 86%, 52% 93%, 30% 90%, 14% 78%, 7% 58%); }
+.blob-3 img { clip-path: polygon(16% 12%, 40% 6%, 62% 11%, 80% 22%, 91% 43%, 89% 66%, 76% 84%, 54% 92%, 31% 89%, 15% 76%, 9% 58%, 9% 36%); }
+
+/* softer editorial shadow used across the site */
+.shadow-soft { box-shadow: 0 10px 24px rgba(0,0,0,.08); }

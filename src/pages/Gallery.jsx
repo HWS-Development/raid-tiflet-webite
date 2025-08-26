@@ -44,10 +44,10 @@ export default function Gallery() {
 
   return (
     <>
-    <main id="gallery" className="pt-16 pb-10 sm:pb-12">
+    <main id="gallery" className="pb-10 sm:pb-12">
       <GalleryHero />
 
-      <section className="py-8 sm:py-10">
+      <section className="py-8 sm:py-10 bg-ec">
         <div className="container-grid">
           {/* <GalleryFilters
             categories={categories}
@@ -74,7 +74,6 @@ export default function Gallery() {
         />
       )}
     </main>
-        <CurveBand position="bottom" from="#F6F1E8" to="#254E3E" height={140} />
         </>
   );
 }

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import CurveBand from "./ui/CurveBand";
 
 const Icon = {
   ig: (
@@ -27,19 +28,20 @@ export default function ArtFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative text-white">
+    <footer className="relative text-ec">
+      <CurveBand position="bottom" from="#F6F1E8" to="#556B2F" height={140} />
       {/* Curved top (paper -> palm) */}
-      <div style={{ background: "var(--palm)" }}>
+      <div style={{ background: "#556B2F" }} >
         <div className="container-grid py-12 md:py-16 grid gap-10 md:grid-cols-[1.2fr_.8fr_.9fr]">
           {/* Brand / tagline */}
           <div>
-            <h3 className="display-title text-white mb-2">{t("footer.brand")}</h3>
-            <p className="text-white/85 max-w-sm">{t("footer.tagline")}</p>
+            <h3 className="display-title text-ec mb-2">{t("footer.brand")}</h3>
+            <p className="text-ec max-w-sm">{t("footer.tagline")}</p>
           </div>
 
           {/* Explore */}
-          <nav className="text-white">
-            <h4 className="font-semibold mb-3 text-white">{t("footer.links_title")}</h4>
+          <nav className="text-ec">
+            <h4 className="font-semibold mb-3 text-ec">{t("footer.links_title")}</h4>
             <ul className="space-y-2">
               {links.map((l) => (
                 <li key={l.to}>
@@ -51,8 +53,8 @@ export default function ArtFooter() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-3 text-white">{t("footer.contact_title")}</h4>
-            <address className="not-italic text-white/85 space-y-1">
+            <h4 className="font-semibold mb-3 text-ec">{t("footer.contact_title")}</h4>
+            <address className="not-italic text-ec space-y-1">
               {address.map((line, i) => (
                 <div key={i}>{line}</div>
               ))}
@@ -96,7 +98,7 @@ export default function ArtFooter() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/15">
-          <div className="container-grid py-4 text-sm flex flex-col sm:flex-row items-center gap-3 justify-between text-white/70">
+          <div className="container-grid py-4 text-sm flex flex-col sm:flex-row items-center gap-3 justify-between text-ec">
             <span>{t("footer.copyright", { year })}</span>
             <span>{t("footer.made_with_love")}</span>
           </div>

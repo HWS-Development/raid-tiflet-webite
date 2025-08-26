@@ -16,7 +16,7 @@ export default function RatingsAwards() {
   return (
     <section className="relative bg-white/55">
       {/* Sage band with waves */}
-      <div className="relative tone-sage py-14 md:py-16 overflow-hidden">
+      <div className="relative bg-chb pb-6 md:pb-8 overflow-hidden">
         {/* <CurveBand position="bottom" from="#F6F1E8" to="#DCE5D9" height={120} /> */}
 
         {/* “paper” field */}

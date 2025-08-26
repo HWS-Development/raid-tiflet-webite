@@ -9,7 +9,6 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Transparent on top of Home hero, solid after scroll or on other pages
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
@@ -27,7 +26,7 @@ export default function Header() {
     // { to: "/dining", label: t("nav.dining") },
     { to: "/gallery", label: t("nav.gallery") },
     { to: "/about", label: t("nav.about") },
-    { to: "/contact", label: t("nav.contact") }
+    { to: "/contact", label: t("nav.contact") },
   ];
 
   const setLang = (lng) => {
@@ -37,92 +36,94 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors ${
-        solid
-          ? "bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-black/5"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container-grid h-16 flex items-center justify-between">
-        {/* Left: Logo */}
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          {/* swap src to your real logo url when ready */}
-          <img
-            src="/images/dar-tiflet-logo-transparent.png"
-            alt="Dar Tiflet"
-            className="h-28 w-28 rounded-xl"
-          />
-        </Link>
+    <header className="fixed inset-x-0 top-0 z-50">
+      <div className="container-grid">
+        {/* Cream pill shell only when solid */}
+        <div
+          className={`mt-3 flex h-14 items-center justify-between transition-all
+            ${solid
+              ? "rounded-full border border-olive/20 bg-ec/70 px-3 backdrop-blur shadow-soft supports-[backdrop-filter]:bg-ec/60"
+              : "px-0"}`
+          }
+        >
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+            <img
+              src="/images/dar-tiflet-logo-transparent.png"
+              alt="Dar Tiflet"
+              className={`transition ${solid ? "h-16 w-16" : "h-10 w-10"} rounded`}
+            />
+          </Link>
 
-        {/* Center: Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
-          {nav.map((n) => (
-            <NavLink
-              key={n.to}
-              to={n.to}
-              className={({ isActive }) =>
-                `text-sm font-medium transition ${
-                  solid ? "text-brand-charcoal" : "text-white"
-                } hover:opacity-80 ${isActive ? "underline underline-offset-8 decoration-brand-terracotta" : ""}`
-              }
-              onClick={() => setOpen(false)}
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-6">
+            {nav.map((n) => (
+              <NavLink
+                key={n.to}
+                to={n.to}
+                className={({ isActive }) =>
+                  `text-sm font-medium transition ${
+                    solid ? "text-ink" : "text-white"
+                  } hover:opacity-80 ${isActive ? "underline underline-offset-8 decoration-fcd" : ""}`
+                }
+                onClick={() => setOpen(false)}
+              >
+                {n.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          {/* Actions */}
+          <div className="hidden md:flex items-center gap-3">
+            {/* Language switcher */}
+            <div className={`inline-flex items-center rounded-full px-1 py-1 ${solid ? "bg-ec" : "bg-white/20"}`}>
+              {["fr", "en"].map((lng) => {
+                const active = i18n.language === lng;
+                return (
+                  <button
+                    key={lng}
+                    aria-pressed={active}
+                    onClick={() => setLang(lng)}
+                    className={`px-2.5 py-1 text-xs rounded-full transition ${
+                      active
+                        ? "bg-white text-ink shadow"
+                        : solid
+                        ? "text-ink/70 hover:text-ink"
+                        : "text-white/90 hover:text-white"
+                    }`}
+                  >
+                    {lng.toUpperCase()}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Book button → client terracotta */}
+            <a
+              href="https://riad-dar-tiflet-1.hotelrunner.com/bv3/search"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-fcd text-white hover:bg-accent-terracottaDark shadow-soft transition"
             >
-              {n.label}
-            </NavLink>
-          ))}
-        </nav>
-
-        {/* Right: Actions */}
-        <div className="hidden md:flex items-center gap-3">
-          {/* Language switcher (segmented) */}
-          <div className={`inline-flex items-center rounded-full px-1 py-1 ${solid ? "bg-brand-ivory" : "bg-white/20"}`}>
-            {["fr", "en"].map((lng) => {
-              const active = i18n.language === lng;
-              return (
-                <button
-                  key={lng}
-                  aria-pressed={active}
-                  onClick={() => setLang(lng)}
-                  className={`px-2.5 py-1 text-xs rounded-full transition ${
-                    active
-                      ? "bg-white text-brand-charcoal shadow"
-                      : solid
-                      ? "text-brand-charcoal/70 hover:text-brand-charcoal"
-                      : "text-white/90 hover:text-white"
-                  }`}
-                >
-                  {lng.toUpperCase()}
-                </button>
-              );
-            })}
+              {t("nav.book")}
+            </a>
           </div>
 
-          {/* Book button */}
-          <a
-            href="https://riad-dar-tiflet-1.hotelrunner.com/bv3/search"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-brand-terracotta text-white hover:bg-brand-terracottaDark shadow-soft transition"
+          {/* Mobile burger */}
+          <button
+            className={`md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg ${
+              solid ? "text-ink bg-ec" : "text-white/95 bg-white/20"
+            }`}
+            onClick={() => setOpen((s) => !s)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
           >
-            {t("nav.book")}
-          </a>
+            <span className="sr-only">Menu</span>
+            <span className="block h-0.5 w-5 bg-current"></span>
+            <span className="mt-1.5 block h-0.5 w-5 bg-current"></span>
+            <span className="mt-1.5 block h-0.5 w-5 bg-current"></span>
+          </button>
         </div>
-
-        {/* Mobile: Hamburger */}
-        <button
-          className={`md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg ${
-            solid ? "text-brand-charcoal bg-brand-ivory" : "text-white/95 bg-white/20"
-          }`}
-          onClick={() => setOpen((s) => !s)}
-          aria-label="Toggle menu"
-          aria-expanded={open}
-        >
-          <span className="sr-only">Menu</span>
-          <span className="block w-5 h-0.5 bg-current"></span>
-          <span className="block w-5 h-0.5 bg-current mt-1.5"></span>
-          <span className="block w-5 h-0.5 bg-current mt-1.5"></span>
-        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -134,7 +135,7 @@ export default function Header() {
                 <NavLink
                   key={n.to}
                   to={n.to}
-                  className="px-2 py-3 text-base font-medium text-brand-charcoal hover:bg-brand-ivory rounded-lg"
+                  className="px-2 py-3 text-base font-medium text-ink hover:bg-ec rounded-lg"
                   onClick={() => setOpen(false)}
                 >
                   {n.label}
@@ -143,7 +144,7 @@ export default function Header() {
             </nav>
 
             <div className="mt-3 flex items-center justify-between">
-              <div className="inline-flex items-center rounded-full bg-brand-ivory px-1 py-1">
+              <div className="inline-flex items-center rounded-full bg-ec px-1 py-1">
                 {["fr", "en"].map((lng) => {
                   const active = i18n.language === lng;
                   return (
@@ -152,7 +153,7 @@ export default function Header() {
                       aria-pressed={active}
                       onClick={() => setLang(lng)}
                       className={`px-2.5 py-1 text-xs rounded-full transition ${
-                        active ? "bg-white text-brand-charcoal shadow" : "text-brand-charcoal/70 hover:text-brand-charcoal"
+                        active ? "bg-white text-ink shadow" : "text-ink/70 hover:text-ink"
                       }`}
                     >
                       {lng.toUpperCase()}
@@ -165,7 +166,7 @@ export default function Header() {
                 href="https://riad-dar-tiflet-1.hotelrunner.com/bv3/search"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-brand-terracotta text-white hover:bg-brand-terracottaDark shadow-soft transition"
+                className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-fcd text-white hover:bg-accent-terracottaDark shadow-soft transition"
                 onClick={() => setOpen(false)}
               >
                 {t("nav.book")}

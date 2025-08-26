@@ -74,7 +74,7 @@ export default function RoomsPage() {
   return (
     <main id="rooms">
        <RoomsHero />
-      <section className="tone-ivory">
+      <section className="bg-ec">
         <div className="container-grid">
 
           {/* Masonry using CSS columns */}
@@ -90,7 +90,6 @@ export default function RoomsPage() {
           </div>
         </div>
       </section>
-      <CurveBand position="bottom" from="#F6F1E8" to="#254E3E" height={140} />
     </main>
   );
 }
