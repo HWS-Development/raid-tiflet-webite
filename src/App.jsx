@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import Services from "./pages/Services";
+import Activities from "./pages/Activity";
 import Dining from "./pages/Dining";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} /> 
           <Route path="/services" element={<Services />} /> 
+          <Route path="/activities" element={<Activities />} /> 
           <Route path="/dining" element={<Dining />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />

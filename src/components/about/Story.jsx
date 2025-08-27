@@ -47,12 +47,12 @@ export default function Story() {
         </div>
 
         {/* Right: heritage list */}
-        <aside className="bg-white rounded-2xl shadow-soft border border-black/5 p-5 md:p-6">
-          <h3 className="font-serif text-lg tracking-wide text-ink">
+        <aside className="bg-fcd rounded-2xl shadow-soft border border-black/5 p-5 md:p-6">
+          <h3 className="font-serif text-lg tracking-wide text-ec">
             {heritageTitle}
           </h3>
 
-          <ul className="mt-3 space-y-2 text-[15px] text-ink/90">
+          <ul className="mt-3 space-y-2 text-[15px] text-ec">
             {heritage.map((line, i) => (
               <li key={i}>• {line}</li>
             ))}

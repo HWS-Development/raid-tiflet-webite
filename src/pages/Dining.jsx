@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import DiningHero from "../components/dining/DiningHero";
 import MenuSection from "../components/dining/MenuSection";
 import BarSection from "../components/dining/BarSection";
-import DiningGallery from "../components/dining/DiningGallery";
+import DiningGallery from "../components/services/DiningGallery";
 
 export default function Dining() {
   const { t } = useTranslation();

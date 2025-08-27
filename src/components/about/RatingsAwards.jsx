@@ -42,47 +42,49 @@ export default function RatingsAwards() {
             </div>
 
             {/* grid of equal-height cards */}
-            <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 px-4 pb-6 sm:px-6 md:px-8">
+            <ul className="grid justify-around gap-5 sm:grid-cols-2 lg:grid-cols-2 px-4 pb-6 sm:px-6 md:px-28">
               {items.map((b) => (
-                <li key={b.id}>
+                <li className="" key={b.id}>
                   <article
                     className="group relative rounded-[28px] bg-white
-                               ring-1 ring-black/5 shadow-soft px-5 py-5
+                               ring-1 ring-black/5 shadow-soft p-5
                                transition-transform hover:-translate-y-1 hover:shadow-xl
-                               flex flex-col items-center justify-between
-                               min-h-[220px] md:min-h-[240px]"
+                               flex md:flex-row flex-col  items-center justify-between
+                               min-h-[220px] md:min-h-[240px] max-w-[30rem]"
                   >
                     {/* ribbon */}
-                    <span className="absolute -top-2 left-5 rounded-full bg-rose-500 text-white
+                    {/* <span className="absolute -top-2 left-5 rounded-full bg-rose-500 text-white
                                      px-2 py-[2px] text-[10px] uppercase tracking-wide shadow">
                       {b.year || t("ratings.badge", "Award")}
-                    </span>
+                    </span> */}
 
                     {/* logo area (fixed) */}
-                    <div className="w-full flex items-center justify-center">
+                    <div className="">
                       <div className="h-24 md:h-28 flex items-center">
                         <img
                           src={b.src}
                           alt={b.alt}
                           loading="lazy"
-                          className="max-h-24 md:max-h-28 object-contain mix-blend-multiply
+                          className="max-h-28 md:max-h-52 object-contain mix-blend-multiply
                                      transition-transform group-hover:scale-[1.03]"
                         />
                       </div>
                     </div>
+                    <div>
 
-                    {/* score (fixed line-height) */}
-                    {b.score ? (
-                      <div className="mt-3 text-2xl font-semibold text-ink tabular-nums">
-                        {b.score}
+                      {/* score (fixed line-height) */}
+                      {b.score ? (
+                        <div className="mt-3 text-2xl font-semibold text-ink tabular-nums">
+                          {b.score}
+                        </div>
+                      ) : (
+                        <div className="mt-3 h-7" /> // keeps vertical rhythm when no score
+                      )}
+
+                      {/* label (single line clamp for consistency) */}
+                      <div className="mt-1 text-sm text-ink/70 line-clamp-1">
+                        {b.label}
                       </div>
-                    ) : (
-                      <div className="mt-3 h-7" /> // keeps vertical rhythm when no score
-                    )}
-
-                    {/* label (single line clamp for consistency) */}
-                    <div className="mt-1 text-sm text-ink/70 line-clamp-1">
-                      {b.label}
                     </div>
                   </article>
                 </li>

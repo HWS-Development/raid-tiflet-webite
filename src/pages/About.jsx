@@ -41,7 +41,7 @@ export default function About() {
       <section
         className="relative text-white bg-chb"
       >
-        <div className="container-grid section">
+        <div className="container-grid section ">
           <h2 className="display-title text-white mb-6">
             {t("about_page.story.heritage_title", "Héritage de la maison")}
           </h2>
@@ -52,7 +52,7 @@ export default function About() {
 
       {/* TEAM on IVORY */}
       <section className="relative bg-ec">
-        <div className="container-grid section">
+        <div className="container-grid section !pt-0">
           <Team />
         </div>
       </section>

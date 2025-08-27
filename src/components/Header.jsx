@@ -23,7 +23,7 @@ export default function Header() {
     { to: "/", label: t("nav.home") },
     { to: "/rooms", label: t("nav.rooms") },
     { to: "/services", label: t("nav.services") },
-    // { to: "/dining", label: t("nav.dining") },
+    { to: "/activities", label: t("nav.activities") },
     { to: "/gallery", label: t("nav.gallery") },
     { to: "/about", label: t("nav.about") },
     { to: "/contact", label: t("nav.contact") },
@@ -40,7 +40,7 @@ export default function Header() {
       <div className="container-grid">
         {/* Cream pill shell only when solid */}
         <div
-          className={`mt-3 flex h-14 items-center justify-between transition-all
+          className={`mt-3 flex h-16 py-10 items-center justify-between transition-all
             ${solid
               ? "rounded-full border border-olive/20 bg-ec/70 px-3 backdrop-blur shadow-soft supports-[backdrop-filter]:bg-ec/60"
               : "px-0"}`
@@ -51,7 +51,7 @@ export default function Header() {
             <img
               src="/images/dar-tiflet-logo-transparent.png"
               alt="Dar Tiflet"
-              className={`transition ${solid ? "h-16 w-16" : "h-10 w-10"} rounded`}
+              className={`transition ${solid ? "h-28 w-28" : "h-28 w-28"} rounded`}
             />
           </Link>
 

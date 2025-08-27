@@ -14,13 +14,13 @@ export default function GalleryGrid({ images, onImageClick }) {
             className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           />
           {/* category chip */}
-          {img.category_label && (
+          {/* {img.category_label && (
             <figcaption className="absolute top-3 left-3">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs backdrop-blur bg-white/80 border border-black/10">
                 {img.category_label}
               </span>
             </figcaption>
-          )}
+          )} */}
           {/* click overlay */}
           <button
             onClick={() => onImageClick?.(i)}

@@ -163,10 +163,10 @@ export default function ExcursionsArt() {
   const { t } = useTranslation();
 
   const items = [
-    { key: "agafay",   label: "Agafay",   img: "/images/agafay.jpg",                partner: null },
-    { key: "ourika",   label: "Ourika",   img: "/images/ourika.jpg",      partner: { href: "https://dunesdeserts.com/activite/une-journee-dans-la-vallee-dourika-marche-a-pied/" } },
-    { key: "atlas",    label: "Atlas",    img: "/images/imlil.jpg",       partner: { href: "https://dunesdeserts.com/activite/aventure-au-pied-de-l-atlas/" } },
-    { key: "puratlas", label: "Atlas",    img: "/images/PIQUE-NIQUE.jpg",  partner: { href: "https://dunesdeserts.com/activite/pur-atlas-1-journee/" } },
+    { key: "agafay",   label: "Agafay",   img: "/images/agafay.jpg",     partner: { href: "https://wa.me/212663434144" } },
+    { key: "ourika",   label: "Ourika",   img: "/images/ourika.jpg",      partner: { href: "https://wa.me/212663434144" } },
+    { key: "atlas",    label: "Atlas",    img: "/images/imlil.jpg",       partner: { href: "https://wa.me/212663434144" } },
+    { key: "puratlas", label: "Atlas",    img: "/images/PIQUE-NIQUE.jpg",  partner: { href: "https://wa.me/212663434144" } },
   ];
 
   return (

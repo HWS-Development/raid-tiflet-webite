@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import ContactHero from "../components/contact/ContactHero";
 import ContactForm from "../components/contact/ContactForm";
 import ContactCards from "../components/contact/ContactCards";
@@ -6,7 +5,6 @@ import ContactMap from "../components/contact/ContactMap";
 import CurveBand from "../components/ui/CurveBand";
 
 export default function Contact() {
-  const { t } = useTranslation();
 
   return (
     <main id="contact">
@@ -37,15 +35,15 @@ export default function Contact() {
         <div className="container-grid section grid lg:grid-cols-2 gap-10 items-start">
           {/* Left: Form in a layered soft card */}
           <div className="relative">
-            <div className="absolute -inset-2 rounded-[28px] bg-white/60 backdrop-blur-sm -z-10" />
-            <div className="rounded-[24px] bg-white shadow-soft p-4 sm:p-6">
+            <div className="absolute -inset-2 rounded-[28px] bg-ec backdrop-blur-sm -z-10" />
+            <div className="rounded-[24px] bg-ec shadow-soft ">
               <ContactForm />
             </div>
           </div>
 
           {/* Right: Contact cards + map, stacked and sticky on large screens */}
           <div className="space-y-6 lg:sticky lg:top-20">
-            <div className="rounded-[24px] bg-white shadow-soft p-4 sm:p-6">
+            <div className="rounded-[px] bg-ec shadow-soft">
               <ContactCards />
             </div>
             <div className="rounded-[24px] bg-white shadow-soft overflow-hidden">

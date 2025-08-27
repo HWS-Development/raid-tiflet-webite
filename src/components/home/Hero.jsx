@@ -10,7 +10,7 @@ const IMAGES = [
 export default function Hero(){
   const { t } = useTranslation();
   return (
-    <section className="relative h-[62vh] min-h-[100vh] overflow-hidden">
+    <section className="relative  md:h-[100vh] h-[72vh]  overflow-hidden">
       <img
         src="/images/rooftop3.jpg"
         alt={t("hero.alt", "Rooftop Dar Tiflet")}

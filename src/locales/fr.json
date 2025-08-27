@@ -7,7 +7,8 @@
     "gallery": "Galerie",
     "about": "À propos",
     "contact": "Contact",
-    "book": "Réserver"
+    "book": "Réserver",
+    "activities": "Activités"
   },
 
   "brand": {
@@ -323,7 +324,7 @@
     "arrange": "Nous organiser",
     "show_details": "Afficher les détails",
     "hide_details": "Masquer les détails",
-    "open_link": "Page du partenaire",
+    "open_link": "Contactez nous",
 
     "excursions": {
       "agafay": {

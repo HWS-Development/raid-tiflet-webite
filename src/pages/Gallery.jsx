@@ -20,8 +20,8 @@ export default function Gallery() {
   //   [t]
   // );
 
-  const [activeCat, setActiveCat] = useState("all");
-  const [query, setQuery] = useState("");
+  const activeCat = "all";
+  const query = "";
   const [lightbox, setLightbox] = useState({ open: false, index: 0 });
 
   const filtered = useMemo(() => {

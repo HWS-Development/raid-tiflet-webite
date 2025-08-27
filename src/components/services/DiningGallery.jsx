@@ -26,17 +26,17 @@ export default function DiningGallery({ images = [] }) {
   const items = images.length
     ? images
     : [
-        { src: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=1200&auto=format&fit=crop", alt: "Tagine" },
-        { src: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop", alt: "Terrace" },
-        { src: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop", alt: "Breakfast" },
-        { src: "https://images.unsplash.com/photo-1523983305872-1b8a9c09b8f8?q=80&w=1200&auto=format&fit=crop", alt: "Tea" },
-        { src: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=1200&auto=format&fit=crop", alt: "Rooftop" },
-        { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop", alt: "Salads" }
+      { src: "/images/food6.jpg", alt: "Terrace" },
+      { src: "/images/food3.png", alt: "Terrace" },
+      { src: "/images/food5.jpg", alt: "Terrace" },
+      { src: "/images/food2.webp", alt: "Terrace" },
+      { src: "/images/food1.jpg", alt: "Tagine" },
+      { src: "/images/food4.jpg", alt: "Terrace" },
       ];
 
   return (
     <SnapSlider
-      className="mt-6"
+      className=""
       items={items}
       perView={{ base: 1, md: 2, lg: 3 }}
       renderItem={(img) => <Tile {...img} />}

@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Home", "rooms": "Rooms", "services": "Services", "dining": "Dining", "gallery": "Gallery", "about": "About", "contact": "Contact", "book": "Book" },
+  "nav": { "home": "Home", "rooms": "Rooms", "services": "Services", "dining": "Dining", "gallery": "Gallery", "about": "About", "contact": "Contact", "book": "Book", "activities": "Activities" },
 
   "brand": {
     "identity": {
@@ -317,7 +317,7 @@
     "arrange": "Ask us to arrange",
     "show_details": "Show details",
     "hide_details": "Hide details",
-    "open_link": "Partner page",
+    "open_link": "Contact us",
 
     "excursions": {
       "agafay": {

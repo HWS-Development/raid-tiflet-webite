@@ -1,9 +1,8 @@
 import ServicesHero from "../components/services/ServicesHero";
 import ServicesList from "../components/services/ServicesList";
 import DiningSection from "../components/services/DiningSection";
-import Activities from "../components/services/Activities";
 import CurveBand from "../components/ui/CurveBand";
-import Excursions from "../components/services/Excursions";
+import DiningGallery from "../components/services/DiningGallery";
 
 export default function ServicesPage() {
 
@@ -12,13 +11,11 @@ export default function ServicesPage() {
       {/* HERO — keep your current hero if you have one */}
       <ServicesHero/>
       {/* ACTIVITIES — on ivory, curved into the dark band */}
-      <Excursions/> 
-      {/* <section className="relative tone-ivory">
+      <section className="relative bg-ec">
         <div className="container-grid section">
+          <DiningSection/>
         </div>
-
-        <CurveBand position="bottom" from="#F6F1E8" to="#0f5b4a" height={140} />
-      </section> */}
+        </section>
 
       {/* SERVICES (the 4 chips) — on dark band with icons, then curve back to ivory */}
         <CurveBand position="bottom" from="#F5EFE4" to="#D6C4A8" height={160} />
@@ -33,7 +30,7 @@ export default function ServicesPage() {
       {/* If you want, you can continue with your Dining / Counter section here */}
       <section className="relative bg-ec">
         <div className="container-grid section">
-          <DiningSection/>
+          <DiningGallery/> 
         </div>
       </section>
     </main>

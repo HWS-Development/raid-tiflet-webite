@@ -29,7 +29,7 @@ export default function ArtFooter() {
 
   return (
     <footer className="relative text-ec">
-      <CurveBand position="bottom" from="#F6F1E8" to="#556B2F" height={140} />
+      <CurveBand position="bottom" from="#F5EFE4" to="#556B2F" height={140} />
       {/* Curved top (paper -> palm) */}
       <div style={{ background: "#556B2F" }} >
         <div className="container-grid py-12 md:py-16 grid gap-10 md:grid-cols-[1.2fr_.8fr_.9fr]">

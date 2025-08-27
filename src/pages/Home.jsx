@@ -1,4 +1,5 @@
 // pages/Home.jsx
+import RatingsAwards from "../components/about/RatingsAwards";
 import { Hero, Intro, RoomsTeaser, ServicesTeaser, MapEmbed, Reviews } from "../components/home";
 import CurveBand from "../components/ui/CurveBand";
 
@@ -26,7 +27,8 @@ export default function Home() {
       {/* SERVICES on dark band with curve back to IVORY */}
       <section className="relative bg-chb">
         <div className="container-grid pb-6 md:pb-8">
-          <ServicesTeaser />
+          {/* <ServicesTeaser /> */}
+          <RatingsAwards />
         </div>
         <CurveBand position="bottom" from="#D6C4A8" to="#F5EFE4" height={160} />
       </section>

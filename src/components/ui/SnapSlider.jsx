@@ -58,7 +58,7 @@ export default function SnapSlider({
     <section className={`relative ${className}`}>
       <div
         ref={wrapRef}
-        className="overflow-x-auto scroll-smooth snap-x snap-mandatory rounded-2xl border border-black/5 bg-white"
+        className="overflow-x-auto scroll-smooth snap-x snap-mandatory rounded-2xl"
         style={{ scrollbarWidth: "none" }} // Firefox hide
       >
         <div className="flex gap-4 p-3">
