@@ -119,9 +119,7 @@ export default function Header() {
             aria-expanded={open}
           >
             <span className="sr-only">Menu</span>
-            <span className="block h-0.5 w-5 bg-current"></span>
-            <span className="mt-1.5 block h-0.5 w-5 bg-current"></span>
-            <span className="mt-1.5 block h-0.5 w-5 bg-current"></span>
+            ☰
           </button>
         </div>
       </div>
