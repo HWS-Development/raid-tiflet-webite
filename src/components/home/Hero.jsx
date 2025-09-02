@@ -2,11 +2,6 @@
 import BookingForm from "../booking/BookingForm";
 import { useTranslation } from "react-i18next";
 
-const IMAGES = [
-  "/images/rooftop3.jpg",
-  "/images/rooftop.jpg",
-  "/images/interior.jpg",
-];
 export default function Hero(){
   const { t } = useTranslation();
   return (
@@ -28,9 +23,7 @@ export default function Hero(){
           </div>
 
           <div className="justify-self-end w-full max-w-md">
-            <div className="p-4 sm:p-5 rounded-[20px] bg-white/85 backdrop-blur shadow-xl">
               <BookingForm />
-            </div>
           </div>
         </div>
       </div>

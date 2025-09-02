@@ -14,7 +14,7 @@ import { useEffect, useRef, useState } from "react";
  *  - panel:             Content object (title, lines[], ctaLabel, ctaHref)
  */
 export default function WhatsAppFab({
-  phone = "+212663431444",
+  phone = "+33756848934",
   preset = "Hello 👋 I have a question about Dar Tiflet.",
   delayMs = 5000,
   oncePerSession = true,

@@ -40,7 +40,7 @@ ${data.phone ? `\n${t("contact_page.form.phone")}: ${data.phone}` : ""}`
   const disabledWA = !data.name || !data.message;
 
   return (
-    <section className="rounded-2xl bg-fcd p-3">
+    <section className="rounded-2xl bg-ec p-3">
       <div className="rounded-2xl border border-olive/10 bg-ec p-5 md:p-7 shadow-soft ring-1 ring-black/5">
         <header className="mb-4">
           <h2 className="font-display text-2xl text-ink">{t("contact_page.form.title")}</h2>

@@ -385,7 +385,6 @@
     "agencies": "Partner agencies: –10% discount.",
     "payments": "Secure online payment via Payzone (coming soon)."
   },
-
   "footer": {
     "brand": "Dar Tiflet",
     "tagline": "A traditional Berber house in the heart of the medina.",
@@ -393,17 +392,37 @@
     "links": [
       { "label": "Home", "to": "/" },
       { "label": "Rooms", "to": "/rooms" },
+      { "label": "Services", "to": "/services" },
+      { "label": "Activities", "to": "/activities" },
+      { "label": "Gallery", "to": "/gallery" },
       { "label": "About", "to": "/about" },
       { "label": "Contact", "to": "/contact" }
     ],
     "contact_title": "Contact",
-    "address_lines": ["Dar Tiflet", "14 derb Gnaoua, quartier Ben Saleh", "Marrakech, Morocco"],
+    "address_lines": [
+      "14 derb Gnaoua, quartier Ben Saleh",
+      "Marrakech, Morocco"
+    ],
+    "maps_url": "https://maps.google.com/?q=Dar%20Tiflet%2C%20Marrakech",
+    "phone_fr_display": "+33 756 84 8934",
+    "phone_fr_raw": "0033756848934",
+    "whatsapp_fr_link": "https://wa.me/33756848934",
+    "phone_ma_display": "+212 663 434 114",
+    "phone_ma_raw": "00212663434114",
     "phone": "+212 663 43 41 44",
-    "phone_raw": "+212663434144",
     "email": "dartiflet@gmail.com",
-    "instagram": "https://instagram.com/dar_tiflet",
-    "facebook": "https://facebook.com/",
-    "whatsapp": "https://wa.me/212663434144",
+    "whatsapp_ma_link": "https://wa.me/212663434114",
+    "email_primary": "hello@dartiflet.com",
+    "instagram": "https://www.instagram.com/dar_tiflet/",
+    "facebook_fixed": "https://www.facebook.com/dartiflet",
+    "ig_preview": [
+      "/images/ig/01.jpg",
+      "/images/ig/02.jpg",
+      "/images/ig/03.jpg",
+      "/images/ig/04.jpg",
+      "/images/ig/05.jpg",
+      "/images/ig/06.jpg"
+    ],
     "copyright": "© {{year}} Dar Tiflet — Marrakech",
     "made_with_love": "Made with love."
   },
@@ -432,7 +451,7 @@
       { "name": "Lena S.", "country": "Germany", "date": "2025-02-10", "text": "Peaceful, tasteful, and comfortable. We’ll be back!" }
     ]
   },
-"common": { "close": "Close" },
+  "common": { "close": "Close", "cancel": "Cancel" },
   "services_page": {
     "title": "Services & Experiences",
     "subtitle": "Comfort, guidance and local know-how — so you can enjoy Marrakech like a friend of the house.",
@@ -685,6 +704,102 @@
       "toggle": "promo code?",
       "label": "Promo code",
       "placeholder": "e.g. TIFLET10"
+    }   
+  },
+  "activities_page": {
+    "excursions": {
+      "title": "Excursions & Activities",
+      "intro": "Open an experience to see the options and duration. No prices are shown.",
+      "transport_global_note": "Transport is included in all excursions.",
+      "duration_label": "Duration",
+      "cta": "View options",
+      "items": [
+        {
+          "id": "agafay",
+          "title": "Agafay Desert Experiences",
+          "desc": "Discover the stony Agafay desert just outside Marrakech — golden light, open horizons, and unforgettable sunsets.",
+          "duration": "Half-day or full day",
+          "groups": [
+            { "label": "Quad",   "options": ["1h", "2h", "Sunset", "With meal", "Without meal"] },
+            { "label": "Buggy",  "options": ["1h", "2h", "Sunset", "With meal", "Without meal"] },
+            { "label": "Camel",  "options": ["30–45 min", "Sunset", "With meal", "Without meal"] }
+          ],
+          "photo": "/images/agafay.jpg"
+        },
+        {
+          "id": "ourika-walking",
+          "title": "Ourika Valley — walking day",
+          "desc": "A refreshing day in the foothills of the Atlas: small Berber villages, riverbanks and waterfalls with a gentle guided walk.",
+          "options": ["Guided walking route", "Village stops", "Waterfalls", "Lunch stop possible"],
+          "duration": "1 day",
+          "photo": "/images/ourika.jpg"
+        },
+        {
+          "id": "imlil-toubkal",
+          "title": "Imlil — at the foot of Mount Toubkal",
+          "desc": "Drive up the Atlas to Imlil, gateway to Toubkal, with a short walk and tea in a Berber village.",
+          "options": ["Short guided walk", "Village tea stop", "Local lunch optional"],
+          "duration": "1 day",
+          "photo": "/images/imlil.jpg"
+        },
+
+        { "id": "ourika-4x4-track",
+          "title": "Ourika Valley by 4x4 track",
+          "desc": "Off-road track through the valley and plateaus with Atlas views and stops in traditional hamlets.",
+          "options": ["4x4 off-road route", "Photo/viewpoints", "Village stop", "Lunch stop possible"],
+          "duration": "1 day",
+          "photo": "/images/ourika-4x4.jpg"
+        },
+        { "id": "lalla-takerkoust-kik",
+          "title": "Lalla Takerkoust Lake & Kik Plateau",
+          "desc": "A scenic loop around the lake and the Kik plateau with sweeping views over the High Atlas.",
+          "options": ["Lakeside stop", "Kik plateau viewpoints", "Village stop", "Lunch stop possible"],
+          "duration": "1 day",
+          "photo": "/images/kik.jpg"
+        },
+        { "id": "marrakech-city",
+          "title": "Marrakech city tour",
+          "desc": "A curated discovery of the medina and key monuments with local tips and flexible pacing.",
+          "options": ["Medina walk", "Souks", "Selected monuments", "Garden / photo stops"],
+          "duration": "Half-day or full day",
+          "photo": "/images/marrakech.jpg"
+        },
+        { "id": "essaouira",
+          "title": "Essaouira day trip",
+          "desc": "Atlantic breeze, ramparts and blue fishing port — a relaxed coastal day from Marrakech.",
+          "options": ["Medina & ramparts", "Port & fish market", "Argan cooperative stop"],
+          "duration": "1 day",
+          "photo": "/images/essaouira.jpg"
+        },
+        { "id": "cooking-class",
+          "title": "Couscous & Tajine cooking class",
+          "desc": "Hands-on class to learn the secrets of Moroccan tajines and couscous, followed by tasting on site.",
+          "options": ["Market or spice intro", "Tajine preparation", "Couscous workshop", "Tasting"],
+          "duration": "Half-day",
+          "photo": "/images/cooking.jpg"
+        },
+        { "id": "horseback-riding",
+          "title": "Horseback riding",
+          "desc": "Gentle ride on quiet tracks around Marrakech with an experienced guide.",
+          "options": ["Intro & equipment", "Guided loop", "Photo stops"],
+          "duration": "1–2 hours",
+          "photo": "/images/horse.jpg"
+        },
+        { "id": "zagora-2d",
+          "title": "Zagora desert — 2 days",
+          "desc": "Across the Draa valley to the dunes of Zagora with a night in a desert camp.",
+          "options": ["Draa valley road", "Camel ride", "Camp dinner & music", "Sunrise"],
+          "duration": "2 days / 1 night",
+          "photo": "/images/zagora.jpg"
+        },
+        { "id": "merzouga-3d",
+          "title": "Merzouga desert — 3 days",
+          "desc": "Longer desert journey to the high dunes of Erg Chebbi with a camel ride and starry night in camp.",
+          "options": ["Road of a thousand kasbahs", "Camel ride", "Camp dinner & music", "Sunrise on dunes"],
+          "duration": "3 days / 2 nights",
+          "photo": "/images/merzouga.jpg"
+        }
+      ]
     }
   }
 }

@@ -25,7 +25,7 @@ export default function ContactCards() {
   ];
 
   return (
-    <section className="rounded-2xl bg-fcd p-3">
+    <section className="rounded-2xl bg-ec p-3">
       <div className="rounded-2xl border border-olive/10 bg-ec p-4 shadow-soft ring-1 ring-black/5">
         <div className="grid gap-4 sm:grid-cols-2">
           {items.map((it) => (

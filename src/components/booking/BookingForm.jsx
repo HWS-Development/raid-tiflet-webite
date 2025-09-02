@@ -60,7 +60,7 @@ export default function BookingForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="grid grid-cols-2 gap-3 rounded-2xl bg-white p-4 shadow-soft ring-1 ring-ink/10"
+      className="grid grid-cols-2 gap-3 rounded-2xl bg-ec p-8 shadow-soft ring-1 ring-ink/10"
       aria-label={t("booking.ariaForm")}
     >
       <div className="col-span-2">
