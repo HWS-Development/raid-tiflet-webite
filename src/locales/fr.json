@@ -73,7 +73,7 @@
         "ac": true,
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
         "amenities": ["Wi-Fi", "Linge & serviettes", "Rangements", "Climatisation"],
-        "color": "#2F8F5B",
+        "color": "#145C32",
         "features": [
           "Chambre double classique située au rez-de-chaussée",
           "Lit double",
@@ -131,7 +131,7 @@
         "ac": true,
         "windows": "Deux fenêtres donnant sur la cour",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
-        "color": "#F2B705",
+        "color": "#FFEA5C",
         "features": [
           "Chambre twin supérieure au 1er étage",
           "Deux lits jumeaux ou lit double",

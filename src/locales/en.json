@@ -64,7 +64,7 @@
         "ac": true,
         "windows": "Window facing the inner house",
         "amenities": ["Wi-Fi", "Linens & towels", "Storage", "Air conditioning"],
-        "color": "#2F8F5B",
+        "color": "#145C32",
         "features": [
           "Classic double room on the ground floor",
           "Double bed",
@@ -122,7 +122,7 @@
         "ac": true,
         "windows": "Two windows facing the courtyard",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
-        "color": "#F2B705",
+        "color": "#FFEA5C",
         "features": [
           "Superior twin room on the first floor",
           "Two twin beds or one double bed",
