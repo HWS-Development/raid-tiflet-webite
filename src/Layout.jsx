@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       </div> 
       
       <WhatsAppFab
-        phone="212663434144"
+        phone="33756848934"
         message="Hi Dar Tiflet! I'd like to ask about availability 😊"
         bottom={24}
         right={20}

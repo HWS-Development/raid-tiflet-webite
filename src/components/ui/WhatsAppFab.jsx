@@ -28,8 +28,8 @@ export default function WhatsAppFab({
         t('whatsappPromo.line3'),
         t('whatsappPromo.line4'),
     ],
-    ctaLabel: "dartiflet@gmail.com",
-    ctaHref: "mailto:dartiflet@gmail.com",
+    ctaLabel: "hello@dartiflet.com",
+    ctaHref: "mailto:hello@dartiflet.com",
   },
 }) {
   const [open, setOpen] = useState(false);

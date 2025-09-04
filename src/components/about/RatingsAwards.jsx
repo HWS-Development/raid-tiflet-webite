@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import CurveBand from "../ui/CurveBand";
 
 /**
  * Equal-height award cards, calmer headline, and an “art panel” field.
@@ -17,7 +16,6 @@ export default function RatingsAwards() {
     <section className="relative bg-white/55">
       {/* Sage band with waves */}
       <div className="relative bg-chb pb-6 md:pb-8 overflow-hidden">
-        {/* <CurveBand position="bottom" from="#F6F1E8" to="#DCE5D9" height={120} /> */}
 
         {/* “paper” field */}
         <div className="container-grid relative z-10">

@@ -58,8 +58,109 @@
         "Au cœur de la médina, Dar Tiflet vous invite à découvrir un lieu où authenticité berbère, simplicité et confort se mêlent pour offrir un séjour apaisant. Chaque chambre est une parenthèse tranquille, décorée avec soin dans le respect des traditions locales et pensée pour préserver la fraîcheur naturelle grâce à ses murs épais en pisé."
       ]
     },
-
+    "home": [
+      {
+        "id": "green",
+        "name": "Chambre Verte",
+        "image": "/images/rooms/Green Room1.jpg"
+      },
+      {
+        "id": "red",
+        "name": "Chambre Rouge",
+        "image": "/images/rooms/Red Room1.jpg"
+      },
+      {
+        "id": "safi",
+        "name": "Suite Safi",
+        "image": "/images/rooms/Safi Suite1.jpg"
+      }
+    ],
     "items": [
+      {
+        "id": "red",
+        "name": "Chambre Rouge",
+        "type": "Triple Supérieure",
+        "description": "Grande chambre à l’étage, chaleureuse, pouvant accueillir confortablement trois personnes.",
+        "capacity": 3,
+        "floor": "etage",
+        "beds": "Lit double + lit simple ou canapé convertible",
+        "bath": "Salle de bains privative",
+        "size": "25 m²",
+        "ac": true,
+        "windows": "Fenêtre donnant sur l’intérieur de la maison",
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
+        "color": "#B7322C",
+        "features": [
+          "Chambre triple supérieure au 1er étage",
+          "Lit double + lit simple ou canapé convertible",
+          "Salle de bains privative",
+          "25 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur l’intérieur de la maison"
+        ],
+        "images": [
+          "/images/rooms/Red Room1.jpg",
+          "/images/rooms/Red Room2.jpg",
+          "/images/rooms/Red Room3.jpg"
+        ]
+      },
+      {
+        "id": "bigarree",
+        "name": "Chambre Bigarrée",
+        "type": "Triple Classique",
+        "description": "Spacieuse et colorée, parfaite pour 2–3 personnes, au rez-de-chaussée, avec salle de bains privative.",
+        "capacity": 3,
+        "floor": "rdc",
+        "beds": "Lit double + lit simple ou canapé convertible",
+        "bath": "Salle de bains privative",
+        "size": "22 m²",
+        "ac": true,
+        "windows": "Fenêtre donnant sur l’intérieur de la maison",
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
+        "color": "#757C76",
+        "features": [
+          "Chambre triple classique au rez-de-chaussée",
+          "Lit double + lit simple ou canapé convertible",
+          "Salle de bains privative",
+          "22 m² avec espace de rangement",
+          "Climatisation",
+          "Murs épais en pisé pour une fraîcheur naturelle",
+          "Fenêtre donnant sur l’intérieur de la maison"
+        ],
+        "images": [
+          "/images/rooms/Bigarree room1.jpg",
+          "/images/rooms/Bigarree room2.jpg",
+          "/images/rooms/Bigarree room3.jpg"
+        ]
+      },
+      {
+        "id": "zina",
+        "name": "Chambre Zina",
+        "type": "Double Supérieure",
+        "description": "Charmante chambre à l’étage avec vue sur le jardin intérieur, intimiste et confortable.",
+        "capacity": 2,
+        "floor": "etage",
+        "beds": "Lit double",
+        "bath": "Salle de bains privative",
+        "size": "11 m²",
+        "ac": true,
+        "windows": "Fenêtre donnant sur le jardin intérieur",
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
+        "color": "#D1CEC6",
+        "features": [
+          "Chambre double supérieure au 1er étage",
+          "Lit double",
+          "Salle de bains privative",
+          "11 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur le jardin intérieur"
+        ],
+        "images": [
+          "/images/rooms/Zina Room1.jpg",
+          "/images/rooms/Zina Room2.jpg",
+          "/images/rooms/Zina Room3.jpg"
+        ]
+      },
       {
         "id": "green",
         "name": "Chambre Verte",
@@ -90,35 +191,6 @@
         ]
       },
       {
-        "id": "bigarree",
-        "name": "Chambre Bigarrée",
-        "type": "Triple Classique",
-        "description": "Spacieuse et colorée, parfaite pour 2–3 personnes, au rez-de-chaussée, avec salle de bains privative.",
-        "capacity": 3,
-        "floor": "rdc",
-        "beds": "Lit double + lit simple ou canapé convertible",
-        "bath": "Salle de bains privative",
-        "size": "22 m²",
-        "ac": true,
-        "windows": "Fenêtre donnant sur l’intérieur de la maison",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
-        "color": "#B7322C",
-        "features": [
-          "Chambre triple classique au rez-de-chaussée",
-          "Lit double + lit simple ou canapé convertible",
-          "Salle de bains privative",
-          "22 m² avec espace de rangement",
-          "Climatisation",
-          "Murs épais en pisé pour une fraîcheur naturelle",
-          "Fenêtre donnant sur l’intérieur de la maison"
-        ],
-        "images": [
-          "/images/rooms/Bigarree room1.jpg",
-          "/images/rooms/Bigarree room2.jpg",
-          "/images/rooms/Bigarree room3.jpg"
-        ]
-      },
-      {
         "id": "yellow",
         "name": "Chambre Jaune",
         "type": "Twin Supérieure",
@@ -131,7 +203,7 @@
         "ac": true,
         "windows": "Deux fenêtres donnant sur la cour",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
-        "color": "#FFEA5C",
+        "color": "#FFD83D",
         "features": [
           "Chambre twin supérieure au 1er étage",
           "Deux lits jumeaux ou lit double",
@@ -147,31 +219,61 @@
         ]
       },
       {
-        "id": "red",
-        "name": "Chambre Rouge",
-        "type": "Triple Supérieure",
-        "description": "Grande chambre à l’étage, chaleureuse, pouvant accueillir confortablement trois personnes.",
-        "capacity": 3,
-        "floor": "etage",
-        "beds": "Lit double + lit simple ou canapé convertible",
+        "id": "safi",
+        "name": "Suite Safi",
+        "type": "Quadruple Classique",
+        "description": "Deux pièces contiguës au rez-de-chaussée, idéales pour famille ou amis, jusqu’à 4 personnes.",
+        "capacity": 4,
+        "floor": "rdc",
+        "beds": "Lit double + lits simples/canapés dans deux pièces",
         "bath": "Salle de bains privative",
         "size": "25 m²",
         "ac": true,
-        "windows": "Fenêtre donnant sur l’intérieur de la maison",
+        "windows": "Fenêtres donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
-        "color": "#B7322C",
+        "color": "#3E3C30",
         "features": [
-          "Chambre triple supérieure au 1er étage",
-          "Lit double + lit simple ou canapé convertible",
+          "Chambre quadruple classique au rez-de-chaussée",
+          "Deux pièces contiguës",
+          "Lit double + lits simples ou canapés convertibles",
           "Salle de bains privative",
           "25 m² avec espace de rangement",
           "Climatisation",
-          "Fenêtre donnant sur l’intérieur de la maison"
+          "Murs épais en pisé assurant une fraîcheur naturelle",
+          "Fenêtres donnant sur le jardin intérieur"
         ],
         "images": [
-          "/images/rooms/Red Room1.jpg",
-          "/images/rooms/Red Room2.jpg",
-          "/images/rooms/Red Room3.jpg"
+          "/images/rooms/Safi Suite1.jpg",
+          "/images/rooms/Safi Suite2.jpg",
+          "/images/rooms/Safi Suite3.jpg"
+        ]
+      },
+      {
+        "id": "baraka",
+        "name": "Chambre Baraka",
+        "type": "Twin",
+        "description": "Étage, deux lits jumeaux, simple et pratique pour amis ou siblings.",
+        "capacity": 2,
+        "floor": "etage",
+        "beds": "Deux lits jumeaux",
+        "bath": "Salle de bains privative",
+        "size": "12 m²",
+        "ac": true,
+        "windows": "Fenêtre donnant sur le jardin intérieur",
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
+        "color": "#9C8874",
+        "features": [
+          "Chambre twin au 1er étage",
+          "Deux lits jumeaux",
+          "Salle de bains privative",
+          "12 m² avec espace de rangement",
+          "Climatisation",
+          "Fenêtre donnant sur le jardin intérieur"
+        ],
+        "images": [
+          "/images/rooms/Baraka room1.jpg",
+          "/images/rooms/Baraka room2.jpg",
+          "/images/rooms/Baraka room3.jpg"
         ]
       },
       {
@@ -200,92 +302,6 @@
           "/images/rooms/Blue Room1.jpg",
           "/images/rooms/Blue Room2.jpg",
           "/images/rooms/Blue Room3.jpg"
-        ]
-      },
-      {
-        "id": "safi",
-        "name": "Suite Safi",
-        "type": "Quadruple Classique",
-        "description": "Deux pièces contiguës au rez-de-chaussée, idéales pour famille ou amis, jusqu’à 4 personnes.",
-        "capacity": 4,
-        "floor": "rdc",
-        "beds": "Lit double + lits simples/canapés dans deux pièces",
-        "bath": "Salle de bains privative",
-        "size": "25 m²",
-        "ac": true,
-        "windows": "Fenêtres donnant sur le jardin intérieur",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
-        "color": "#0C4A6E",
-        "features": [
-          "Chambre quadruple classique au rez-de-chaussée",
-          "Deux pièces contiguës",
-          "Lit double + lits simples ou canapés convertibles",
-          "Salle de bains privative",
-          "25 m² avec espace de rangement",
-          "Climatisation",
-          "Murs épais en pisé assurant une fraîcheur naturelle",
-          "Fenêtres donnant sur le jardin intérieur"
-        ],
-        "images": [
-          "/images/rooms/Safi Suite1.jpg",
-          "/images/rooms/Safi Suite2.jpg",
-          "/images/rooms/Safi Suite3.jpg"
-        ]
-      },
-      {
-        "id": "zina",
-        "name": "Chambre Zina",
-        "type": "Double Supérieure",
-        "description": "Charmante chambre à l’étage avec vue sur le jardin intérieur, intimiste et confortable.",
-        "capacity": 2,
-        "floor": "etage",
-        "beds": "Lit double",
-        "bath": "Salle de bains privative",
-        "size": "11 m²",
-        "ac": true,
-        "windows": "Fenêtre donnant sur le jardin intérieur",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
-        "color": "#C94F44",
-        "features": [
-          "Chambre double supérieure au 1er étage",
-          "Lit double",
-          "Salle de bains privative",
-          "11 m² avec espace de rangement",
-          "Climatisation",
-          "Fenêtre donnant sur le jardin intérieur"
-        ],
-        "images": [
-          "/images/rooms/Zina Room1.jpg",
-          "/images/rooms/Zina Room2.jpg",
-          "/images/rooms/Zina Room3.jpg"
-        ]
-      },
-      {
-        "id": "baraka",
-        "name": "Chambre Baraka",
-        "type": "Twin",
-        "description": "Étage, deux lits jumeaux, simple et pratique pour amis ou siblings.",
-        "capacity": 2,
-        "floor": "etage",
-        "beds": "Deux lits jumeaux",
-        "bath": "Salle de bains privative",
-        "size": "12 m²",
-        "ac": true,
-        "windows": "Fenêtre donnant sur le jardin intérieur",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
-        "color": "#8A352D",
-        "features": [
-          "Chambre twin au 1er étage",
-          "Deux lits jumeaux",
-          "Salle de bains privative",
-          "12 m² avec espace de rangement",
-          "Climatisation",
-          "Fenêtre donnant sur le jardin intérieur"
-        ],
-        "images": [
-          "/images/rooms/Baraka room1.jpg",
-          "/images/rooms/Baraka room2.jpg",
-          "/images/rooms/Baraka room3.jpg"
         ]
       }
     ]
@@ -392,10 +408,7 @@
       { "label": "Contact", "to": "/contact" }
     ],
     "contact_title": "Contact",
-    "address_lines": [
-      "14 derb Gnaoua, quartier Ben Saleh",
-      "Marrakech, Maroc"
-    ],
+    "address_lines": ["Dar Tiflet", "14 derb Gnaoua, quartier Ben Saleh", "Marrakech, Maroc"],
     "maps_url": "https://maps.google.com/?q=Dar%20Tiflet%2C%20Marrakech",
     "phone_fr_display": "+33 756 84 8934",
     "phone_fr_raw": "0033756848934",
@@ -403,7 +416,7 @@
     "phone_ma_display": "+212 663 434 114",
     "phone_ma_raw": "33756848934",
     "phone": "+33 756 84 8934",
-    "email": "dartiflet@gmail.com",
+    "email": "hello@dartiflet.com",
     "whatsapp_ma_link": "https://wa.me/212663434114",
     "email_primary": "hello@dartiflet.com",
     "instagram": "https://www.instagram.com/dar_tiflet/",
@@ -716,7 +729,7 @@
     "items": [
       {
         "id": "hotels",
-        "src": "/images/rating4.jpeg",
+        "src": "/images/rating4.png",
         "alt": "Hotels.com Loved by Guests 9,6/10",
         "score": "9,6/10",
         "label": "Hotels.com"
@@ -876,7 +889,58 @@
           "options": ["Route des mille kasbahs", "Balade à dos de chameau", "Dîner & musique au camp", "Lever de soleil sur les dunes"],
           "duration": "3 jours / 2 nuits",
           "photo": "/images/merzouga.jpg"
-        }
+        },
+        {
+  "id": "ouzoud",
+  "title": "Chutes d’Ouzoud",
+  "desc": "Évasion rafraîchissante au pied de l’Atlas — découvrez les plus hautes cascades du Maroc, ses oliveraies et les macaques berbères.",
+  "duration": "1 journée",
+  "groups": [
+    { "label": "Options", "options": ["Balade pédestre", "Promenade en barque", "Pause déjeuner"] }
+  ],
+  "photo": "/images/ouzoud.jpg"
+},
+{
+  "id": "ouarzazate",
+  "title": "Ouarzazate & Aït Ben Haddou",
+  "desc": "Traversez le Haut Atlas par le col du Tizi n’Tichka et explorez Ouarzazate, la « Porte du Désert », et le ksar classé UNESCO d’Aït Ben Haddou.",
+  "duration": "1 journée",
+  "groups": [
+    { "label": "Options", "options": ["Visite guidée", "Studios de cinéma", "Pause déjeuner"] }
+  ],
+  "photo": "/images/ouarzazate.jpg"
+},
+{
+  "id": "balloon",
+  "title": "Vol en Montgolfière",
+  "desc": "Envolez-vous doucement au-dessus de Marrakech et de l’Atlas au lever du soleil pour des panoramas inoubliables suivis d’un petit-déjeuner traditionnel.",
+  "duration": "Demi-journée (tôt le matin)",
+  "groups": [
+    { "label": "Options", "options": ["Panier partagé", "Vol privé", "Petit-déjeuner inclus"] }
+  ],
+  "photo": "/images/balloon.jpg"
+},
+{
+  "id": "palmeraie",
+  "title": "Expérience Palmeraie",
+  "desc": "Balade à dos de chameau ou en quad au milieu de milliers de palmiers, une oasis emblématique aux portes de Marrakech.",
+  "duration": "1–2 heures", 
+  "groups": [
+    { "label": "Options", "options": ["Balade à dos de chameau", "Quad", "Coucher de soleil"] }
+  ],
+  "photo": "/images/palmeraie.jpg"
+},
+{
+  "id": "poterie",
+  "title": "Atelier Poterie",
+  "desc": "Initiation pratique à la poterie marocaine. Apprenez les techniques traditionnelles avec un artisan local et façonnez vos propres créations.",
+  "duration": "Demi-journée",
+  "groups": [
+    { "label": "Options", "options": ["Atelier découverte", "Techniques avancées", "Avec pause thé"] }
+  ],
+  "photo": "/images/poterie.jpg"
+}
+
       ]
     }
   }

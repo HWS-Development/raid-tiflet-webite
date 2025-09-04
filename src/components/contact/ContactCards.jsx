@@ -20,7 +20,7 @@ export default function ContactCards() {
   const items = [
     { id: "phone", title: t("contact_page.cards.phone"), href: `tel:${t("footer.phone_raw")}`, label: t("footer.phone"), icon: "phone" },
     { id: "email", title: t("contact_page.cards.email"), href: `mailto:${t("footer.email")}`, label: t("footer.email"), icon: "email" },
-    { id: "whatsapp", title: t("contact_page.cards.whatsapp"), href: t("footer.whatsapp"), label: t("footer.phone"), icon: "wa" },
+    { id: "whatsapp", title: t("contact_page.cards.whatsapp"), href:`https://wa.me/${t("footer.phone_fr_raw")}`, label: t("footer.phone"), icon: "wa" },
     { id: "address", title: t("contact_page.cards.address"), href: "https://maps.google.com/?q=Riad%20Dar%20Tiflet%2C%20Marrakech", label: `${t("footer.address_lines.0")}, ${t("footer.address_lines.1")}, ${t("footer.address_lines.2")}`, icon: "pin" }
   ];
 
@@ -36,7 +36,7 @@ export default function ContactCards() {
               rel="noreferrer"
               className="group flex items-start gap-3 rounded-xl border border-olive/10 bg-white/90 p-4 shadow-sm transition hover:shadow-md hover:border-olive/30"
             >
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-olive/10 text-olive ring-1 ring-olive/15">
+              <span className="grid h-9 w-9 place-items-center rounded-full bg-olive/10 text-fcd ring-1 ring-olive/15">
                 <Icon name={it.icon} />
               </span>
               <div>

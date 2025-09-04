@@ -7,10 +7,6 @@ const FALLBACK =
 
 function RoomTile({ room, onView }) {
   const { t } = useTranslation();
-  const img =
-    (Array.isArray(room.images) && typeof room.images[0] === "string" && room.images[0]) ||
-    FALLBACK;
-
   const handleKey = (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -29,7 +25,7 @@ function RoomTile({ room, onView }) {
     >
       {/* image */}
       <img
-        src={img}
+        src={room.image}
         alt={room.name}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         loading="lazy"
@@ -61,7 +57,7 @@ function RoomTile({ room, onView }) {
 export default function RoomsTeaser() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const rooms = useMemo(() => t("rooms.items", { returnObjects: true }) || [], [t]);
+  const rooms = useMemo(() => t("rooms.home", { returnObjects: true }) || [], [t]);
 
   return (
     <>

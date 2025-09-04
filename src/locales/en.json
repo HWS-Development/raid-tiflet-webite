@@ -49,8 +49,109 @@
         "In the heart of the medina, Dar Tiflet offers a place where Berber authenticity, simplicity, and comfort come together for a soothing stay. Each room is a quiet pause, carefully decorated with respect for local traditions, and designed to keep natural coolness thanks to thick earthen walls."
       ]
     },
-
+    "home": [
+      {
+        "id": "green",
+        "name": "Chambre Verte",
+        "image": "/images/rooms/Green Room1.jpg"
+      },
+      {
+        "id": "red",
+        "name": "Chambre Rouge",
+        "image": "/images/rooms/Red Room1.jpg"
+      },
+      {
+        "id": "safi",
+        "name": "Suite Safi",
+        "image": "/images/rooms/Safi Suite1.jpg"
+      }
+    ],
     "items": [
+      {
+        "id": "red",
+        "name": "Red Room",
+        "type": "Superior Triple",
+        "description": "Large upstairs room with warm tones, comfortably sleeping up to three guests.",
+        "capacity": 3,
+        "floor": "etage",
+        "beds": "Double bed + single bed or sofa bed",
+        "bath": "Private bathroom",
+        "size": "25 m²",
+        "ac": true,
+        "windows": "Window facing the inner house",
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
+        "color": "#B7322C",
+        "features": [
+          "Superior triple room on the first floor",
+          "Double bed + single bed or sofa bed",
+          "Private bathroom",
+          "25 m² with storage space",
+          "Air conditioning",
+          "Window facing the interior of the house"
+        ],
+        "images": [
+          "/images/rooms/Red Room1.jpg",
+          "/images/rooms/Red Room2.jpg",
+          "/images/rooms/Red Room3.jpg"
+        ]
+      },
+      {
+        "id": "bigarree",
+        "name": "Bigarrée Room",
+        "type": "Classic Triple",
+        "description": "Spacious and colorful, perfect for 2–3 guests, on the ground floor with a private bathroom.",
+        "capacity": 3,
+        "floor": "rdc",
+        "beds": "Double bed + single bed or sofa bed",
+        "bath": "Private bathroom",
+        "size": "22 m²",
+        "ac": true,
+        "windows": "Window facing the inner house",
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
+        "color": "#757C76",
+        "features": [
+          "Classic triple room on the ground floor",
+          "Double bed + single bed or sofa bed",
+          "Private bathroom",
+          "22 m² with storage space",
+          "Air conditioning",
+          "Thick rammed-earth walls for natural coolness",
+          "Window facing the interior of the house"
+        ],
+        "images": [
+          "/images/rooms/Bigarree room1.jpg",
+          "/images/rooms/Bigarree room2.jpg",
+          "/images/rooms/Bigarree room3.jpg"
+        ]
+      },
+      {
+        "id": "zina",
+        "name": "Zina Room",
+        "type": "Superior Double",
+        "description": "Charming upstairs room overlooking the inner garden — intimate and comfortable.",
+        "capacity": 2,
+        "floor": "etage",
+        "beds": "Double bed",
+        "bath": "Private bathroom",
+        "size": "11 m²",
+        "ac": true,
+        "windows": "Window facing the inner garden",
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
+        "color": "#D1CEC6",
+        "features": [
+          "Superior double room on the first floor",
+          "Double bed",
+          "Private bathroom",
+          "11 m² with storage space",
+          "Air conditioning",
+          "Window overlooking the inner garden"
+        ],
+        "images": [
+          "/images/rooms/Zina Room1.jpg",
+          "/images/rooms/Zina Room2.jpg",
+          "/images/rooms/Zina Room3.jpg"
+        ]
+      },
       {
         "id": "green",
         "name": "Green Room",
@@ -81,35 +182,6 @@
         ]
       },
       {
-        "id": "bigarree",
-        "name": "Bigarrée Room",
-        "type": "Classic Triple",
-        "description": "Spacious and colorful, perfect for 2–3 guests, on the ground floor with a private bathroom.",
-        "capacity": 3,
-        "floor": "rdc",
-        "beds": "Double bed + single bed or sofa bed",
-        "bath": "Private bathroom",
-        "size": "22 m²",
-        "ac": true,
-        "windows": "Window facing the inner house",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
-        "color": "#B7322C",
-        "features": [
-          "Classic triple room on the ground floor",
-          "Double bed + single bed or sofa bed",
-          "Private bathroom",
-          "22 m² with storage space",
-          "Air conditioning",
-          "Thick rammed-earth walls for natural coolness",
-          "Window facing the interior of the house"
-        ],
-        "images": [
-          "/images/rooms/Bigarree room1.jpg",
-          "/images/rooms/Bigarree room2.jpg",
-          "/images/rooms/Bigarree room3.jpg"
-        ]
-      },
-      {
         "id": "yellow",
         "name": "Yellow Room",
         "type": "Superior Twin",
@@ -122,7 +194,7 @@
         "ac": true,
         "windows": "Two windows facing the courtyard",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
-        "color": "#FFEA5C",
+        "color": "#FFD83D",
         "features": [
           "Superior twin room on the first floor",
           "Two twin beds or one double bed",
@@ -138,31 +210,61 @@
         ]
       },
       {
-        "id": "red",
-        "name": "Red Room",
-        "type": "Superior Triple",
-        "description": "Large upstairs room with warm tones, comfortably sleeping up to three guests.",
-        "capacity": 3,
-        "floor": "etage",
-        "beds": "Double bed + single bed or sofa bed",
+        "id": "safi",
+        "name": "Safi Suite",
+        "type": "Classic Quadruple",
+        "description": "Two adjoining rooms on the ground floor — ideal for families or friends, up to 4 guests.",
+        "capacity": 4,
+        "floor": "rdc",
+        "beds": "Double bed + single beds/sofas across two rooms",
         "bath": "Private bathroom",
         "size": "25 m²",
         "ac": true,
-        "windows": "Window facing the inner house",
+        "windows": "Windows facing the inner garden",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
-        "color": "#B7322C",
+        "color": "#3E3C30",
         "features": [
-          "Superior triple room on the first floor",
-          "Double bed + single bed or sofa bed",
+          "Classic quadruple room on the ground floor",
+          "Two adjoining rooms",
+          "Double bed + single beds or sofa beds",
           "Private bathroom",
           "25 m² with storage space",
           "Air conditioning",
-          "Window facing the interior of the house"
+          "Thick rammed-earth walls for natural coolness",
+          "Windows overlooking the inner garden"
         ],
         "images": [
-          "/images/rooms/Red Room1.jpg",
-          "/images/rooms/Red Room2.jpg",
-          "/images/rooms/Red Room3.jpg"
+          "/images/rooms/Safi Suite1.jpg",
+          "/images/rooms/Safi Suite2.jpg",
+          "/images/rooms/Safi Suite3.jpg"
+        ]
+      },
+      {
+        "id": "baraka",
+        "name": "Baraka Room",
+        "type": "Twin",
+        "description": "Upstairs with two twin beds — simple and practical for friends or siblings.",
+        "capacity": 2,
+        "floor": "etage",
+        "beds": "Two twin beds",
+        "bath": "Private bathroom",
+        "size": "12 m²",
+        "ac": true,
+        "windows": "Window facing the inner garden",
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
+        "color": "#9C8874",
+        "features": [
+          "Twin room on the first floor",
+          "Two twin beds",
+          "Private bathroom",
+          "12 m² with storage space",
+          "Air conditioning",
+          "Window overlooking the inner garden"
+        ],
+        "images": [
+          "/images/rooms/Baraka room1.jpg",
+          "/images/rooms/Baraka room2.jpg",
+          "/images/rooms/Baraka room3.jpg"
         ]
       },
       {
@@ -191,92 +293,6 @@
           "/images/rooms/Blue Room1.jpg",
           "/images/rooms/Blue Room2.jpg",
           "/images/rooms/Blue Room3.jpg"
-        ]
-      },
-      {
-        "id": "safi",
-        "name": "Safi Suite",
-        "type": "Classic Quadruple",
-        "description": "Two adjoining rooms on the ground floor — ideal for families or friends, up to 4 guests.",
-        "capacity": 4,
-        "floor": "rdc",
-        "beds": "Double bed + single beds/sofas across two rooms",
-        "bath": "Private bathroom",
-        "size": "25 m²",
-        "ac": true,
-        "windows": "Windows facing the inner garden",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
-        "color": "#0C4A6E",
-        "features": [
-          "Classic quadruple room on the ground floor",
-          "Two adjoining rooms",
-          "Double bed + single beds or sofa beds",
-          "Private bathroom",
-          "25 m² with storage space",
-          "Air conditioning",
-          "Thick rammed-earth walls for natural coolness",
-          "Windows overlooking the inner garden"
-        ],
-        "images": [
-          "/images/rooms/Safi Suite1.jpg",
-          "/images/rooms/Safi Suite2.jpg",
-          "/images/rooms/Safi Suite3.jpg"
-        ]
-      },
-      {
-        "id": "zina",
-        "name": "Zina Room",
-        "type": "Superior Double",
-        "description": "Charming upstairs room overlooking the inner garden — intimate and comfortable.",
-        "capacity": 2,
-        "floor": "etage",
-        "beds": "Double bed",
-        "bath": "Private bathroom",
-        "size": "11 m²",
-        "ac": true,
-        "windows": "Window facing the inner garden",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
-        "color": "#C94F44",
-        "features": [
-          "Superior double room on the first floor",
-          "Double bed",
-          "Private bathroom",
-          "11 m² with storage space",
-          "Air conditioning",
-          "Window overlooking the inner garden"
-        ],
-        "images": [
-          "/images/rooms/Zina Room1.jpg",
-          "/images/rooms/Zina Room2.jpg",
-          "/images/rooms/Zina Room3.jpg"
-        ]
-      },
-      {
-        "id": "baraka",
-        "name": "Baraka Room",
-        "type": "Twin",
-        "description": "Upstairs with two twin beds — simple and practical for friends or siblings.",
-        "capacity": 2,
-        "floor": "etage",
-        "beds": "Two twin beds",
-        "bath": "Private bathroom",
-        "size": "12 m²",
-        "ac": true,
-        "windows": "Window facing the inner garden",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
-        "color": "#8A352D",
-        "features": [
-          "Twin room on the first floor",
-          "Two twin beds",
-          "Private bathroom",
-          "12 m² with storage space",
-          "Air conditioning",
-          "Window overlooking the inner garden"
-        ],
-        "images": [
-          "/images/rooms/Baraka room1.jpg",
-          "/images/rooms/Baraka room2.jpg",
-          "/images/rooms/Baraka room3.jpg"
         ]
       }
     ]
@@ -399,18 +415,15 @@
       { "label": "Contact", "to": "/contact" }
     ],
     "contact_title": "Contact",
-    "address_lines": [
-      "14 derb Gnaoua, quartier Ben Saleh",
-      "Marrakech, Morocco"
-    ],
+    "address_lines": ["Dar Tiflet", "14 derb Gnaoua, quartier Ben Saleh", "Marrakech, Morocco"],
     "maps_url": "https://maps.google.com/?q=Dar%20Tiflet%2C%20Marrakech",
     "phone_fr_display": "+33 756 84 8934",
     "phone_fr_raw": "0033756848934",
     "whatsapp_fr_link": "https://wa.me/33756848934",
     "phone_ma_display": "+212 663 434 114",
     "phone_ma_raw": "00212663434114",
-    "phone": "+212 663 43 41 44",
-    "email": "dartiflet@gmail.com",
+    "phone": "+33 756 84 8934",
+    "email": "hello@dartiflet.com",
     "whatsapp_ma_link": "https://wa.me/212663434114",
     "email_primary": "hello@dartiflet.com",
     "instagram": "https://www.instagram.com/dar_tiflet/",
@@ -643,7 +656,7 @@
     "items": [
       {
         "id": "hotels",
-        "src": "/images/rating4.jpeg",
+        "src": "/images/rating4.png",
         "alt": "Hotels.com Loved by Guests 9.6/10",
         "score": "9.6/10",
         "label": "Hotels.com"
@@ -798,7 +811,58 @@
           "options": ["Road of a thousand kasbahs", "Camel ride", "Camp dinner & music", "Sunrise on dunes"],
           "duration": "3 days / 2 nights",
           "photo": "/images/merzouga.jpg"
-        }
+        },
+        {
+  "id": "ouzoud",
+  "title": "Ouzoud Waterfalls",
+  "desc": "A refreshing escape to the Atlas foothills — discover Morocco’s tallest waterfalls, olive groves, and friendly Barbary macaques.",
+  "duration": "1 day",
+  "groups": [
+    { "label": "Options", "options": ["Walking tour", "Boat ride", "Lunch stop"] }
+  ],
+  "photo": "/images/ouzoud.jpg"
+},
+{
+  "id": "ouarzazate",
+  "title": "Ouarzazate & Ait Ben Haddou",
+  "desc": "Cross the High Atlas via the Tizi n’Tichka pass and explore Ouarzazate, the ‘Gateway to the Desert’, and the UNESCO-listed ksar of Ait Ben Haddou.",
+  "duration": "1 day",
+  "groups": [
+    { "label": "Options", "options": ["Guided tour", "Cinema studios visit", "Lunch stop"] }
+  ],
+  "photo": "/images/ouarzazate.jpg"
+},
+{
+  "id": "balloon",
+  "title": "Hot Air Balloon Flight",
+  "desc": "Soar gently above Marrakech and the Atlas mountains at sunrise for unforgettable panoramic views and a traditional breakfast.",
+  "duration": "Half-day (early morning)",
+  "groups": [
+    { "label": "Options", "options": ["Shared basket", "Private flight", "Breakfast included"] }
+  ],
+  "photo": "/images/balloon.jpg"
+},
+{
+  "id": "palmeraie",
+  "title": "Palmeraie Experience",
+  "desc": "Ride camels or quads among thousands of palm trees on the outskirts of Marrakech — an iconic oasis just minutes away from the medina.",
+  "duration": "1–2 hours",
+  "groups": [
+    { "label": "Options", "options": ["Camel ride", "Quad bike", "Sunset tour"] }
+  ],
+  "photo": "/images/palmeraie.jpg"
+},
+{
+  "id": "poterie",
+  "title": "Pottery Workshop",
+  "desc": "Hands-on introduction to Moroccan pottery. Learn traditional techniques with a local artisan and shape your own clay creations.",
+  "duration": "Half-day",
+  "groups": [
+    { "label": "Options", "options": ["Beginner workshop", "Advanced techniques", "With tea break"] }
+  ],
+  "photo": "/images/poterie.jpg"
+}
+
       ]
     }
   }

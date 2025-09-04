@@ -112,7 +112,7 @@ export default function ArtFooter() {
 
           {/* Explore */}
           <nav className="text-ec">
-            <h4 className="font-semibold mb-3">{t("footer.links_title")}</h4>
+            <h4 className="text-2xl text-ec mb-3">{t("footer.links_title")}</h4>
             <ul className="space-y-2">
               {links.map((l) => (
                 <li key={l.to}>
@@ -124,7 +124,7 @@ export default function ArtFooter() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-3">{t("footer.contact_title")}</h4>
+            <h4 className="text-2xl text-ec mb-3">{t("footer.contact_title")}</h4>
 
             {/* Address (link to Google Maps) */}
             <address className="not-italic text-ec/95">
