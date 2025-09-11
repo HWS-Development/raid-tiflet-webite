@@ -117,7 +117,7 @@
         "ac": true,
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
-        "color": "#757C76",
+        "color": "#009FB2",
         "features": [
           "Chambre triple classique au rez-de-chaussée",
           "Lit double + lit simple ou canapé convertible",
@@ -146,7 +146,7 @@
         "ac": true,
         "windows": "Fenêtre donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
-        "color": "#D1CEC6",
+        "color": "#9C8874",
         "features": [
           "Chambre double supérieure au 1er étage",
           "Lit double",
@@ -228,6 +228,7 @@
         "beds": "Lit double + lits simples/canapés dans deux pièces",
         "bath": "Salle de bains privative",
         "size": "25 m²",
+        "border": "black",
         "ac": true,
         "windows": "Fenêtres donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
@@ -420,7 +421,7 @@
     "whatsapp_ma_link": "https://wa.me/212663434114",
     "email_primary": "hello@dartiflet.com",
     "instagram": "https://www.instagram.com/dar_tiflet/",
-    "facebook_fixed": "https://www.facebook.com/dartiflet",
+    "facebook_fixed": "https://www.facebook.com/profile.php?id=100063690094935",
     "ig_preview": [
       "/images/ig/01.jpg",
       "/images/ig/02.jpg",
@@ -518,6 +519,7 @@
   },
 
   "services_page": {
+    "activity_title": "Excursions & Activités",
     "title": "Services & Expériences",
     "subtitle": "Confort, conseils et savoir-faire local — pour vivre Marrakech comme chez des amis.",
     "intro": "Nous organisons votre arrivée, les petits déjeuners, des conseils et excursions, la consigne des bagages et plus encore. Dites-nous ce dont vous avez besoin.",
@@ -821,7 +823,7 @@
           "id": "ourika-walking",
           "title": "Vallée de l’Ourika — journée à pied",
           "desc": "Une journée rafraîchissante au pied de l’Atlas : villages berbères, bords de rivière et cascades avec une marche accompagnée.",
-          "options": ["Parcours à pied guidé", "Haltes villages", "Cascades", "Déjeuner possible"],
+          "options": ["Parcours à pied guidé", "4x4", "Haltes villages", "Cascades", "Déjeuner possible"],
           "duration": "1 journée",
           "photo": "/images/ourika.jpg"
         },
@@ -832,14 +834,6 @@
           "options": ["Courte marche accompagnée", "Thé chez l’habitant", "Déjeuner local en option"],
           "duration": "1 journée",
           "photo": "/images/imlil.jpg"
-        },
-
-        { "id": "ourika-4x4-track",
-          "title": "Vallée de l’Ourika en 4x4 (piste)",
-          "desc": "Parcours piste à travers la vallée et les plateaux, points de vue sur l’Atlas et pauses dans les hameaux.",
-          "options": ["Itinéraire 4x4 piste", "Points de vue / photos", "Arrêt village", "Déjeuner possible"],
-          "duration": "1 journée",
-          "photo": "/images/ourika-4x4.jpg"
         },
         { "id": "lalla-takerkoust-kik",
           "title": "Lac Lalla Takerkoust & Plateau du Kik",

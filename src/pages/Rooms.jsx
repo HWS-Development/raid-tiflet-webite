@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import RoomsHero from "../components/rooms/RoomsHero";
-import CurveBand from "../components/ui/CurveBand";
 
 const FALLBACK =
   "https://images.unsplash.com/photo-1562259949-e8e7689d7821?q=80&w=1600&auto=format&fit=crop";

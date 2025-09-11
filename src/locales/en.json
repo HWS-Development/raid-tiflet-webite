@@ -108,7 +108,7 @@
         "ac": true,
         "windows": "Window facing the inner house",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
-        "color": "#757C76",
+        "color": "#009FB2",
         "features": [
           "Classic triple room on the ground floor",
           "Double bed + single bed or sofa bed",
@@ -137,7 +137,7 @@
         "ac": true,
         "windows": "Window facing the inner garden",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
-        "color": "#D1CEC6",
+        "color": "#9C8874",
         "features": [
           "Superior double room on the first floor",
           "Double bed",
@@ -219,6 +219,7 @@
         "beds": "Double bed + single beds/sofas across two rooms",
         "bath": "Private bathroom",
         "size": "25 m²",
+        "border": "black",
         "ac": true,
         "windows": "Windows facing the inner garden",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
@@ -427,7 +428,7 @@
     "whatsapp_ma_link": "https://wa.me/212663434114",
     "email_primary": "hello@dartiflet.com",
     "instagram": "https://www.instagram.com/dar_tiflet/",
-    "facebook_fixed": "https://www.facebook.com/dartiflet",
+    "facebook_fixed": "https://www.facebook.com/profile.php?id=100063690094935",
     "ig_preview": [
       "/images/ig/01.jpg",
       "/images/ig/02.jpg",
@@ -466,6 +467,7 @@
   },
   "common": { "close": "Close", "cancel": "Cancel" },
   "services_page": {
+    "activity_title": "Excursions & Activities",
     "title": "Services & Experiences",
     "subtitle": "Comfort, guidance and local know-how — so you can enjoy Marrakech like a friend of the house.",
     "intro": "We can arrange your arrival, breakfasts, tips and excursions, luggage storage and more. Ask us anything — we’re here to help.",
@@ -743,7 +745,7 @@
           "id": "ourika-walking",
           "title": "Ourika Valley — walking day",
           "desc": "A refreshing day in the foothills of the Atlas: small Berber villages, riverbanks and waterfalls with a gentle guided walk.",
-          "options": ["Guided walking route", "Village stops", "Waterfalls", "Lunch stop possible"],
+          "options": ["Guided walking route", "4x4", "Village stops", "Waterfalls", "Lunch stop possible"],
           "duration": "1 day",
           "photo": "/images/ourika.jpg"
         },
@@ -754,14 +756,6 @@
           "options": ["Short guided walk", "Village tea stop", "Local lunch optional"],
           "duration": "1 day",
           "photo": "/images/imlil.jpg"
-        },
-
-        { "id": "ourika-4x4-track",
-          "title": "Ourika Valley by 4x4 track",
-          "desc": "Off-road track through the valley and plateaus with Atlas views and stops in traditional hamlets.",
-          "options": ["4x4 off-road route", "Photo/viewpoints", "Village stop", "Lunch stop possible"],
-          "duration": "1 day",
-          "photo": "/images/ourika-4x4.jpg"
         },
         { "id": "lalla-takerkoust-kik",
           "title": "Lalla Takerkoust Lake & Kik Plateau",

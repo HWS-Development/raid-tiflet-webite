@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 /** Tiny inline icon set keyed by service id */
 function Ico({ id, className = "" }) {
-  const common = "w-5 h-5";
+  const common = "w-28 h-5 text-fcd";
   switch (id) {
     case "shuttle":
       return (
@@ -107,7 +107,7 @@ export default function ServicesTeaser({ variant = "light" }) {
                 className={`
                   group relative overflow-hidden rounded-2xl px-6 py-6 md:py-7 min-h-[118px] md:min-h-[132px]
                   shadow-soft backdrop-blur
-                  border transition
+                  border transition !bg-ec
                   ${theme.card}
                 `}
               >

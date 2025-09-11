@@ -170,13 +170,13 @@ export default function RoomShow() {
           {/* Quick facts / CTA */}
           <div className="mt-8 md:mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
             {typeof room.capacity === "number" && (
-              <FactCard label={t("rooms.capacity")} value={`${room.capacity} ${t("rooms.guests")}`} />
+              <FactCard label={t("rooms.capacity")} value={`${room.capacity} ${t("rooms.guests")}`} room={room} />
             )}
-            {room.size && <FactCard label={t("rooms.size")} value={room.size} />}
+            {room.size && <FactCard label={t("rooms.size")} value={room.size} room={room} />}
             {room.floor && (
               <FactCard
                 label={t("rooms.floor")}
-                value={room.floor === "rdc" ? t("rooms.ground_floor") : t("rooms.first_floor")}
+                value={room.floor === "rdc" ? t("rooms.ground_floor") : t("rooms.first_floor")} room={room}
               />
             )}
             <button
@@ -269,11 +269,11 @@ export default function RoomShow() {
 
 // ---------- local tiny components ----------
 
-function FactCard({ label, value }) {
+function FactCard({ label, value, room }) {
   return (
-    <div className="rounded-full border border-white/25 bg-white/10 px-5 py-3 backdrop-blur-[1px]">
-      <span className="text-white/70 text-sm">{label}</span>
-      <span className="ml-2 font-semibold">{value}</span>
+    <div className={room?.border ? "rounded-full border border-black bg-white/10 px-5 py-3 backdrop-blur-[20px]" : "rounded-full border border-white/25 bg-white/10 px-5 py-3 backdrop-blur-[1px]"}>
+      <span className={room?.border ? "text-black/90 text-sm" : "text-white/70 text-sm"}>{label}</span>
+      <span className={room?.border ? "ml-2 font-semibold text-black" : "ml-2 font-semibold" }>{value}</span>
     </div>
   );
 }
