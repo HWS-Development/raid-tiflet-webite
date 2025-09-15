@@ -219,7 +219,6 @@
         "beds": "Double bed + single beds/sofas across two rooms",
         "bath": "Private bathroom",
         "size": "25 m²",
-        "border": "black",
         "ac": true,
         "windows": "Windows facing the inner garden",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
@@ -377,6 +376,12 @@
         ],
         "duration": "Full day"
       }
+    },
+    "menu": {
+      "title": "See our table menu",
+      "desc": "Open the current menu as a PDF. We’ll show it in your language.",
+      "open_btn": "Open menu (PDF)",
+      "alt_link": "Direct link"
     }
   },
 
@@ -505,24 +510,22 @@
       }
     ]
   },
-"dining": {
-  "title": "The Table of Dar Tiflet",
-  "table_desc": "On the rooftop terrace, overlooking the medina and the Koutoubia’s minaret, we serve a simple, welcoming home-cooked table.",
-  "menu": "Daily set menu — seasonal tagines, couscous, pastilla, zaalouk, harira…",
-  "fresh": "Fresh bread baked on site, ripe fruit, Moroccan sweets",
-  "vegetarian": "Vegetarian and allergy-friendly options available on request",
-  "notice": "Meals are served by reservation only (minimum 6 hours in advance).",
+  "dining": {
+    "title": "The Table of Dar Tiflet",
+    "table_desc": "On the rooftop terrace, overlooking the medina and the Koutoubia’s minaret, we serve a simple, welcoming home-cooked table.",
+    "menu": "Daily set menu — seasonal tagines, couscous, pastilla, zaalouk, harira…",
+    "fresh": "Fresh bread baked on site, ripe fruit, Moroccan sweets",
+    "vegetarian": "Vegetarian and allergy-friendly options available on request",
+    "notice": "Meals are served by reservation only (minimum 6 hours in advance).",
 
-  "counter_title": "The Tiflet Counter — terrace refreshments",
-  "counter_desc": "Our alcohol-free bar serves fresh, local drinks to enjoy with a wide view over Marrakech.",
-  "bar_teas": "Mint tea and traditional Moroccan infusions",
-  "bar_juices": "Fresh orange juice, homemade lemonade, seasonal fruit juices",
-  "bar_soft": "Mineral water, soft drinks, coffee",
-  "bar_smoothies": "House smoothies made with market fruit",
-  "bar_note": "No alcohol is served — only the joy of natural flavors in a calm, intimate setting."
-},
-
-
+    "counter_title": "The Tiflet Counter — terrace refreshments",
+    "counter_desc": "Our alcohol-free bar serves fresh, local drinks to enjoy with a wide view over Marrakech.",
+    "bar_teas": "Mint tea and traditional Moroccan infusions",
+    "bar_juices": "Fresh orange juice, homemade lemonade, seasonal fruit juices",
+    "bar_soft": "Mineral water, soft drinks, coffee",
+    "bar_smoothies": "House smoothies made with market fruit",
+    "bar_note": "No alcohol is served — only the joy of natural flavors in a calm, intimate setting."
+  },
   "dining_page": {
     "title": "Dining",
     "subtitle": "Home-cooked Berber & Moroccan cuisine on the rooftop.",
@@ -723,6 +726,18 @@
   },
   "activities_page": {
     "excursions": {
+      "kinds": {
+        "walk": "Balade",
+        "ride": "Balade",
+        "class": "Atelier",
+        "tour": "Excursion",
+        "flight": "Vol",
+        "spa": "SPA",
+        "desert": "Désert",
+        "city": "Ville",
+        "coast": "Côte",
+        "nature": "Nature"
+      },
       "title": "Excursions & Activities",
       "intro": "Open an experience to see the options and duration. No prices are shown.",
       "transport_global_note": "Transport is included in all excursions.",
@@ -731,6 +746,7 @@
       "items": [
         {
           "id": "agafay",
+          "kind": "desert",
           "title": "Agafay Desert Experiences",
           "desc": "Discover the stony Agafay desert just outside Marrakech — golden light, open horizons, and unforgettable sunsets.",
           "duration": "Half-day or full day",
@@ -743,6 +759,7 @@
         },
         {
           "id": "ourika-walking",
+          "kind": "walk",
           "title": "Ourika Valley — walking day",
           "desc": "A refreshing day in the foothills of the Atlas: small Berber villages, riverbanks and waterfalls with a gentle guided walk.",
           "options": ["Guided walking route", "4x4", "Village stops", "Waterfalls", "Lunch stop possible"],
@@ -751,6 +768,7 @@
         },
         {
           "id": "imlil-toubkal",
+          "kind": "walk",
           "title": "Imlil — at the foot of Mount Toubkal",
           "desc": "Drive up the Atlas to Imlil, gateway to Toubkal, with a short walk and tea in a Berber village.",
           "options": ["Short guided walk", "Village tea stop", "Local lunch optional"],
@@ -758,6 +776,7 @@
           "photo": "/images/imlil.jpg"
         },
         { "id": "lalla-takerkoust-kik",
+          "kind": "tour",
           "title": "Lalla Takerkoust Lake & Kik Plateau",
           "desc": "A scenic loop around the lake and the Kik plateau with sweeping views over the High Atlas.",
           "options": ["Lakeside stop", "Kik plateau viewpoints", "Village stop", "Lunch stop possible"],
@@ -765,6 +784,7 @@
           "photo": "/images/kik.jpg"
         },
         { "id": "marrakech-city",
+          "kind": "city",
           "title": "Marrakech city tour",
           "desc": "A curated discovery of the medina and key monuments with local tips and flexible pacing.",
           "options": ["Medina walk", "Souks", "Selected monuments", "Garden / photo stops"],
@@ -772,6 +792,7 @@
           "photo": "/images/marrakech.jpg"
         },
         { "id": "essaouira",
+          "kind": "coast",
           "title": "Essaouira day trip",
           "desc": "Atlantic breeze, ramparts and blue fishing port — a relaxed coastal day from Marrakech.",
           "options": ["Medina & ramparts", "Port & fish market", "Argan cooperative stop"],
@@ -779,6 +800,7 @@
           "photo": "/images/essaouira.jpg"
         },
         { "id": "cooking-class",
+          "kind": "class",
           "title": "Couscous & Tajine cooking class",
           "desc": "Hands-on class to learn the secrets of Moroccan tajines and couscous, followed by tasting on site.",
           "options": ["Market or spice intro", "Tajine preparation", "Couscous workshop", "Tasting"],
@@ -786,6 +808,7 @@
           "photo": "/images/cooking.jpg"
         },
         { "id": "horseback-riding",
+          "kind": "ride",
           "title": "Horseback riding",
           "desc": "Gentle ride on quiet tracks around Marrakech with an experienced guide.",
           "options": ["Intro & equipment", "Guided loop", "Photo stops"],
@@ -793,6 +816,7 @@
           "photo": "/images/horse.jpg"
         },
         { "id": "zagora-2d",
+          "kind": "desert",
           "title": "Zagora desert — 2 days",
           "desc": "Across the Draa valley to the dunes of Zagora with a night in a desert camp.",
           "options": ["Draa valley road", "Camel ride", "Camp dinner & music", "Sunrise"],
@@ -800,6 +824,7 @@
           "photo": "/images/zagora.jpg"
         },
         { "id": "merzouga-3d",
+          "kind": "desert",
           "title": "Merzouga desert — 3 days",
           "desc": "Longer desert journey to the high dunes of Erg Chebbi with a camel ride and starry night in camp.",
           "options": ["Road of a thousand kasbahs", "Camel ride", "Camp dinner & music", "Sunrise on dunes"],
@@ -807,55 +832,71 @@
           "photo": "/images/merzouga.jpg"
         },
         {
-  "id": "ouzoud",
-  "title": "Ouzoud Waterfalls",
-  "desc": "A refreshing escape to the Atlas foothills — discover Morocco’s tallest waterfalls, olive groves, and friendly Barbary macaques.",
-  "duration": "1 day",
-  "groups": [
-    { "label": "Options", "options": ["Walking tour", "Boat ride", "Lunch stop"] }
-  ],
-  "photo": "/images/ouzoud.jpg"
-},
-{
-  "id": "ouarzazate",
-  "title": "Ouarzazate & Ait Ben Haddou",
-  "desc": "Cross the High Atlas via the Tizi n’Tichka pass and explore Ouarzazate, the ‘Gateway to the Desert’, and the UNESCO-listed ksar of Ait Ben Haddou.",
-  "duration": "1 day",
-  "groups": [
-    { "label": "Options", "options": ["Guided tour", "Cinema studios visit", "Lunch stop"] }
-  ],
-  "photo": "/images/ouarzazate.jpg"
-},
-{
-  "id": "balloon",
-  "title": "Hot Air Balloon Flight",
-  "desc": "Soar gently above Marrakech and the Atlas mountains at sunrise for unforgettable panoramic views and a traditional breakfast.",
-  "duration": "Half-day (early morning)",
-  "groups": [
-    { "label": "Options", "options": ["Shared basket", "Private flight", "Breakfast included"] }
-  ],
-  "photo": "/images/balloon.jpg"
-},
-{
-  "id": "palmeraie",
-  "title": "Palmeraie Experience",
-  "desc": "Ride camels or quads among thousands of palm trees on the outskirts of Marrakech — an iconic oasis just minutes away from the medina.",
-  "duration": "1–2 hours",
-  "groups": [
-    { "label": "Options", "options": ["Camel ride", "Quad bike", "Sunset tour"] }
-  ],
-  "photo": "/images/palmeraie.jpg"
-},
-{
-  "id": "poterie",
-  "title": "Pottery Workshop",
-  "desc": "Hands-on introduction to Moroccan pottery. Learn traditional techniques with a local artisan and shape your own clay creations.",
-  "duration": "Half-day",
-  "groups": [
-    { "label": "Options", "options": ["Beginner workshop", "Advanced techniques", "With tea break"] }
-  ],
-  "photo": "/images/poterie.jpg"
-}
+          "id": "ouzoud",
+          "kind": "nature",
+          "title": "Ouzoud Waterfalls",
+          "desc": "A refreshing escape to the Atlas foothills — discover Morocco’s tallest waterfalls, olive groves, and friendly Barbary macaques.",
+          "duration": "1 day",
+          "groups": [
+            { "label": "Options", "options": ["Walking tour", "Boat ride", "Lunch stop"] }
+          ],
+          "photo": "/images/ouzoud.jpg"
+        },
+        {
+          "id": "ouarzazate",
+          "kind": "tour",
+          "title": "Ouarzazate & Ait Ben Haddou",
+          "desc": "Cross the High Atlas via the Tizi n’Tichka pass and explore Ouarzazate, the ‘Gateway to the Desert’, and the UNESCO-listed ksar of Ait Ben Haddou.",
+          "duration": "1 day",
+          "groups": [
+            { "label": "Options", "options": ["Guided tour", "Cinema studios visit", "Lunch stop"] }
+          ],
+          "photo": "/images/ouarzazate.jpg"
+        },
+        {
+          "id": "balloon",
+          "kind": "flight",
+          "title": "Hot Air Balloon Flight",
+          "desc": "Soar gently above Marrakech and the Atlas mountains at sunrise for unforgettable panoramic views and a traditional breakfast.",
+          "duration": "Half-day (early morning)",
+          "groups": [
+            { "label": "Options", "options": ["Shared basket", "Private flight", "Breakfast included"] }
+          ],
+          "photo": "/images/balloon.jpg"
+        },
+        {
+          "id": "palmeraie",
+          "kind": "ride",
+          "title": "Palmeraie Experience",
+          "desc": "Ride camels or quads among thousands of palm trees on the outskirts of Marrakech — an iconic oasis just minutes away from the medina.",
+          "duration": "1–2 hours",
+          "groups": [
+            { "label": "Options", "options": ["Camel ride", "Quad bike", "Sunset tour"] }
+          ],
+          "photo": "/images/palmeraie.jpg"
+        },
+        {
+          "id": "poterie",
+          "kind": "class",
+          "title": "Pottery Workshop",
+          "desc": "Hands-on introduction to Moroccan pottery. Learn traditional techniques with a local artisan and shape your own clay creations.",
+          "duration": "Half-day",
+          "groups": [
+            { "label": "Options", "options": ["Beginner workshop", "Advanced techniques", "With tea break"] }
+          ],
+          "photo": "/images/poterie.jpg"
+        },
+        {
+          "id": "spa-hammam",
+          "kind": "spa",
+          "title": "SPA Hammam Experience",
+          "desc": "Relax and rejuvenate with a traditional Moroccan hammam. Enjoy steam, black soap scrub, and soothing argan oil massage for complete well-being.",
+          "duration": "1–2 hours",
+          "groups": [
+            { "label": "Options", "options": ["Traditional hammam", "Black soap & kessa scrub", "Argan oil massage", "Herbal tea after treatment"] }
+          ],
+          "photo": "/images/hammam.jpg"
+        }
 
       ]
     }

@@ -96,6 +96,95 @@ function BlobImage({ src, label, shapeIndex = 0 }) {
     </figure>
   );
 }
+/** tiny terracotta icons for activity "kind" */
+function KindIcon({ kind, className = "" }) {
+  const common = `w-4 h-4 ${className}`;
+  switch (kind) {
+    case "walk": // footsteps
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M7.5 13.5c-.9 0-1.7.5-2 1.3l-.5 1.2a1.7 1.7 0 0 0 3.1 1.2l.7-1.1a1.9 1.9 0 0 0-.3-2.6Zm6.9-7.7c-.8.2-1.4.9-1.5 1.7l-.2 1.3a1.9 1.9 0 0 0 3.7.7l.4-1.2a2 2 0 0 0-2.4-2.5Z" />
+          <path d="M6.8 16.7c1.6.5 3 .6 4.5.4m.9-10.1c1.5.4 2.9.5 4.3.2" />
+        </svg>
+      );
+    case "ride": // camel/horse/quad = generic saddle
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M4 15c3-2 6-2 8 0m0 0c2-2 5-2 8 0M6 11l2-3 4 2 4-2 2 3" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      );
+    case "class": // book
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M4 6.5A3 3 0 0 1 7 4h13v14H7a3 3 0 0 0-3 3V6.5Z" strokeLinejoin="round"/>
+          <path d="M7 4v14" />
+        </svg>
+      );
+    case "tour": // route pin
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M17.5 6.5a3.5 3.5 0 1 0-7 0c0 3 3.5 6.5 3.5 6.5S17.5 9.5 17.5 6.5Z" />
+          <circle cx="14" cy="6.5" r="1.2" fill="currentColor"/>
+          <path d="M4 20c2-2 4-3 6-3h1" strokeLinecap="round"/>
+        </svg>
+      );
+    case "flight": // balloon
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M12 3c3.3 0 6 2.6 6 5.8S14 15 12 15s-6-3.6-6-6.2S8.7 3 12 3Z" />
+          <path d="M10 15l.8 3h2.4l.8-3M10 18h4" />
+        </svg>
+      );
+    case "spa": // lotus
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M12 12c0-3 2-6 5-7-1 3-1 6 1 8-3 0-5-1-6-1Z"/>
+          <path d="M12 12c0-3-2-6-5-7 1 3 1 6-1 8 3 0 5-1 6-1Z"/>
+          <path d="M12 12c-2 0-4 1-6 3 2 1 4 2 6 2s4-1 6-2c-2-2-4-3-6-3Z"/>
+        </svg>
+      );
+    case "desert":
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M3 17c3-2 6-2 9 0s6 2 9 0" strokeLinecap="round" />
+          <path d="M12 8l2 4h-4l2-4Z" />
+        </svg>
+      );
+    case "city":
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M4 20V7l5-3 5 3v13M9 9h2M9 12h2M9 15h2" />
+          <path d="M19 20V10h-3v10" />
+        </svg>
+      );
+    case "coast":
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M3 18c1 .6 2 .9 3 .9s2-.3 3-.9 2-.9 3-.9 2 .3 3 .9 2 .9 3 .9 2-.3 3-.9" strokeLinecap="round"/>
+          <path d="M8 10c2-3 5-4 8-2" />
+        </svg>
+      );
+    default:
+      return (
+        <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="1.8">
+          <circle cx="12" cy="12" r="9" />
+        </svg>
+      );
+  }
+}
+
+/** tiny badge (top-right) */
+function KindBadge({ kind, label }) {
+  return (
+    <span
+      className="absolute top-2 right-2 inline-flex items-center gap-1 rounded-full border border-[#C2634B]/30
+                 bg-ec/90 px-2 py-1 text-[11px] font-medium text-[#C2634B] shadow-sm"
+    >
+      <KindIcon kind={kind} />
+      <span>{label}</span>
+    </span>
+  );
+}
 
 /* ----------------------- big row (featured) ----------------------- */
 
@@ -162,7 +251,8 @@ function FeaturedRow({ i, x }) {
 
 /* ----------------------- small item ----------------------- */
 
-function SmallItem({ x, i = 0 }) {
+function SmallItem({ x, i = 0, t }) {
+  const kindLabel = x.kind ? t(`activities_page.excursions.kinds.${x.kind}`, x.kind) : null;
   const [open, setOpen] = useState(false);
 
   // alternate tones for variety
@@ -176,31 +266,37 @@ function SmallItem({ x, i = 0 }) {
     >
       {/* zellige wash */}
       <ZelligeBg className="text-ink" />
+      <KindBadge kind={x.kind} label={kindLabel} />
 
       {/* drifting blobs */}
       <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-fcd/20 blur-2xl transition-transform duration-500 group-hover:translate-x-1" />
       <div className="pointer-events-none absolute -left-10 -bottom-12 h-28 w-28 rounded-full bg-olive/20 blur-2xl transition-transform duration-500 group-hover:-translate-y-1" />
 
       {/* corner ribbon */}
-      <span className="absolute right-0 top-0 rounded-bl-[14px] rounded-tr-[22px] bg-fcd px-3 py-1 text-[10px] font-semibold tracking-wide text-white">
+      {/* this used to be the old amount of time like 1 day */}
+      {/* <span className="absolute right-0 top-0 rounded-bl-[14px] rounded-tr-[22px] bg-fcd px-3 py-1 text-[10px] font-semibold tracking-wide text-white">
         {x.duration || ""}
-      </span>
+      </span> */}
+      <div className="flex flex-col justify-between items-start min-h-36">
+        <div>
+          <h4 className="font-display text-[1.1rem] text-ink pr-24">{x.title}</h4>
+          <Flourish />
 
-      <h4 className="font-display text-[1.1rem] text-ink pr-16">{x.title}</h4>
-      <Flourish />
+          <p className="mt-2 text-sm text-ink/75 line-clamp-4">{x.desc}</p>
 
-      <p className="mt-2 text-sm text-ink/75 line-clamp-4">{x.desc}</p>
+        </div>
+        <button
+          className="mt-3 text-sm font-medium text-fcd hover:text-brand-terracottaDark underline underline-offset-4"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+        >
+          {x.cta}
+        </button>
+      </div>
 
-      <button
-        className="mt-3 text-sm font-medium text-fcd hover:text-brand-terracottaDark underline underline-offset-4"
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-      >
-        {x.cta}
-      </button>
 
       {open && (
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap gap-2 z-30">
           {(x.options || []).map((o) => (
             <span key={o} className="inline-flex items-center rounded-full bg-ink/5 px-3 py-1 text-xs text-ink ring-1 ring-ink/10">
               {o}
@@ -228,16 +324,90 @@ function SmallItem({ x, i = 0 }) {
 
 /* ----------------------- main component ----------------------- */
 
+// export default function Excursions() {
+//   const { t } = useTranslation();
+
+//   // Safely normalize i18n payload to an array.
+//   const raw = t("activities_page.excursions.items", { returnObjects: true });
+//   const items = Array.isArray(raw)
+//     ? raw
+//     : raw && typeof raw === "object"
+//       ? Object.entries(raw).map(([id, v]) => ({ id, ...(v || {}) }))
+//       : [];
+
+//   const copy = {
+//     title: t("activities_page.excursions.title"),
+//     intro: t("activities_page.excursions.intro"),
+//     transportNote: t("activities_page.excursions.transport_global_note"),
+//     durationLabel: t("activities_page.excursions.duration_label"),
+//     cta: t("activities_page.excursions.cta"),
+//   };
+
+//   const withCommon = (x) => ({
+//     ...x,
+//     id: x.id || x.key || x.slug, // last-resort fallback
+//     durationLabel: copy.durationLabel,
+//     cta: x.cta || copy.cta,
+//     transportNote: copy.transportNote,
+//   });
+
+  
+
+//   // choose 3 featured ids (order matters)
+//   const FEATURED = ["agafay", "ourika-walking", "imlil-toubkal"];
+
+//   const byId = Object.fromEntries(items.map((it) => [it.id, it]));
+
+//   const featured = FEATURED
+//     .map((id) => byId[id])
+//     .filter(Boolean)
+//     .map(withCommon);
+
+//   const rest = items
+//     .filter((d) => !FEATURED.includes(d.id))
+//     .map(withCommon);
+
+//   return (
+//     <section className="relative bg-ec">
+//       <div className="container-grid section">
+//         <header className="mb-6 md:mb-8">
+//           <h2 className="display-title text-ink">{copy.title}</h2>
+//           <p className="mt-2 text-ink/70">{copy.intro}</p>
+//           {copy.transportNote && <p className="mt-1 text-sm text-olive">{copy.transportNote}</p>}
+//         </header>
+
+//         {/* Featured 3 */}
+//         <div className="space-y-14 md:space-y-16">
+//           {featured.map((x, i) => (
+//             <FeaturedRow key={x.id || i} i={i} x={x} />
+//           ))}
+//         </div>
+
+//         {/* Others */}
+//         {rest.length > 0 && (
+//           <div className="mt-12 md:mt-16">
+//             <div className="mb-4 h-1 w-24 rounded-full bg-olive/30" aria-hidden />
+//             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+//               {rest.map((x, idx) => (
+//                 <SmallItem key={x.id || idx} x={x} i={idx} />
+//               ))}
+//             </div>
+//           </div>
+//         )}
+//       </div>
+//     </section>
+//   );
+// }
 export default function Excursions() {
   const { t } = useTranslation();
 
-  // Safely normalize i18n payload to an array.
+  // Normalize i18n payload to an array.
   const raw = t("activities_page.excursions.items", { returnObjects: true });
   const items = Array.isArray(raw)
     ? raw
     : raw && typeof raw === "object"
-      ? Object.entries(raw).map(([id, v]) => ({ id, ...(v || {}) }))
-      : [];
+    ? Object.entries(raw).map(([id, v]) => ({ id, ...(v || {}) }))
+    : [];
 
   const copy = {
     title: t("activities_page.excursions.title"),
@@ -249,7 +419,7 @@ export default function Excursions() {
 
   const withCommon = (x) => ({
     ...x,
-    id: x.id || x.key || x.slug, // last-resort fallback
+    id: x.id || x.key || x.slug,
     durationLabel: copy.durationLabel,
     cta: x.cta || copy.cta,
     transportNote: copy.transportNote,
@@ -260,14 +430,9 @@ export default function Excursions() {
 
   const byId = Object.fromEntries(items.map((it) => [it.id, it]));
 
-  const featured = FEATURED
-    .map((id) => byId[id])
-    .filter(Boolean)
-    .map(withCommon);
+  const featured = FEATURED.map((id) => byId[id]).filter(Boolean).map(withCommon);
 
-  const rest = items
-    .filter((d) => !FEATURED.includes(d.id))
-    .map(withCommon);
+  const rest = items.filter((d) => !FEATURED.includes(d.id)).map(withCommon);
 
   return (
     <section className="relative bg-ec">
@@ -281,7 +446,7 @@ export default function Excursions() {
         {/* Featured 3 */}
         <div className="space-y-14 md:space-y-16">
           {featured.map((x, i) => (
-            <FeaturedRow key={x.id || i} i={i} x={x} />
+            <FeaturedRow key={x.id || i} i={i} x={x} t={t} />
           ))}
         </div>
 
@@ -291,7 +456,7 @@ export default function Excursions() {
             <div className="mb-4 h-1 w-24 rounded-full bg-olive/30" aria-hidden />
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {rest.map((x, idx) => (
-                <SmallItem key={x.id || idx} x={x} i={idx} />
+                <SmallItem key={x.id || idx} x={x} i={idx} t={t} />
               ))}
             </div>
           </div>

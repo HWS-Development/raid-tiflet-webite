@@ -5,7 +5,7 @@ export default function DiningSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative bg-ivory py-16">
+    <section className="relative bg-ivory pt-16 pb-8">
       <div className="container-grid gap-12 md:gap-20">
         {/* The Table of Dar Tiflet */}
         <div className="grid md:grid-cols-2 items-center gap-8 md:gap-12">

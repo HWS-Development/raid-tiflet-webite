@@ -3,6 +3,7 @@ import ServicesList from "../components/services/ServicesList";
 import DiningSection from "../components/services/DiningSection";
 import CurveBand from "../components/ui/CurveBand";
 import DiningGallery from "../components/services/DiningGallery";
+import MenuSection from "../components/services/MenuSection";
 
 export default function ServicesPage() {
 
@@ -17,9 +18,9 @@ export default function ServicesPage() {
         </div>
         </section>
 
+        <MenuSection />
       {/* SERVICES (the 4 chips) — on dark band with icons, then curve back to ivory */}
         <CurveBand position="bottom" from="#F5EFE4" to="#D6C4A8" height={160} />
-      
       <section className="relative bg-chb">
         <div className="container-grid pb-6 md:pb-8">
           <ServicesList />

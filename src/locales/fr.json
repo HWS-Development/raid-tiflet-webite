@@ -228,7 +228,6 @@
         "beds": "Lit double + lits simples/canapés dans deux pièces",
         "bath": "Salle de bains privative",
         "size": "25 m²",
-        "border": "black",
         "ac": true,
         "windows": "Fenêtres donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
@@ -384,6 +383,12 @@
         ],
         "duration": "Journée complète"
       }
+    },
+    "menu": {
+      "title": "Voir notre menu de table",
+      "desc": "Ouvrez le menu actuel en PDF. Nous l’afficherons selon votre langue.",
+      "open_btn": "Ouvrir le menu (PDF)",
+      "alt_link": "Lien direct"
     }
   },
 
@@ -801,6 +806,18 @@
   },
   "activities_page": {
     "excursions": {
+      "kinds": {
+        "walk": "Balade",
+        "ride": "Balade",
+        "class": "Atelier",
+        "tour": "Excursion",
+        "flight": "Vol",
+        "spa": "SPA",
+        "desert": "Désert",
+        "city": "Ville",
+        "coast": "Côte",
+        "nature": "Nature"
+      },
       "title": "Excursions & Activités",
       "intro": "Ouvrez une expérience pour voir les options et la durée. Aucun prix n’est affiché.",
       "transport_global_note": "Les transports sont inclus dans toutes les excursions.",
@@ -809,6 +826,7 @@
       "items": [
         {
           "id": "agafay",
+          "kind": "desert",
           "title": "Expériences désert d’Agafay",
           "desc": "À quelques kilomètres de Marrakech, découvrez le désert pierreux d’Agafay — lumière dorée, grands horizons et couchers de soleil mémorables.",
           "duration": "Demi-journée ou journée",
@@ -821,6 +839,7 @@
         },
         {
           "id": "ourika-walking",
+          "kind": "walk",
           "title": "Vallée de l’Ourika — journée à pied",
           "desc": "Une journée rafraîchissante au pied de l’Atlas : villages berbères, bords de rivière et cascades avec une marche accompagnée.",
           "options": ["Parcours à pied guidé", "4x4", "Haltes villages", "Cascades", "Déjeuner possible"],
@@ -829,6 +848,7 @@
         },
         {
           "id": "imlil-toubkal",
+          "kind": "walk",
           "title": "Imlil — au pied du Toubkal",
           "desc": "Montée dans l’Atlas jusqu’à Imlil, porte du Toubkal, avec petite marche et thé chez l’habitant.",
           "options": ["Courte marche accompagnée", "Thé chez l’habitant", "Déjeuner local en option"],
@@ -836,6 +856,7 @@
           "photo": "/images/imlil.jpg"
         },
         { "id": "lalla-takerkoust-kik",
+          "kind": "tour",
           "title": "Lac Lalla Takerkoust & Plateau du Kik",
           "desc": "Boucle panoramique autour du lac et du plateau du Kik avec vues ouvertes sur le Haut-Atlas.",
           "options": ["Pause au bord du lac", "Points de vue sur le plateau", "Arrêt village", "Déjeuner possible"],
@@ -843,6 +864,7 @@
           "photo": "/images/kik.jpg"
         },
         { "id": "marrakech-city",
+          "kind": "city",
           "title": "Visite de Marrakech",
           "desc": "Découverte guidée de la médina et des monuments essentiels avec conseils locaux et rythme souple.",
           "options": ["Balade médina", "Souks", "Monuments choisis", "Jardins / pauses photos"],
@@ -850,6 +872,7 @@
           "photo": "/images/marrakech.jpg"
         },
         { "id": "essaouira",
+          "kind": "coast",
           "title": "Essaouira — excursion journée",
           "desc": "Brise atlantique, remparts et port bleu : une journée détente sur la côte depuis Marrakech.",
           "options": ["Médina & remparts", "Port & marché aux poissons", "Coopérative d’argan"],
@@ -857,6 +880,7 @@
           "photo": "/images/essaouira.jpg"
         },
         { "id": "cooking-class",
+          "kind": "class",
           "title": "Atelier cuisine — Couscous & Tajine",
           "desc": "Atelier pratique pour apprendre les secrets des tajines et du couscous, suivi d’une dégustation.",
           "options": ["Intro marché/épices", "Préparation du tajine", "Atelier couscous", "Dégustation"],
@@ -864,6 +888,7 @@
           "photo": "/images/cooking.jpg"
         },
         { "id": "horseback-riding",
+          "kind": "ride",
           "title": "Balade à cheval",
           "desc": "Promenade tranquille sur des pistes aux alentours de Marrakech avec un accompagnateur expérimenté.",
           "options": ["Briefing & équipement", "Boucle accompagnée", "Pauses photos"],
@@ -871,6 +896,7 @@
           "photo": "/images/horse.jpg"
         },
         { "id": "zagora-2d",
+        "kind": "desert",
           "title": "Désert de Zagora — 2 jours",
           "desc": "Par la vallée du Drâa jusqu’aux dunes de Zagora avec nuit en campement.",
           "options": ["Route de la vallée du Drâa", "Balade à dos de chameau", "Dîner & musique au camp", "Lever de soleil"],
@@ -878,6 +904,7 @@
           "photo": "/images/zagora.jpg"
         },
         { "id": "merzouga-3d",
+        "kind": "desert",
           "title": "Désert de Merzouga — 3 jours",
           "desc": "Plus long périple vers les hautes dunes de l’Erg Chebbi, balade à dos de chameau et nuit sous les étoiles.",
           "options": ["Route des mille kasbahs", "Balade à dos de chameau", "Dîner & musique au camp", "Lever de soleil sur les dunes"],
@@ -885,55 +912,71 @@
           "photo": "/images/merzouga.jpg"
         },
         {
-  "id": "ouzoud",
-  "title": "Chutes d’Ouzoud",
-  "desc": "Évasion rafraîchissante au pied de l’Atlas — découvrez les plus hautes cascades du Maroc, ses oliveraies et les macaques berbères.",
-  "duration": "1 journée",
-  "groups": [
-    { "label": "Options", "options": ["Balade pédestre", "Promenade en barque", "Pause déjeuner"] }
-  ],
-  "photo": "/images/ouzoud.jpg"
-},
-{
-  "id": "ouarzazate",
-  "title": "Ouarzazate & Aït Ben Haddou",
-  "desc": "Traversez le Haut Atlas par le col du Tizi n’Tichka et explorez Ouarzazate, la « Porte du Désert », et le ksar classé UNESCO d’Aït Ben Haddou.",
-  "duration": "1 journée",
-  "groups": [
-    { "label": "Options", "options": ["Visite guidée", "Studios de cinéma", "Pause déjeuner"] }
-  ],
-  "photo": "/images/ouarzazate.jpg"
-},
-{
-  "id": "balloon",
-  "title": "Vol en Montgolfière",
-  "desc": "Envolez-vous doucement au-dessus de Marrakech et de l’Atlas au lever du soleil pour des panoramas inoubliables suivis d’un petit-déjeuner traditionnel.",
-  "duration": "Demi-journée (tôt le matin)",
-  "groups": [
-    { "label": "Options", "options": ["Panier partagé", "Vol privé", "Petit-déjeuner inclus"] }
-  ],
-  "photo": "/images/balloon.jpg"
-},
-{
-  "id": "palmeraie",
-  "title": "Expérience Palmeraie",
-  "desc": "Balade à dos de chameau ou en quad au milieu de milliers de palmiers, une oasis emblématique aux portes de Marrakech.",
-  "duration": "1–2 heures", 
-  "groups": [
-    { "label": "Options", "options": ["Balade à dos de chameau", "Quad", "Coucher de soleil"] }
-  ],
-  "photo": "/images/palmeraie.jpg"
-},
-{
-  "id": "poterie",
-  "title": "Atelier Poterie",
-  "desc": "Initiation pratique à la poterie marocaine. Apprenez les techniques traditionnelles avec un artisan local et façonnez vos propres créations.",
-  "duration": "Demi-journée",
-  "groups": [
-    { "label": "Options", "options": ["Atelier découverte", "Techniques avancées", "Avec pause thé"] }
-  ],
-  "photo": "/images/poterie.jpg"
-}
+          "id": "ouzoud",
+          "kind": "nature",
+          "title": "Chutes d’Ouzoud",
+          "desc": "Évasion rafraîchissante au pied de l’Atlas — découvrez les plus hautes cascades du Maroc, ses oliveraies et les macaques berbères.",
+          "duration": "1 journée",
+          "groups": [
+            { "label": "Options", "options": ["Balade pédestre", "Promenade en barque", "Pause déjeuner"] }
+          ],
+          "photo": "/images/ouzoud.jpg"
+        },
+        {
+          "id": "ouarzazate",
+          "kind": "tour",
+          "title": "Ouarzazate & Aït Ben Haddou",
+          "desc": "Traversez le Haut Atlas par le col du Tizi n’Tichka et explorez Ouarzazate, la « Porte du Désert », et le ksar classé UNESCO d’Aït Ben Haddou.",
+          "duration": "1 journée",
+          "groups": [
+            { "label": "Options", "options": ["Visite guidée", "Studios de cinéma", "Pause déjeuner"] }
+          ],
+          "photo": "/images/ouarzazate.jpg"
+        },
+        {
+          "id": "balloon",
+          "kind": "flight",
+          "title": "Vol en Montgolfière",
+          "desc": "Envolez-vous doucement au-dessus de Marrakech et de l’Atlas au lever du soleil pour des panoramas inoubliables suivis d’un petit-déjeuner traditionnel.",
+          "duration": "Demi-journée (tôt le matin)",
+          "groups": [
+            { "label": "Options", "options": ["Panier partagé", "Vol privé", "Petit-déjeuner inclus"] }
+          ],
+          "photo": "/images/balloon.jpg"
+        },
+        {
+          "id": "palmeraie",
+          "kind": "ride",
+          "title": "Expérience Palmeraie",
+          "desc": "Balade à dos de chameau ou en quad au milieu de milliers de palmiers, une oasis emblématique aux portes de Marrakech.",
+          "duration": "1–2 heures", 
+          "groups": [
+            { "label": "Options", "options": ["Balade à dos de chameau", "Quad", "Coucher de soleil"] }
+          ],
+          "photo": "/images/palmeraie.jpg"
+        },
+        {
+          "id": "poterie",
+          "kind": "class",
+          "title": "Atelier Poterie",
+          "desc": "Initiation pratique à la poterie marocaine. Apprenez les techniques traditionnelles avec un artisan local et façonnez vos propres créations.",
+          "duration": "Demi-journée",
+          "groups": [
+            { "label": "Options", "options": ["Atelier découverte", "Techniques avancées", "Avec pause thé"] }
+          ],
+          "photo": "/images/poterie.jpg"
+        },
+        {
+          "id": "spa-hammam",
+          "kind": "spa",
+          "title": "Expérience SPA Hammam",
+          "desc": "Détendez-vous et ressourcez-vous avec un hammam marocain traditionnel. Vapeur, gommage au savon noir et massage à l’huile d’argan pour un bien-être complet.",
+          "duration": "1–2 heures",
+          "groups": [
+            { "label": "Options", "options": ["Hammam traditionnel", "Gommage au savon noir & kessa", "Massage à l’huile d’argan", "Thé aux herbes après le soin"] }
+          ],
+          "photo": "/images/hammam.jpg"
+        }
 
       ]
     }
