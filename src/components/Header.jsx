@@ -36,14 +36,14 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
-      <div className="container-grid">
+    <header className="fixed inset-x-0 top-0 z-50"> 
+      <div className={`container-grid ${onHome && "!mr-10 md:!mx-auto"}`}>
         {/* Cream pill shell only when solid */}
         <div
-          className={`mt-3 flex h-16 py-10 items-center justify-between transition-all
+          className={`mt-3 flex h-16 py-10 items-center justify-between transition-all w-full
             ${solid
-              ? "rounded-full border border-olive/20 bg-ec/70 px-3 backdrop-blur shadow-soft supports-[backdrop-filter]:bg-ec/60"
-              : "px-0"}`
+              ? "rounded-full border border-olive/20 bg-ec/70 pr-10 pl-3 md:!px-3 backdrop-blur shadow-soft supports-[backdrop-filter]:bg-ec/60"
+              : "pr-8 md:!px-0"}`
           }
         >
           {/* Logo */}

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 export default function Hero(){
   const { t } = useTranslation();
   return (
-    <section className="relative  md:h-[100vh] h-[72vh]  overflow-hidden">
+    <section className="relative  md:h-[100vh] h-[96vh]  overflow-hidden">
       <img
         src="/images/rooftop3.jpg"
         alt={t("hero.alt", "Rooftop Dar Tiflet")}
