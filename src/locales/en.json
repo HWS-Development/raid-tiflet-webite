@@ -219,6 +219,7 @@
         "beds": "Double bed + single beds/sofas across two rooms",
         "bath": "Private bathroom",
         "size": "25 m²",
+        "border": true,
         "ac": true,
         "windows": "Windows facing the inner garden",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],

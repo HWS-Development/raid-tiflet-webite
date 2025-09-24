@@ -229,6 +229,7 @@
         "bath": "Salle de bains privative",
         "size": "25 m²",
         "ac": true,
+        "border": true,
         "windows": "Fenêtres donnant sur le jardin intérieur",
         "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#D6C4A8",
