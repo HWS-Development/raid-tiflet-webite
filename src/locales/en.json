@@ -13,14 +13,13 @@
   },
 
   "hero": {
-    "subtitle": "A warm, authentic Berber guesthouse in Marrakech’s Medina",
+    "subtitle": "Where living tradition meets contemporary elegance",
     "cta": "Availability & Prices"
   },
 
   "about": {
-    "title": "Ambience & History",
-    "lead": "Dar Tiflet is a true traditional Berber home, a century-old riad that has preserved the authenticity of its architecture and the soul of its past. Handmade zelliges, carved plaster, painted floors and walls—every detail reflects ancestral craftsmanship.",
-    "body": "Locally crafted furniture and rugs continue this living heritage. “Dar” means house in Arabic; “Tiflet” means door in Tamazight (Berber). Today the riad’s atmosphere is intimate and convivial: the patio invites rest, the Berber salon fosters exchange, and the sunny terrace overlooks the rooftops of the medina.",
+    "title": "🕯️Ambience & History",
+    "lead": "Once the home of a Berber spice merchant, Dar Tiflet has witnessed generations pass by — along with their fragrances and family stories. Today, this century-old house has been completely restored, in keeping with its original spirit. Traditional architecture — vaults, zelliges, a central patio — now blends harmoniously with cleaner lines, soft colors, and decidedly modern comfort. Here, every detail tells a story: a floor pattern, a hand-painted wall, a lantern lighting a quiet alcove. The atmosphere is calm, bright, and welcoming, reflecting Berber hospitality — sincere, generous, and discreet. At Dar Tiflet, you don’t just come to sleep: you come to experience a home, to feel a place, and to be carried away by the charm of a more intimate Marrakech.",
     "hospitality": "At Dar Tiflet, you are welcomed like friends."
   },
 
@@ -61,8 +60,8 @@
         "image": "/images/rooms/Red Room1.jpg"
       },
       {
-        "id": "safi",
-        "name": "Suite Safi",
+        "id": "hiba",
+        "name": "Suite Hiba",
         "image": "/images/rooms/Safi Suite1.jpg"
       }
     ],
@@ -71,13 +70,14 @@
         "id": "red",
         "name": "Red Room",
         "type": "Superior Triple",
-        "description": "Large upstairs room with warm tones, comfortably sleeping up to three guests.",
+        "description": "Spacious and bright, this upstairs room can accommodate up to 3 people. Its warm red tones create an intimate and friendly atmosphere, ideal for a family stay or a getaway with friends in the heart of the medina.",
         "capacity": 3,
         "floor": "etage",
         "beds": "Double bed + single bed or sofa bed",
         "bath": "Private bathroom",
-        "size": "25 m²",
+        "size": "20 m²",
         "ac": true,
+        "storage": false,
         "windows": "Window facing the inner house",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
         "color": "#B7322C",
@@ -85,7 +85,7 @@
           "Superior triple room on the first floor",
           "Double bed + single bed or sofa bed",
           "Private bathroom",
-          "25 m² with storage space",
+          "20 m² with storage space",
           "Air conditioning",
           "Window facing the interior of the house"
         ],
@@ -99,12 +99,12 @@
         "id": "bigarree",
         "name": "Bigarrée Room",
         "type": "Classic Triple",
-        "description": "Spacious and colorful, perfect for 2–3 guests, on the ground floor with a private bathroom.",
+        "description": "Spacious and colorful, this ground-floor room comfortably accommodates up to three guests. Its vibrant decor brings a warm and lively ambiance to the heart of the riad.",
         "capacity": 3,
         "floor": "rdc",
         "beds": "Double bed + single bed or sofa bed",
         "bath": "Private bathroom",
-        "size": "22 m²",
+        "size": "20 m²",
         "ac": true,
         "windows": "Window facing the inner house",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
@@ -113,7 +113,7 @@
           "Classic triple room on the ground floor",
           "Double bed + single bed or sofa bed",
           "Private bathroom",
-          "22 m² with storage space",
+          "20 m²",
           "Air conditioning",
           "Thick rammed-earth walls for natural coolness",
           "Window facing the interior of the house"
@@ -156,12 +156,12 @@
         "id": "green",
         "name": "Green Room",
         "type": "Classic Double",
-        "description": "A quiet ground-floor room, ideal for couples, with adobe walls that keep a naturally cool temperature.",
+        "description": "A natural haven where deep green tones blend harmoniously with modern comfort, offering a tranquil retreat within the riad. Located on the ground floor, it accommodates up to two guests for a peaceful and comfortable stay.",
         "capacity": 2,
         "floor": "rdc",
         "beds": "Double bed",
         "bath": "Private bathroom",
-        "size": "12 m²",
+        "size": "15 m²",
         "ac": true,
         "windows": "Window facing the inner house",
         "amenities": ["Wi-Fi", "Linens & towels", "Storage", "Air conditioning"],
@@ -170,7 +170,7 @@
           "Classic double room on the ground floor",
           "Double bed",
           "Private bathroom",
-          "12 m² with storage space",
+          "15 m²",
           "Air conditioning",
           "Thick rammed-earth walls for natural coolness",
           "Window facing the interior of the house"
@@ -185,12 +185,12 @@
         "id": "yellow",
         "name": "Yellow Room",
         "type": "Superior Twin",
-        "description": "Upstairs and bright, with two windows overlooking the courtyard. Can be set up as twin or as a double.",
+        "description": "A bright room with radiant yellow accents, creating a cheerful and uplifting atmosphere—perfect for starting the day with a smile. Located upstairs, it overlooks the courtyard of the Derb and accommodates two guests, with either twin beds or a double bed according to your preference.",
         "capacity": 2,
         "floor": "etage",
         "beds": "Two twin beds or double",
         "bath": "Private bathroom",
-        "size": "14 m²",
+        "size": "18 m²",
         "ac": true,
         "windows": "Two windows facing the courtyard",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
@@ -199,7 +199,7 @@
           "Superior twin room on the first floor",
           "Two twin beds or one double bed",
           "Private bathroom",
-          "14 m² with storage space",
+          "18 m² with storage space",
           "Air conditioning",
           "Two windows overlooking the outer courtyard"
         ],
@@ -210,15 +210,15 @@
         ]
       },
       {
-        "id": "safi",
-        "name": "Safi Suite",
+        "id": "hiba",
+        "name": "Suite Hiba",
         "type": "Classic Quadruple",
         "description": "Two adjoining rooms on the ground floor — ideal for families or friends, up to 4 guests.",
-        "capacity": 4,
+        "capacity": 3,
         "floor": "rdc",
-        "beds": "Double bed + single beds/sofas across two rooms",
+        "beds": "Double bed + single bed or sofa bed",
         "bath": "Private bathroom",
-        "size": "25 m²",
+        "size": "28 m²",
         "border": true,
         "ac": true,
         "windows": "Windows facing the inner garden",
@@ -227,9 +227,9 @@
         "features": [
           "Classic quadruple room on the ground floor",
           "Two adjoining rooms",
-          "Double bed + single beds or sofa beds",
+          "Double bed + single bed or sofa bed",
           "Private bathroom",
-          "25 m² with storage space",
+          "28 m²",
           "Air conditioning",
           "Thick rammed-earth walls for natural coolness",
           "Windows overlooking the inner garden"
@@ -244,12 +244,12 @@
         "id": "baraka",
         "name": "Baraka Room",
         "type": "Twin",
-        "description": "Upstairs with two twin beds — simple and practical for friends or siblings.",
+        "description": "Located upstairs, this bright room features two windows overlooking the riad’s inner courtyard. Perfect for two guests, it can be arranged with twin beds or converted into a double bed according to your needs.",
         "capacity": 2,
         "floor": "etage",
         "beds": "Two twin beds",
         "bath": "Private bathroom",
-        "size": "12 m²",
+        "size": "13 m²",
         "ac": true,
         "windows": "Window facing the inner garden",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
@@ -258,7 +258,7 @@
           "Twin room on the first floor",
           "Two twin beds",
           "Private bathroom",
-          "12 m² with storage space",
+          "13 m² with storage space",
           "Air conditioning",
           "Window overlooking the inner garden"
         ],
@@ -272,12 +272,12 @@
         "id": "blue",
         "name": "Blue Room",
         "type": "Superior Double",
-        "description": "Upstairs, peaceful atmosphere — perfect for a stay for two.",
+        "description": "A serene haven adorned with soothing shades of blue, inviting relaxation and tranquility while remaining close to the vibrant spirit of Marrakech. Located upstairs, it accommodates up to two guests for a peaceful and comfortable stay.",
         "capacity": 2,
         "floor": "etage",
         "beds": "Double bed",
         "bath": "Private bathroom",
-        "size": "14 m²",
+        "size": "15 m²",
         "ac": true,
         "windows": "Window facing the inner house",
         "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
@@ -286,7 +286,7 @@
           "Superior double room on the first floor",
           "Double bed",
           "Private bathroom",
-          "14 m² with storage space",
+          "15 m² with storage space",
           "Air conditioning",
           "Window facing the interior of the house"
         ],
@@ -304,10 +304,10 @@
   "services": {
     "title": "Services & Experiences",
     "items": [
-      { "id": "shuttle", "name": "Airport / Train shuttle" },
-      { "id": "breakfast", "name": "Breakfast (included when booking direct)" },
-      { "id": "tips", "name": "City tips & excursion info" },
-      { "id": "luggage", "name": "Luggage racks & 1–2 bikes" }
+      { "id": "shuttle", "name": "Experience Dar Tiflet" },
+      { "id": "breakfast", "name": "Homemade Flavors" },
+      { "id": "tips", "name": "Tips & Experiences" },
+      { "id": "luggage", "name": "Welcome & Accessibility" }
     ],
     "activities": {
       "title": "Activities",
@@ -410,7 +410,7 @@
   },
   "footer": {
     "brand": "Dar Tiflet",
-    "tagline": "A traditional Berber house in the heart of the medina.",
+    "tagline": "Where living tradition meets contemporary elegance.",
     "links_title": "Explore",
     "links": [
       { "label": "Home", "to": "/" },
@@ -568,7 +568,7 @@
 
   "gallery_page": {
     "title": "Gallery",
-    "subtitle": "A glimpse of the house, the rooftop and Marrakech life.",
+    "subtitle": "A glimpse in images of life at Dar Tiflet: its lights, its colors, its sun-drenched terrace… with the soul of Marrakech as the backdrop.",
     "filters": {
       "all": "All",
       "categories": [
@@ -616,25 +616,46 @@
     "subtitle": "A traditional Berber house with a living soul.",
     "intro": "Dar Tiflet is a century-old riad rooted in the medina. We preserve its authentic architecture and a warm, simple way of hosting.",
     "story": {
-      "title": "✨ Ambience & History",
+      "title": "🕯️Ambience & History",
       "paragraphs": [
-        "Riad Dar Tiflet is a truly traditional Berber home, nestled in the vibrant heart of Marrakech’s medina. Once the family house of a Berber grocer, this century-old riad has preserved the authenticity of its architecture and the soul of its past.",
-        "Handmade zellij tiles, carved plaster, hand-decorated floors and walls… every detail bears witness to ancestral craftsmanship. Locally made furniture and rugs carry on this living heritage, faithful to the simple, warm aesthetics of Berber culture."
+        "Once the home of a Berber spice merchant, Dar Tiflet has witnessed generations pass by — along with their fragrances and family stories. Today, this century-old house has been completely restored, in keeping with its original spirit. Traditional architecture — vaults, zelliges, a central patio — now blends harmoniously with cleaner lines, soft colors, and decidedly modern comfort. Here, every detail tells a story: a floor pattern, a hand-painted wall, a lantern lighting a quiet alcove. The atmosphere is calm, bright, and welcoming, reflecting Berber hospitality — sincere, generous, and discreet.",
+        " At Dar Tiflet, you don’t just come to sleep: you come to experience a home, to feel a place, and to be carried away by the charm of a more intimate Marrakech."
       ],
       "heritage_title": "The name Dar Tiflet",
       "heritage": [
-        "The name Dar Tiflet is a nod to this dual identity:",
-        "“Dar” means house in Arabic,",
-        "“Tiflet” means door in Tamazight (Berber).",
-        "A direct tribute to its roots, and the idea of a place that is open, intimate, and deeply grounded."
+        "The name Dar Tiflet is a nod to the place’s dual identity:",
+        "“Dar,” meaning house in Arabic,",
+        "and “Tiflet,” meaning door in Tamazight (Berber).",
+        "A tribute to its roots, but also to the spirit of the riad:",
+        "a place both open and intimate, welcoming and deeply rooted in tradition."
       ]
     },
-    "highlights": [
-      { "id": "today-intro", "icon": "spark", "title": "Today", "body": "A bridge between past and present — every corner whispers a story. This is a lived-in space, not just a decorated one." },
-      { "id": "patio", "icon": "patio", "title": "Central patio", "body": "Invites rest." },
-      { "id": "salon", "icon": "salon", "title": "Berber lounge", "body": "Moments of exchange." },
-      { "id": "terrace", "icon": "rooftop", "title": "Sunny terrace", "body": "Overlooks medina rooftops — a space to share and unwind." }
-    ],
+  "highlights": [
+    {
+      "id": "today-intro",
+      "icon": "spark",
+      "title": "Today",
+      "body": "Like a bridge between past and present, every corner of the riad whispers a story. Here, you don’t just pass through a setting — you live within a vibrant, genuine, and timeless space."
+    },
+    {
+      "id": "patio",
+      "icon": "patio",
+      "title": "The Central Patio",
+      "body": "A soothing heart bathed in light, where time slows down. Perfect for a pause, a cup of tea, or simply a moment of silence."
+    },
+    {
+      "id": "salon",
+      "icon": "salon",
+      "title": "The Berber Lounge",
+      "body": "A space for exchange, reading, and conversation — where the spirit of sharing and hospitality truly comes to life."
+    },
+    {
+      "id": "terrasse",
+      "icon": "rooftop",
+      "title": "Rooftop Terrace",
+      "body": "Breathtaking views over the rooftops of the medina and the Koutoubia. A suspended haven made for rest, shared meals, and golden sunsets."
+    }
+  ],
     "invite": {
       "paragraphs": [
         "At Dar Tiflet, you are welcomed like friends. Berber hospitality shows in a mint tea, a sincere smile, and care for the smallest details.",
@@ -644,14 +665,35 @@
     "team": {
       "title": "The Team",
       "members": [
-        { "id": "yassine", "photo": "/images/person1.jpg", "name": "Yassine", "bio": "Resident host and heart of Dar Tiflet. A guardian of Berber tradition who goes the extra mile for guests. Loves countryside souks — and reading your reviews." },
-        { "id": "mohamed", "photo": "/images/person2.jpg", "name": "Mohamed", "bio": "Discreet and attentive, with a special care for families. Always welcoming with a genuine, broad smile." },
-        { "id": "ibrahim", "photo": "/images/person5.jpg", "name": "Ibrahim", "bio": "From the Southern Atlas beyond the Dadès Valley. Loves sharing Tamazight culture and can write your name in Arabic and in Tifinagh — always with a huge smile." }
-      ]
+    {
+      "id": "yassine",
+      "photo": "/images/person1.jpg",
+      "name": "Yassine",
+      "bio": "Resident host and the true heartbeat of Dar Tiflet. A guardian of Berber traditions, always attentive to every guest. Passionate about rural souks… and a faithful reader of your reviews!"
+    },
+    {
+      "id": "mohamed",
+      "photo": "/images/person2.jpg",
+      "name": "Mohamed",
+      "bio": "Discreet, attentive, and incredibly gentle. Always present with a sincere smile, he offers a special welcome to families and younger travelers."
+    },
+    {
+      "id": "ibrahim",
+      "photo": "/images/person5.jpg",
+      "name": "Ibrahim",
+      "bio": "Originally from the High Atlas Mountains, beyond the Dades Valley. Passionate about Amazigh culture, he loves to share stories and can even write your name in Arabic — always with a beaming smile."
+    },
+    {
+      "id": "najat",
+      "photo": "/images/person5.jpg",
+      "name": "Najat",
+      "bio": "The newest member of the team, she lovingly looks after the house — from cleaning to cooking and small daily delights. She prepares homemade meals with care and even offers a short cooking class for those eager to learn the secrets of a perfect tajine."
+    }
+  ]
     },
     "map": {
       "title": "Where we are",
-      "body": "Ben Saleh quarter, a few minutes from the souks and the main sights. We’re happy to guide your arrival.",
+      "body": "Dar Tiflet is nestled in the Ben Saleh district, just a few minutes’ walk from the souks, the Ben Youssef Madrasa, and the main sights of the medina. We’ll be delighted to guide you upon arrival — whether you come on foot or by car.",
       "cta": "Open in Google Maps"
     }
   },
@@ -699,6 +741,7 @@
     "map_title": "Dar Tiflet on the map",
     "form": {
       "title": "Send us a message",
+      "subtitle": "We reply within 24h",
       "name": "Name",
       "email": "Email",
       "phone": "Phone (optional)",
@@ -740,8 +783,8 @@
         "nature": "Nature"
       },
       "title": "Excursions & Activities",
-      "intro": "Open an experience to see the options and duration. No prices are shown.",
-      "transport_global_note": "Transport is included in all excursions.",
+      "intro": "Set off to explore! Click on an experience to view its details and duration.",
+      "transport_global_note": "All transfers are included — all that’s left is for you to enjoy.",
       "duration_label": "Duration",
       "cta": "View options",
       "items": [
@@ -794,7 +837,7 @@
         },
         { "id": "essaouira",
           "kind": "coast",
-          "title": "Essaouira day trip",
+          "title": "Essaouira",
           "desc": "Atlantic breeze, ramparts and blue fishing port — a relaxed coastal day from Marrakech.",
           "options": ["Medina & ramparts", "Port & fish market", "Argan cooperative stop"],
           "duration": "1 day",

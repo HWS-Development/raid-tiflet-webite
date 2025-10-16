@@ -5,7 +5,7 @@ export default function Intro(){
   return (
     <div className="grid md:grid-cols-2 gap-10 pt-10 items-center">
       <div>
-        <h2 className="display-title">{t("about.title")}</h2>
+        <h2 className="display-title mb-6">{t("about.title")}</h2>
         <p className="mt-3 text-[16px] leading-7">{t("about.lead")}</p>
         <p className="mt-2 text-[16px] leading-7">{t("about.hospitality")}</p>
       </div>

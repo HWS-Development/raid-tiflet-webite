@@ -44,7 +44,7 @@ ${data.phone ? `\n${t("contact_page.form.phone")}: ${data.phone}` : ""}`
       <div className="rounded-2xl border border-olive/10 bg-ec p-5 md:p-7 shadow-soft ring-1 ring-black/5">
         <header className="mb-4">
           <h2 className="font-display text-2xl text-ink">{t("contact_page.form.title")}</h2>
-          <p className="mt-1 text-sm text-ink/60">{t("contact_page.form.helper", "We reply within 24h.")}</p>
+          <p className="mt-1 text-sm text-ink/60">{t("contact_page.form.subtitle", "We reply within 24h.")}</p>
         </header>
 
         <form className="grid grid-cols-1 gap-4 sm:grid-cols-2" onSubmit={(e) => e.preventDefault()}>
