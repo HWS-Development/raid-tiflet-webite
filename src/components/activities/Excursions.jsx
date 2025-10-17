@@ -321,83 +321,6 @@ function SmallItem({ x, i = 0, t }) {
   );
 }
 
-
-/* ----------------------- main component ----------------------- */
-
-// export default function Excursions() {
-//   const { t } = useTranslation();
-
-//   // Safely normalize i18n payload to an array.
-//   const raw = t("activities_page.excursions.items", { returnObjects: true });
-//   const items = Array.isArray(raw)
-//     ? raw
-//     : raw && typeof raw === "object"
-//       ? Object.entries(raw).map(([id, v]) => ({ id, ...(v || {}) }))
-//       : [];
-
-//   const copy = {
-//     title: t("activities_page.excursions.title"),
-//     intro: t("activities_page.excursions.intro"),
-//     transportNote: t("activities_page.excursions.transport_global_note"),
-//     durationLabel: t("activities_page.excursions.duration_label"),
-//     cta: t("activities_page.excursions.cta"),
-//   };
-
-//   const withCommon = (x) => ({
-//     ...x,
-//     id: x.id || x.key || x.slug, // last-resort fallback
-//     durationLabel: copy.durationLabel,
-//     cta: x.cta || copy.cta,
-//     transportNote: copy.transportNote,
-//   });
-
-  
-
-//   // choose 3 featured ids (order matters)
-//   const FEATURED = ["agafay", "ourika-walking", "imlil-toubkal"];
-
-//   const byId = Object.fromEntries(items.map((it) => [it.id, it]));
-
-//   const featured = FEATURED
-//     .map((id) => byId[id])
-//     .filter(Boolean)
-//     .map(withCommon);
-
-//   const rest = items
-//     .filter((d) => !FEATURED.includes(d.id))
-//     .map(withCommon);
-
-//   return (
-//     <section className="relative bg-ec">
-//       <div className="container-grid section">
-//         <header className="mb-6 md:mb-8">
-//           <h2 className="display-title text-ink">{copy.title}</h2>
-//           <p className="mt-2 text-ink/70">{copy.intro}</p>
-//           {copy.transportNote && <p className="mt-1 text-sm text-olive">{copy.transportNote}</p>}
-//         </header>
-
-//         {/* Featured 3 */}
-//         <div className="space-y-14 md:space-y-16">
-//           {featured.map((x, i) => (
-//             <FeaturedRow key={x.id || i} i={i} x={x} />
-//           ))}
-//         </div>
-
-//         {/* Others */}
-//         {rest.length > 0 && (
-//           <div className="mt-12 md:mt-16">
-//             <div className="mb-4 h-1 w-24 rounded-full bg-olive/30" aria-hidden />
-//             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-//               {rest.map((x, idx) => (
-//                 <SmallItem key={x.id || idx} x={x} i={idx} />
-//               ))}
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     </section>
-//   );
-// }
 export default function Excursions() {
   const { t } = useTranslation();
 
@@ -440,7 +363,7 @@ export default function Excursions() {
         <header className="mb-6 md:mb-8">
           <h2 className="display-title text-ink">{copy.title}</h2>
           <p className="mt-2 text-ink/70">{copy.intro}</p>
-          {copy.transportNote && <p className="mt-1 text-sm text-olive">{copy.transportNote}</p>}
+          {copy.transportNote && <p className="mt-1 text-sm text-fcd">{copy.transportNote}</p>}
         </header>
 
         {/* Featured 3 */}

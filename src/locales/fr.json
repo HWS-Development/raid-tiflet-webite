@@ -28,9 +28,9 @@
   },
 
   "about": {
-    "title": "🕯️Ambiance & Histoire",
+    "title": "Ambiance & Histoire",
     "lead": "Autrefois demeure d’un marchand d’épices berbère, Dar Tiflet a vu passer les générations, les parfums, les récits de famille. Aujourd’hui, cette maison centenaire a été entièrement rénovée, dans le respect de son âme d’origine. L’architecture traditionnelle – voûtes, zelliges, patio central – dialogue désormais avec des lignes plus épurées, des couleurs douces et un confort résolument contemporain. Ici, chaque détail raconte une histoire : un motif au sol, un mur peint à la main, une lanterne qui éclaire une alcôve tranquille. \n L’ambiance y est calme, lumineuse, accueillante, à l’image de l’hospitalité berbère : sincère, généreuse, discrète. \n À Dar Tiflet, on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime.",
-    "hospitality": "Chez Dar Tiflet, on est reçu comme des amis."
+    "hospitality": "À Dar Tiflet, on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime. "
   },
 
   "rooms": {
@@ -138,7 +138,7 @@
         "id": "zina",
         "name": "Chambre Zina",
         "type": "Double Supérieure",
-        "description": "Charmante chambre à l’étage avec vue sur le jardin intérieur, intimiste et confortable.",
+        "description": "Charmante chambre à l’étage, la plus petite du riad, mais très agréable et intime. Elle offre une vue apaisante sur le jardin intérieur et dispose d’un lit double, pouvant accueillir jusqu’à 2 personnes pour un séjour confortable et cosy.",
         "capacity": 2,
         "floor": "etage",
         "beds": "Lit double",
@@ -146,7 +146,7 @@
         "size": "11 m²",
         "ac": true,
         "windows": "Fenêtre donnant sur le jardin intérieur",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#9C8874",
         "features": [
           "Chambre double supérieure au 1er étage",
@@ -203,7 +203,7 @@
         "size": "18 m²",
         "ac": true,
         "windows": "Deux fenêtres donnant sur la cour",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#FFD83D",
         "features": [
           "Chambre twin supérieure au 1er étage",
@@ -223,7 +223,7 @@
         "id": "hiba",
         "name": "Suite Hiba",
         "type": "Quadruple Classique",
-        "description": "Deux pièces contiguës au rez-de-chaussée, idéales pour famille ou amis, jusqu’à 4 personnes.",
+        "description": "Une suite élégante et spacieuse au rez-de-chaussée, composée de deux pièces communicantes. Parfaite pour les familles ou les amis, elle peut accueillir jusqu’à 3 personnes dans un cadre raffiné, alliant confort moderne et charme authentique du riad.",
         "capacity": 3,
         "floor": "rdc",
         "beds": "Lit double +  lit simple ou canapé convertible",
@@ -262,7 +262,7 @@
         "size": "13 m²",
         "ac": true,
         "windows": "Fenêtre donnant sur le jardin intérieur",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#9C8874",
         "features": [
           "Chambre twin au 1er étage",
@@ -290,7 +290,7 @@
         "size": "15 m²",
         "ac": true,
         "windows": "Fenêtre donnant sur l’intérieur de la maison",
-        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes"],
+        "amenities": ["Wi-Fi", "Climatisation", "Linge & serviettes", "Espace de rangement"],
         "color": "#1E5A8A",
         "features": [
           "Chambre double supérieure au 1er étage",
@@ -678,12 +678,13 @@
         "Autrefois demeure d’un marchand d’épices berbère, Dar Tiflet a vu passer les générations, les parfums, les récits de famille. Aujourd’hui, cette maison centenaire a été entièrement rénovée, dans le respect de son âme d’origine. L’architecture traditionnelle – voûtes, zelliges, patio central – dialogue désormais avec des lignes plus épurées, des couleurs douces et un confort résolument contemporain. Ici, chaque détail raconte une histoire : un motif au sol, un mur peint à la main, une lanterne qui éclaire une alcôve tranquille. \n L’ambiance y est calme, lumineuse, accueillante, à l’image de l’hospitalité berbère : sincère, généreuse, discrète.",
         "À Dar Tiflet, on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime."
       ],
-      "heritage_title": "Le nom Dar Tiflet",
+      "heritage_title": "Le nom Dar Tiflet est un clin d’œil à la double identité du lieu:",
       "heritage": [
-        "Le nom Dar Tiflet est un clin d’œil à la double identité du lieu:",
         "« Dar », qui signifie maison en arabe,",
-        "et « Tiflet », qui veut dire porte en tamazight (berbère).",
-        "Un hommage à ses racines, mais aussi à l’esprit du riad :",
+        "et « Tiflet », qui veut dire porte en tamazight (berbère)."
+      ],
+      "heritage2": [
+        "Un hommage à ses racines, mais aussi à l’esprit du riad:",
         "un lieu à la fois ouvert et intime, accueillant et profondément ancré dans la tradition."
       ]
     },

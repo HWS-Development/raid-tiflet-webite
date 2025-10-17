@@ -69,7 +69,7 @@ export default function WhatsAppFab({
             type="button"
             onClick={dismiss}
             aria-label="Close"
-            className="absolute right-2.5 top-2.5 inline-flex h-8 w-8 items-center justify-center rounded-full text-ink/70
+            className="absolute right-2.5 top-1 inline-flex h-8 w-8 items-center justify-center rounded-full text-ink/70
                        hover:bg-black/5 focus:outline-none focus:ring-2 focus:ring-rose-400"
           >
             <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor">
@@ -90,7 +90,7 @@ export default function WhatsAppFab({
           <h3 className="text-[15px] sm:text-[16px] font-semibold text-ink mb-2">
             {panel.title}
           </h3>
-          <ul className="space-y-1.5 text-[14px] text-ink/80">
+          {/* <ul className="space-y-1.5 text-[14px] text-ink/80">
             {panel.lines.map((line, i) => (
               <li key={i}>
                 {line === "—" ? (
@@ -103,17 +103,17 @@ export default function WhatsAppFab({
                 )}
               </li>
             ))}
-          </ul>
+          </ul> */}
 
           {/* CTA */}
-          {panel.ctaHref && (
+          {/* {panel.ctaHref && (
             <a
               href={panel.ctaHref}
               className="mt-3 inline-block text-emerald-700 hover:underline break-all"
             >
               {panel.ctaLabel}
             </a>
-          )}
+          )} */}
         </div>
       )}
 

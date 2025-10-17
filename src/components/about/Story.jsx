@@ -25,8 +25,8 @@ export default function Story() {
     t("about_page.story.paragraphs", { returnObjects: true }) || [];
 
   const heritageTitle = t("about_page.story.heritage_title");
-  const heritage =
-    t("about_page.story.heritage", { returnObjects: true }) || [];
+  const heritage = t("about_page.story.heritage", { returnObjects: true }) || [];
+  const heritage2 = t("about_page.story.heritage2", { returnObjects: true }) || [];
 
   return (
     <div className="relative">
@@ -55,6 +55,11 @@ export default function Story() {
           <ul className="mt-3 space-y-2 text-[15px] text-ink/80">
             {heritage.map((line, i) => (
               <li key={i}>• {line}</li>
+            ))}
+          </ul>
+          <ul className="mt-3 space-y-2 text-[15px] text-ink/80">
+            {heritage2.map((line, i) => (
+              <li key={i}>{line}</li>
             ))}
           </ul>
         </aside>

@@ -117,7 +117,7 @@ export default function ServicesTeaser({ variant = "light" }) {
                   className={`pointer-events-none absolute left-0 top-0 h-[2px] w-0 transition-[width] duration-500 ease-out group-hover:w-full ${theme.sweep}`}
                 />
 
-                <div className="flex items-start gap-4">
+                <div className="gap-4 flex items-center h-16">
                   {/* icon bubble */}
                   <span
                     className={`mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full shadow-inner ring-1 ${theme.chipWrap}`}
@@ -127,7 +127,7 @@ export default function ServicesTeaser({ variant = "light" }) {
 
                   {/* text */}
                   <div className="leading-snug">
-                    <div className="font-semibold">{s.name}</div>
+                    <div className="font-semibold flex items-center h-16">{s.name}</div>
                     {s.tag ? (
                       <div className={`mt-1 text-xs ${theme.tag}`}>{s.tag}</div>
                     ) : null}

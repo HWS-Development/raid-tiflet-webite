@@ -18,9 +18,9 @@
   },
 
   "about": {
-    "title": "🕯️Ambience & History",
+    "title": "Ambience & History",
     "lead": "Once the home of a Berber spice merchant, Dar Tiflet has witnessed generations pass by — along with their fragrances and family stories. Today, this century-old house has been completely restored, in keeping with its original spirit. Traditional architecture — vaults, zelliges, a central patio — now blends harmoniously with cleaner lines, soft colors, and decidedly modern comfort. Here, every detail tells a story: a floor pattern, a hand-painted wall, a lantern lighting a quiet alcove. The atmosphere is calm, bright, and welcoming, reflecting Berber hospitality — sincere, generous, and discreet. At Dar Tiflet, you don’t just come to sleep: you come to experience a home, to feel a place, and to be carried away by the charm of a more intimate Marrakech.",
-    "hospitality": "At Dar Tiflet, you are welcomed like friends."
+    "hospitality": "At Dar Tiflet, you don’t just come to sleep — you come to experience a home, to feel a place, and to be carried away by the charm of a more intimate Marrakech."
   },
 
   "rooms": {
@@ -128,7 +128,7 @@
         "id": "zina",
         "name": "Zina Room",
         "type": "Superior Double",
-        "description": "Charming upstairs room overlooking the inner garden — intimate and comfortable.",
+        "description": "Charming upstairs room — the smallest in the riad, yet very pleasant and intimate. It offers a soothing view of the inner garden and features a double bed, accommodating up to two guests for a comfortable and cozy stay.",
         "capacity": 2,
         "floor": "etage",
         "beds": "Double bed",
@@ -136,7 +136,7 @@
         "size": "11 m²",
         "ac": true,
         "windows": "Window facing the inner garden",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
         "color": "#9C8874",
         "features": [
           "Superior double room on the first floor",
@@ -193,7 +193,7 @@
         "size": "18 m²",
         "ac": true,
         "windows": "Two windows facing the courtyard",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
         "color": "#FFD83D",
         "features": [
           "Superior twin room on the first floor",
@@ -213,7 +213,7 @@
         "id": "hiba",
         "name": "Suite Hiba",
         "type": "Classic Quadruple",
-        "description": "Two adjoining rooms on the ground floor — ideal for families or friends, up to 4 guests.",
+        "description": "An elegant and spacious suite on the ground floor, consisting of two adjoining rooms. Perfect for families or friends, it can accommodate up to three guests in a refined setting that combines modern comfort with the authentic charm of the riad.",
         "capacity": 3,
         "floor": "rdc",
         "beds": "Double bed + single bed or sofa bed",
@@ -252,7 +252,7 @@
         "size": "13 m²",
         "ac": true,
         "windows": "Window facing the inner garden",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
         "color": "#9C8874",
         "features": [
           "Twin room on the first floor",
@@ -280,7 +280,7 @@
         "size": "15 m²",
         "ac": true,
         "windows": "Window facing the inner house",
-        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels"],
+        "amenities": ["Wi-Fi", "Air conditioning", "Linens & towels", "Storage space"],
         "color": "#1E5A8A",
         "features": [
           "Superior double room on the first floor",
@@ -621,11 +621,12 @@
         "Once the home of a Berber spice merchant, Dar Tiflet has witnessed generations pass by — along with their fragrances and family stories. Today, this century-old house has been completely restored, in keeping with its original spirit. Traditional architecture — vaults, zelliges, a central patio — now blends harmoniously with cleaner lines, soft colors, and decidedly modern comfort. Here, every detail tells a story: a floor pattern, a hand-painted wall, a lantern lighting a quiet alcove. The atmosphere is calm, bright, and welcoming, reflecting Berber hospitality — sincere, generous, and discreet.",
         " At Dar Tiflet, you don’t just come to sleep: you come to experience a home, to feel a place, and to be carried away by the charm of a more intimate Marrakech."
       ],
-      "heritage_title": "The name Dar Tiflet",
+      "heritage_title": "The name Dar Tiflet is a nod to the place’s dual identity:",
       "heritage": [
-        "The name Dar Tiflet is a nod to the place’s dual identity:",
         "“Dar,” meaning house in Arabic,",
-        "and “Tiflet,” meaning door in Tamazight (Berber).",
+        "and “Tiflet,” meaning door in Tamazight (Berber)."
+      ],
+      "heritage2": [
         "A tribute to its roots, but also to the spirit of the riad:",
         "a place both open and intimate, welcoming and deeply rooted in tradition."
       ]
