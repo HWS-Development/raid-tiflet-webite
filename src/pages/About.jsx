@@ -42,8 +42,8 @@ export default function About() {
         className="relative text-white bg-chb"
       >
         <div className="container-grid section ">
-          <h2 className="display-title text-white mb-6">
-            {t("about_page.story.heritage_title", "Héritage de la maison")}
+          <h2 className="display-title text-white mb-10">
+            {t("about_page.story.heritage_services_title", "Héritage de la maison")}
           </h2>
           <Highlights />
         </div>

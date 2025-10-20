@@ -30,7 +30,7 @@
   "about": {
     "title": "Ambiance & Histoire",
     "lead": "Autrefois demeure d’un marchand d’épices berbère, Dar Tiflet a vu passer les générations, les parfums, les récits de famille. Aujourd’hui, cette maison centenaire a été entièrement rénovée, dans le respect de son âme d’origine. L’architecture traditionnelle – voûtes, zelliges, patio central – dialogue désormais avec des lignes plus épurées, des couleurs douces et un confort résolument contemporain. Ici, chaque détail raconte une histoire : un motif au sol, un mur peint à la main, une lanterne qui éclaire une alcôve tranquille. \n L’ambiance y est calme, lumineuse, accueillante, à l’image de l’hospitalité berbère : sincère, généreuse, discrète. \n À Dar Tiflet, on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime.",
-    "hospitality": "À Dar Tiflet, on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime. "
+    "hospitality": "on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime. "
   },
 
   "rooms": {
@@ -45,6 +45,7 @@
     "ac": "Climatisation",
     "windows": "Fenêtres",
     "capacity": "Capacité",
+    "details": "Détails ",
     "guests": "personnes",
     "amenities": "Équipements",
     "floor": "Étage",
@@ -673,12 +674,13 @@
     "intro": "Dar Tiflet est un riad centenaire ancré dans la médina. Nous préservons son architecture authentique et une hospitalité simple et chaleureuse.",
 
     "story": {
-      "title": "🕯️ Ambiance & Histoire",
+      "title": "Ambiance & Histoire",
       "paragraphs": [
         "Autrefois demeure d’un marchand d’épices berbère, Dar Tiflet a vu passer les générations, les parfums, les récits de famille. Aujourd’hui, cette maison centenaire a été entièrement rénovée, dans le respect de son âme d’origine. L’architecture traditionnelle – voûtes, zelliges, patio central – dialogue désormais avec des lignes plus épurées, des couleurs douces et un confort résolument contemporain. Ici, chaque détail raconte une histoire : un motif au sol, un mur peint à la main, une lanterne qui éclaire une alcôve tranquille. \n L’ambiance y est calme, lumineuse, accueillante, à l’image de l’hospitalité berbère : sincère, généreuse, discrète.",
         "À Dar Tiflet, on ne vient pas seulement dormir : on vient vivre une maison, ressentir un lieu, et se laisser porter par le charme d’un Marrakech plus intime."
       ],
       "heritage_title": "Le nom Dar Tiflet est un clin d’œil à la double identité du lieu:",
+      "heritage_services_title": "Dar Tiflet : Un lieu, une histoire ",
       "heritage": [
         "« Dar », qui signifie maison en arabe,",
         "et « Tiflet », qui veut dire porte en tamazight (berbère)."
