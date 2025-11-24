@@ -32,7 +32,7 @@ export default function DiningSection() {
           {/* organic image */}
           <div className="relative">
             <img
-              src="/images/rooftop.jpg"
+              src="/images/Roofoptableservice.png"
               alt="Dar Tiflet Table"
               className="w-full h-80 object-cover rounded-[50%_30%_40%_60%/50%_60%_40%_50%]"
             />
@@ -44,7 +44,7 @@ export default function DiningSection() {
           {/* organic image */}
           <div className="relative">
             <img
-              src="/images/riad-8.jpg"
+              src="/images/Rooftopbarservices.png"
               alt="Tiflet Counter"
               className="w-full h-80 object-cover rounded-[40%_60%_60%_40%/60%_40%_50%_50%]"
             />

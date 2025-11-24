@@ -10,7 +10,7 @@ export default function Intro(){
         <p className="mt-2 text-[16px] leading-7">{t("about.hospitality")}</p>
       </div>
       <img
-        src="/images/rooftop2.jpg"
+        src="/images/Screenshot 2025-11-24 125250.png"
         alt={t("about.title")}
         className="rounded-[24px] shadow-2xl w-full object-cover aspect-[4/3]"
       />

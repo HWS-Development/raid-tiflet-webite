@@ -28,7 +28,7 @@ export default function RoomsHero({
         {/* Photo */}
         <picture>
           <img
-            src={'/images/room_hero.png'}
+            src={'/images/Roomshero1.png'}
             alt={'hero image'}
             className="absolute inset-0 h-full w-full object-cover"
             loading="eager"

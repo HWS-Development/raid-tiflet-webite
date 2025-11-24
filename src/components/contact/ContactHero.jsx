@@ -5,7 +5,7 @@ export default function ContactHero() {
   return (
     <section className="relative h-[44vh] min-h-[340px] flex items-center justify-center overflow-hidden">
       <img
-        src="/images/riad-1.jpg"
+        src="/images/Screenshot 2025-11-24 162151.png"
         alt={t("contact_page.title")}
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"

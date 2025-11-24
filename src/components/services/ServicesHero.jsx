@@ -6,7 +6,7 @@ export default function ServicesHero() {
   return (
     <section className="relative h-[44vh] min-h-[340px] flex items-center justify-center overflow-hidden">
       <img
-        src="/images/riad-9.jpg"
+        src="/images/Riad-10.png"
         alt="Services hero"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"

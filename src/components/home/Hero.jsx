@@ -7,7 +7,7 @@ export default function Hero(){
   return (
     <section className="relative  md:h-[100vh] h-[96vh]  overflow-hidden">
       <img
-        src="/images/rooftop3.jpg"
+        src="/images/Screenshot 2025-11-24 125235.png"
         alt={t("hero.alt", "Rooftop Dar Tiflet")}
         className="absolute inset-0 w-full h-full object-cover"
       />

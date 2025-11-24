@@ -11,7 +11,7 @@ export default function GalleryHero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('/images/gallery_hero.png')",
+            "url('/images/Screenshot 2025-11-24 160859.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "saturate(0.95)",

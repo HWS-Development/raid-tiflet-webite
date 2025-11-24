@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const FALLBACK =
-  "/images/riad-8.jpg"; // swap with a good rooftop/patio photo in your repo
+  "/images/Screenshot 2025-11-24 161347.png"; // swap with a good rooftop/patio photo in your repo
 
 export default function AboutHero({ src = FALLBACK }) {
   const { t } = useTranslation();

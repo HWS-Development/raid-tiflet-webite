@@ -53,17 +53,17 @@
       {
         "id": "green",
         "name": "Chambre Verte",
-        "image": "/images/rooms/Green Room1.jpg"
+        "image": "/images/rooms/Green princ.png"
       },
       {
         "id": "red",
         "name": "Chambre Rouge",
-        "image": "/images/rooms/Red Room1.jpg"
+        "image": "/images/rooms/Red Principal.png"
       },
       {
         "id": "hiba",
         "name": "Suite Hiba",
-        "image": "/images/rooms/Safi Suite1.jpg"
+        "image": "/images/rooms/Safi prin.png"
       }
     ],
     "items": [
@@ -91,9 +91,9 @@
           "Window facing the interior of the house"
         ],
         "images": [
-          "/images/rooms/Red Room1.jpg",
-          "/images/rooms/Red Room2.jpg",
-          "/images/rooms/Red Room3.jpg"
+          "/images/rooms/Red Principal.png",
+          "/images/rooms/Red 1.png",
+          "/images/rooms/Red 2.png"
         ]
       },
       {
@@ -120,9 +120,9 @@
           "Window facing the interior of the house"
         ],
         "images": [
-          "/images/rooms/Bigarree room1.jpg",
-          "/images/rooms/Bigarree room2.jpg",
-          "/images/rooms/Bigarree room3.jpg"
+           "/images/rooms/Bigarree Principal.png",
+          "/images/rooms/Biggarree 1.png",
+          "/images/rooms/Biggarree2.png"
         ]
       },
       {
@@ -148,9 +148,9 @@
           "Window overlooking the inner garden"
         ],
         "images": [
-          "/images/rooms/Zina Room1.jpg",
-          "/images/rooms/Zina Room2.jpg",
-          "/images/rooms/Zina Room3.jpg"
+          "/images/rooms/Zina Principal.png",
+          "/images/rooms/Zina.png",
+          "/images/rooms/Zina1.png"
         ]
       },
       {
@@ -177,9 +177,9 @@
           "Window facing the interior of the house"
         ],
         "images": [
-          "/images/rooms/Green Room1.jpg",
-          "/images/rooms/Green Room2.jpg",
-          "/images/rooms/Green Room3.jpg"
+          "/images/rooms/Green princ.png",
+          "/images/rooms/Green1.png",
+          "/images/rooms/Green2.png"
         ]
       },
       {
@@ -205,9 +205,9 @@
           "Two windows overlooking the outer courtyard"
         ],
         "images": [
-          "/images/rooms/Yellow Room1.jpg",
-          "/images/rooms/Yellow Room2.jpg",
-          "/images/rooms/Yellow Room3.jpg"
+           "/images/rooms/Yellow princ.png",
+          "/images/rooms/Yellow 1.png",
+          "/images/rooms/Yellow 2.png"
         ]
       },
       {
@@ -236,9 +236,9 @@
           "Windows overlooking the inner garden"
         ],
         "images": [
-          "/images/rooms/Safi Suite1.jpg",
-          "/images/rooms/Safi Suite2.jpg",
-          "/images/rooms/Safi Suite3.jpg"
+          "/images/rooms/Safi prin.png",
+          "/images/rooms/Safi1.png",
+          "/images/rooms/Safi2.png"
         ]
       },
       {
@@ -264,9 +264,9 @@
           "Window overlooking the inner garden"
         ],
         "images": [
-          "/images/rooms/Baraka room1.jpg",
-          "/images/rooms/Baraka room2.jpg",
-          "/images/rooms/Baraka room3.jpg"
+          "/images/rooms/Baraka princ.png",
+          "/images/rooms/Baraka 1.png",
+          "/images/rooms/Baraka 2.png"
         ]
       },
       {
@@ -292,9 +292,9 @@
           "Window facing the interior of the house"
         ],
         "images": [
-          "/images/rooms/Blue Room1.jpg",
-          "/images/rooms/Blue Room2.jpg",
-          "/images/rooms/Blue Room3.jpg"
+          "/images/rooms/Bleu prin.png",
+          "/images/rooms/Bleu1.png",
+          "/images/rooms/Bleu 2.png"
         ]
       }
     ]
@@ -583,32 +583,31 @@
     "search_placeholder": "Search (e.g. terrace, tagine, blue room...)",
     "results": "{{count}} photos",
     "images": [
-      { "id": "g1", "src": "/images/rooms/Baraka room1.jpg", "alt": "Baraka room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g2", "src": "/images/rooms/Baraka room2.jpg", "alt": "Baraka room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g3", "src": "/images/rooms/Bigarree room1.jpg", "alt": "Bigarree room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g4", "src": "/images/rooms/Bigarree room2.jpg", "alt": "Bigarree room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g5", "src": "/images/rooms/Safi Suite1.jpg", "alt": "Safi room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g6", "src": "/images/rooms/Safi Suite2.jpg", "alt": "Safi room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g7", "src": "/images/rooftop.jpg", "alt": "Sunset on the terrace", "category": "terrace", "category_label": "Terrace" },
-      { "id": "g8", "src": "/images/rooftop2.jpg", "alt": "Sunset on the terrace", "category": "terrace", "category_label": "Terrace", "tags": ["sunset", "koutoubia"] },
-      { "id": "g9", "src": "/images/rooftop1.jpg", "alt": "Sunset on the terrace", "category": "terrace", "category_label": "Terrace", "tags": ["sunset", "koutoubia"] },
-      { "id": "g10", "src": "/images/riad-9.jpg", "alt": "Dining table on rooftop", "category": "dining", "category_label": "Dining", "tags": ["dinner", "table"] },
-      { "id": "g11", "src": "/images/interior.jpg", "alt": "Dining table on rooftop", "category": "dining", "category_label": "Dining", "tags": ["dinner", "table"] },
-      { "id": "g12", "src": "/images/riad-8.jpg", "alt": "Dining table on rooftop", "category": "dining", "category_label": "Dining", "tags": ["dinner", "table"] },
-      { "id": "g13", "src": "/images/details.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
-      { "id": "g14", "src": "/images/details1.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
-      { "id": "g15", "src": "/images/details2.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
-      { "id": "g16", "src": "/images/rooftop3.jpg", "alt": "Sunset on the terrace", "category": "terrace", "category_label": "Terrace", "tags": ["sunset", "koutoubia"] },
-      { "id": "g17", "src": "/images/details3.jpg", "alt": "Zellige detail", "category": "details", "category_label": "Details", "tags": ["zellige", "craft"] },
-      { "id": "g18", "src": "/images/rooms/Yellow Room1.jpg", "alt": "Yellow room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g19", "src": "/images/rooms/Yellow Room2.jpg", "alt": "Yellow room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g20", "src": "/images/rooms/Red Room1.jpg", "alt": "Red room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g21", "src": "/images/rooms/Red Room2.jpg", "alt": "Red room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g22", "src": "/images/dining.jpg", "alt": "Tea and pastries", "category": "dining", "category_label": "Dining", "tags": ["tea", "pastries"] },
-      { "id": "g23", "src": "/images/dining1.jpg", "alt": "Tea and pastries", "category": "dining", "category_label": "Dining", "tags": ["tea", "pastries"] },
-      { "id": "g24", "src": "/images/dining2.jpg", "alt": "Tea and pastries", "category": "dining", "category_label": "Dining", "tags": ["tea", "pastries"] },
-      { "id": "g25", "src": "/images/rooms/Blue Room1.jpg", "alt": "Blue room detail", "category": "rooms", "category_label": "Rooms"},
-      { "id": "g26", "src": "/images/rooms/Blue Room2.jpg", "alt": "Blue room detail", "category": "rooms", "category_label": "Rooms"}
+      { "id": "g1", "src": "/images/rooms/Baraka 1.png", "alt": "Détail de la chambre Baraka", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g2", "src": "/images/rooms/Baraka 2.png", "alt": "Détail de la chambre Baraka", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g3", "src": "/images/rooms/Bigarree Principal.png", "alt": "Détail de la chambre Bigarrée", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g4", "src": "/images/rooms/Biggarree 1.png", "alt": "Détail de la chambre Bigarrée", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g5", "src": "/images/rooms/Safi prin.png", "alt": "Détail de la suite Safi", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g6", "src": "/images/rooms/Safi1.png", "alt": "Détail de la suite Safi", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g7", "src": "/images/Riad-10.png", "alt": "Coucher de soleil sur la terrasse", "category": "terrace", "category_label": "Terrasse" },
+      { "id": "g8", "src": "/images/Roomshero1.png", "alt": "Coucher de soleil sur la terrasse", "category": "terrace", "category_label": "Terrasse", "tags": ["coucher de soleil", "koutoubia"] },
+      { "id": "g9", "src": "/images/rooms/Red Principal.png", "alt": "Coucher de soleil sur la terrasse", "category": "terrace", "category_label": "Terrasse", "tags": ["coucher de soleil", "koutoubia"] },
+      { "id": "g10", "src": "/images/rooms/Red 1.png", "alt": "Table à manger sur le rooftop", "category": "dining", "category_label": "Restauration", "tags": ["dîner", "table"] },
+      { "id": "g11", "src": "/images/rooms/Red 2.png", "alt": "Table à manger sur le rooftop", "category": "dining", "category_label": "Restauration", "tags": ["dîner", "table"] },
+      { "id": "g12", "src": "/images/Screenshot 2025-11-24 125235.png", "alt": "Table à manger sur le rooftop", "category": "dining", "category_label": "Restauration", "tags": ["dîner", "table"] },
+      { "id": "g13", "src": "/images/Screenshot 2025-11-24 125250.png", "alt": "Détail de zellige", "category": "details", "category_label": "Détails", "tags": ["zellige", "artisanat"] },
+      { "id": "g14", "src": "/images/Screenshot 2025-11-24 154845.png", "alt": "Détail de zellige", "category": "details", "category_label": "Détails", "tags": ["zellige", "artisanat"] },
+      { "id": "g15", "src": "/images/Screenshot 2025-11-24 154902.png", "alt": "Détail de zellige", "category": "details", "category_label": "Détails", "tags": ["zellige", "artisanat"] },
+      { "id": "g16", "src": "/images/Screenshot 2025-11-24 154916.png", "alt": "Coucher de soleil sur la terrasse", "category": "terrace", "category_label": "Terrasse", "tags": ["coucher de soleil", "koutoubia"] },
+      { "id": "g16", "src": "/images/Screenshot 2025-11-24 154930.png", "alt": "Coucher de soleil sur la terrasse", "category": "terrace", "category_label": "Terrasse", "tags": ["coucher de soleil", "koutoubia"] },
+      { "id": "g17", "src": "/images/Screenshot 2025-11-24 160045.png", "alt": "Détail de zellige", "category": "details", "category_label": "Détails", "tags": ["zellige", "artisanat"] },
+      { "id": "g18", "src": "/images/rooms/Yellow princ.png", "alt": "Détail de la chambre Jaune", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g19", "src": "/images/rooms/Yellow 1.png", "alt": "Détail de la chambre Jaune", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g22", "src": "/images/rooms/Yellow 2.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+      { "id": "g23", "src": "/images/dining1.jpg", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+      { "id": "g24", "src": "/images/dining2.jpg", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+      { "id": "g25", "src": "/images/rooms/Bleu prin.png", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g26", "src": "/images/rooms/Bleu1.png", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" }
     ]
   },
 
@@ -676,7 +675,7 @@
     },
     {
       "id": "mohamed",
-      "photo": "/images/person2.jpg",
+      "photo": "/images/Screenshot 2025-11-24 161428.png",
       "name": "Mohamed",
       "bio": "Discreet, attentive, and incredibly gentle. Always present with a sincere smile, he offers a special welcome to families and younger travelers."
     },
@@ -688,7 +687,7 @@
     },
     {
       "id": "najat",
-      "photo": "/images/person5.jpg",
+      "photo": "/images/Screenshot 2025-11-24 161403.png",
       "name": "Najat",
       "bio": "The newest member of the team, she lovingly looks after the house — from cleaning to cooking and small daily delights. She prepares homemade meals with care and even offers a short cooking class for those eager to learn the secrets of a perfect tajine."
     }
@@ -820,7 +819,7 @@
           "desc": "Drive up the Atlas to Imlil, gateway to Toubkal, with a short walk and tea in a Berber village.",
           "options": ["Short guided walk", "Village tea stop", "Local lunch optional"],
           "duration": "1 day",
-          "photo": "/images/imlil.jpg"
+          "photo": "/images/Imlil1234.png"
         },
         { "id": "lalla-takerkoust-kik",
           "kind": "tour",
