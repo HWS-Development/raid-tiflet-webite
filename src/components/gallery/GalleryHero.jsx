@@ -5,19 +5,20 @@ import CurveBand from "../ui/CurveBand";
 export default function GalleryHero() {
   const { t } = useTranslation();
   return (
-    <section className="relative h-[42vh] min-h-[320px] flex items-end">
-      {/* background image (can swap later) */}
+    <section className="relative h-[40vh] min-h-[220px] md:h-[65vh] flex items-end">
+      {/* background image */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('/images/Screenshot 2025-11-24 160859.png')",
+            "url('/images/Services02.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "saturate(0.95)",
         }}
         aria-hidden
       />
+
       {/* soft overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
 
@@ -31,8 +32,6 @@ export default function GalleryHero() {
           </p>
         )}
       </div>
-
-      {/* curve down to ivory */}
     </section>
   );
 }

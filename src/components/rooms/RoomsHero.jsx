@@ -16,7 +16,7 @@ import CurveBand from "../ui/CurveBand";
  *   overlay?: string                              // rgba() tint (default: green at 35%)
  */
 export default function RoomsHero({
-  height = "h-[32vh] min-h-[220px] md:h-[42vh]",
+  height = "h-[40vh] min-h-[220px] md:h-[65vh]",
   overlay = "rgba(15,91,74,0.35)",
 }) {
   const { t, } = useTranslation();
@@ -28,7 +28,7 @@ export default function RoomsHero({
         {/* Photo */}
         <picture>
           <img
-            src={'/images/Roomshero1.png'}
+            src={'/images/Screenshot 2025-11-26 141953.png'}
             alt={'hero image'}
             className="absolute inset-0 h-full w-full object-cover"
             loading="eager"
@@ -62,7 +62,7 @@ export default function RoomsHero({
 
       {/* Curve into the page (hero → ivory content) */}
       {/* If you see a hard edge on some screens, set `from` to '#0f5b4a14'. */}
-      <CurveBand position="bottom" from="transparent" to="#F6F1E8" height={120} />
+      <CurveBand position="bottom" from="transparent" to="#F6F1E8" height={125} />
     </section>
   );
 }

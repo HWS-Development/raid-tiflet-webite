@@ -26,12 +26,12 @@ export default function DiningGallery({ images = [] }) {
   const items = images.length
     ? images
     : [
-      { src: "/images/food6.jpg", alt: "Terrace" },
-      { src: "/images/food3.png", alt: "Terrace" },
-      { src: "/images/food5.jpg", alt: "Terrace" },
-      { src: "/images/food2.webp", alt: "Terrace" },
-      { src: "/images/food1.jpg", alt: "Tagine" },
-      { src: "/images/food4.jpg", alt: "Terrace" },
+      { src: "/images/Services01.png", alt: "Terrace" },
+      { src: "/images/Services02.png", alt: "Terrace" },
+      { src: "/images/Services03.png", alt: "Terrace" },
+      { src: "/images/Services04.png", alt: "Terrace" },
+      { src: "/images/Services05.png", alt: "Tagine" },
+      { src: "/images/Services06.png", alt: "Terrace" },
       ];
 
   return (

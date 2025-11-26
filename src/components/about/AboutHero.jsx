@@ -1,19 +1,20 @@
 import { useTranslation } from "react-i18next";
 
 const FALLBACK =
-  "/images/Screenshot 2025-11-24 161347.png"; // swap with a good rooftop/patio photo in your repo
+  "/images/Screenshot 2025-11-24 161347.png";
 
 export default function AboutHero({ src = FALLBACK }) {
   const { t } = useTranslation();
 
   return (
-    <header className="relative h-[44vh] min-h-[320px] w-full overflow-hidden">
+    <header className="relative h-[40vh] min-h-[220px] md:h-[65vh] w-full overflow-hidden">
       <img
         src={src}
         alt={t("about_page.title", "About")}
         className="absolute inset-0 h-full w-full object-cover"
         loading="eager"
       />
+
       {/* warm overlay */}
       <div className="absolute inset-0 bg-black/20 bg-[linear-gradient(180deg,rgba(16,41,34,.35)_0%,rgba(16,41,34,.45)_60%,rgba(16,41,34,.55)_100%)]" />
 
