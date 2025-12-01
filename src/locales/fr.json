@@ -991,5 +991,11 @@
 
       ]
     }
-  }
+  },
+  "bar_menu": {
+  "title": "Voir notre carte du bar",
+  "desc": "Ouvrez la carte des boissons au format PDF.",
+  "open_btn": "Ouvrir la carte (PDF)"
+}
+
 }

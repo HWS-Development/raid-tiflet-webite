@@ -943,5 +943,11 @@
 
       ]
     }
-  }
+  },
+  "bar_menu": {
+  "title": "See our bar menu",
+  "desc": "Open the drink menu in PDF format.",
+  "open_btn": "Open menu (PDF)"
+}
+
 }
