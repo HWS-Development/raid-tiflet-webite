@@ -132,7 +132,7 @@
         "images": [
           "/images/rooms/Bigarree Principal.png",
           "/images/rooms/Biggarree 1.png",
-          "/images/rooms/Biggarree2.png"
+          "/images/rooms/Biggarree33.png"
         ]
       },
       {
@@ -160,7 +160,7 @@
         "images": [
           "/images/rooms/Zina Principal.png",
           "/images/rooms/Zina.png",
-          "/images/rooms/Zina1.png"
+          "/images/rooms/Zina3.png"
         ]
       },
       {
@@ -248,7 +248,7 @@
         "images": [
            "/images/rooms/Safi prin.png",
           "/images/rooms/Safi1.png",
-          "/images/rooms/Safi2.png"
+          "/images/rooms/Safi22.png"
         ]
       },
       {
@@ -658,7 +658,15 @@
       { "id": "g26", "src": "/images/Screenshot 2025-11-26 152119.png", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" },
       { "id": "g27", "src": "/images/Screenshot 2025-11-26 152248.png", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" },
       { "id": "g28", "src": "/images/Screenshot 2025-11-26 152300.png", "alt": "Détail de la chambre Bleue", "category": "rooms", "category_label": "Chambres" },
-      { "id": "g29", "src": "/images/Screenshot 2025-11-26 152335.png", "alt": "Détail de la chambre Baraka", "category": "rooms", "category_label": "Chambres" }
+      { "id": "g29", "src": "/images/Screenshot 2025-11-26 152335.png", "alt": "Détail de la chambre Baraka", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g30", "src": "/images/rooms/Safi1.png", "alt": "Détail de la chambre Jaune", "category": "rooms", "category_label": "Chambres" },
+      { "id": "g31", "src": "/images/Screenshot 2025-12-02 112650.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+      { "id": "g32", "src": "/images/Screenshot 2025-12-02 112634.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+      { "id": "g33", "src": "/images/Screenshot 2025-12-02 112049.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] }
+
+
+
+
 
 
 

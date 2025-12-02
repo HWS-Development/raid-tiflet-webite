@@ -5,7 +5,7 @@ export default function ActivitiesHero() {
   return (
     <section className="relative h-[40vh] min-h-[220px] md:h-[65vh] flex items-center justify-center overflow-hidden">
       <img
-        src="/images/RooftopActivity.png"
+        src="/images/Screenshot 2025-12-02 113452.png"
         alt="Activities hero"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
