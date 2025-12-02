@@ -637,7 +637,7 @@
     },
     "search_placeholder": "Rechercher (ex. terrasse, tajine, chambre bleue…)",
     "results": "{{count}} photos",
-    "images": [
+    "images":[
       { "id": "g1", "src": "/images/Screenshot 2025-11-26 151815.png", "alt": "Détail de la chambre Baraka", "category": "rooms", "category_label": "Chambres" },
       { "id": "g2", "src": "/images/Screenshot 2025-11-26 151830.png", "alt": "Détail de la chambre Baraka", "category": "rooms", "category_label": "Chambres" },
       { "id": "g3", "src": "/images/Screenshot 2025-11-26 151840.png", "alt": "Détail de la chambre Bigarrée", "category": "rooms", "category_label": "Chambres" },
@@ -662,12 +662,20 @@
       { "id": "g30", "src": "/images/rooms/Safi1.png", "alt": "Détail de la chambre Jaune", "category": "rooms", "category_label": "Chambres" },
       { "id": "g31", "src": "/images/Screenshot 2025-12-02 112650.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
       { "id": "g32", "src": "/images/Screenshot 2025-12-02 112634.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
-      { "id": "g33", "src": "/images/Screenshot 2025-12-02 112049.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] }
-
-
-
-
-
+      { "id": "g33", "src": "/images/Screenshot 2025-12-02 112049.png", "alt": "Thé et pâtisseries", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+      { "id": "g01", "src": "/images/Screenshot 2025-12-02 122502.png", "alt": "Screenshot 2025-12-02 122502", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g02", "src": "/images/Screenshot 2025-12-02 122526.png", "alt": "Screenshot 2025-12-02 122526", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g03", "src": "/images/Screenshot 2025-12-02 122541.png", "alt": "Screenshot 2025-12-02 122541", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g04", "src": "/images/Screenshot 2025-12-02 122604.png", "alt": "Screenshot 2025-12-02 122604", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g05", "src": "/images/Screenshot 2025-12-02 122620.png", "alt": "Screenshot 2025-12-02 122620", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g07", "src": "/images/Screenshot 2025-12-02 122726.png", "alt": "Screenshot 2025-12-02 122726", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g08", "src": "/images/Screenshot 2025-12-02 122805.png", "alt": "Screenshot 2025-12-02 122805", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g09", "src": "/images/Screenshot 2025-12-02 122821.png", "alt": "Screenshot 2025-12-02 122821", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g10", "src": "/images/Screenshot 2025-12-02 122833.png", "alt": "Screenshot 2025-12-02 122833", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g11", "src": "/images/Screenshot 2025-12-02 122846.png", "alt": "Screenshot 2025-12-02 122846", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g12", "src": "/images/Screenshot 2025-12-02 124317.png", "alt": "Screenshot 2025-12-02 124317", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g13", "src": "/images/Screenshot 2025-12-02 124403.png", "alt": "Screenshot 2025-12-02 124403", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] },
+{ "id": "g14", "src": "/images/Screenshot 2025-12-02 124502.png", "alt": "Screenshot 2025-12-02 124502", "category": "dining", "category_label": "Restauration", "tags": ["thé", "pâtisseries"] }
 
 
 
