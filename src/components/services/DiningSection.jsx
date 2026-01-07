@@ -44,7 +44,7 @@ export default function DiningSection() {
           {/* organic image */}
           <div className="relative">
             <img
-              src="/images/Rooftopbarservices.png"
+              src="/images/1766759719157000_1679102887.png"
               alt="Tiflet Counter"
               className="w-full h-80 object-cover rounded-[40%_60%_60%_40%/60%_40%_50%_50%]"
             />
