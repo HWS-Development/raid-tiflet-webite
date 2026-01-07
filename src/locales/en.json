@@ -721,28 +721,28 @@
         "id": "hotels",
         "src": "/images/rating4.png",
         "alt": "Hotels.com Loved by Guests 9.6/10",
-        "score": "9.6/10",
+        "score": "9,6/10",
         "label": "Hotels.com"
       },
       {
         "id": "tripadvisor",
-        "src": "/images/rating1.jpeg",
-        "alt": "Tripadvisor Excellent 4.8/5",
-        "score": "4.8/5",
+        "src": "/images/rating13.png",
+        "alt": "Tripadvisor Excellent 4.9/5",
+        "score": "4,9/5",
         "label": "Tripadvisor"
       },
       {
         "id": "booking",
-        "src": "/images/rating2.jpeg",
-        "alt": "Booking.com 9.4/10",
-        "score": "9.4/10",
+        "src": "/images/rating12.png",
+        "alt": "Booking.com 9,5/10",
+        "score": "9,5/10",
         "label": "Booking.com"
       },
       {
         "id": "kayak",
         "src": "/images/rating3.jpeg",
         "alt": "Kayak Travel Awards Winner",
-        "score": "9.4/10",
+        "score": "9,4/10",
         "label": "Kayak Travel Awards"
       }
     ]
