@@ -11,7 +11,7 @@ export default function GalleryHero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('/images/Services02.png')",
+            "url('/images/dar-tiflet-2026/gallery-dsc7614-hdr.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "saturate(0.95)",

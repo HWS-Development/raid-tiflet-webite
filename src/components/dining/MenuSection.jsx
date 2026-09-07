@@ -6,7 +6,7 @@ export default function MenuSection() {
   const sections = t("dining_page.menu.sections", { returnObjects: true }) || [];
 
   const IMG =
-    "/images/rooftop.jpg";
+    "/images/dar-tiflet-2026/dining-table.webp";
 
   return (
     <section className="py-8 sm:py-10">

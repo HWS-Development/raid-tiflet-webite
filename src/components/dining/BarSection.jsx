@@ -5,7 +5,7 @@ export default function BarSection() {
   const categories = t("dining_page.bar.categories", { returnObjects: true }) || [];
 
   const IMG =
-    "/images/riad-8.jpg";
+    "/images/dar-tiflet-2026/tiflet-counter.webp";
 
   return (
     <section className="py-8 sm:py-10">

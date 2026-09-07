@@ -6,7 +6,7 @@ export default function ServicesHero() {
   return (
    <section className="relative h-[40vh] min-h-[220px] md:h-[65vh] flex items-center justify-center overflow-hidden">
   <img
-    src="/images/Serviceshero.png"
+    src="/images/dar-tiflet-2026/services-rooftop.webp"
     alt="Services hero"
     className="absolute inset-0 w-full h-full object-cover"
     loading="eager"

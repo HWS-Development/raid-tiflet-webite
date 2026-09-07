@@ -5,7 +5,7 @@ export default function DiningHero() {
   return (
     <section className="relative h-[44vh] min-h-[340px] flex items-center justify-center overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=2000&auto=format&fit=crop"
+        src="/images/dar-tiflet-2026/dining-table.webp"
         alt="Dining hero"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"

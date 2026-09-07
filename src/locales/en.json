@@ -63,7 +63,7 @@
       {
         "id": "hiba",
         "name": "Suite Hiba",
-        "image": "/images/rooms/Safi prin.png"
+        "image": "/images/dar-tiflet-2026/room-hiba-1.webp"
       }
     ],
     "items": [
@@ -205,9 +205,9 @@
           "Two windows overlooking the outer courtyard"
         ],
         "images": [
-           "/images/rooms/Yellow princ.png",
-          "/images/rooms/Yellow 1.png",
-          "/images/rooms/Yellow 2.png"
+          "/images/dar-tiflet-2026/room-yellow-1.webp",
+          "/images/dar-tiflet-2026/room-yellow-2.webp",
+          "/images/dar-tiflet-2026/room-yellow-3.webp"
         ]
       },
       {
@@ -236,9 +236,9 @@
           "Windows overlooking the inner garden"
         ],
         "images": [
-          "/images/rooms/Safi prin.png",
-          "/images/rooms/Safi1.png",
-          "/images/rooms/Safi22.png"
+          "/images/dar-tiflet-2026/room-hiba-1.webp",
+          "/images/dar-tiflet-2026/room-hiba-2.webp",
+          "/images/dar-tiflet-2026/room-hiba-3.webp"
         ]
       },
       {
@@ -264,9 +264,9 @@
           "Window overlooking the inner garden"
         ],
         "images": [
-          "/images/rooms/Baraka princ.png",
-          "/images/rooms/Baraka 1.png",
-          "/images/rooms/Baraka 2.png"
+          "/images/dar-tiflet-2026/room-baraka-1.webp",
+          "/images/dar-tiflet-2026/room-baraka-2.webp",
+          "/images/dar-tiflet-2026/room-baraka-3.webp"
         ]
       },
       {
@@ -292,9 +292,9 @@
           "Window facing the interior of the house"
         ],
         "images": [
-          "/images/rooms/Bleu prin.png",
-          "/images/rooms/Bleu1.png",
-          "/images/rooms/Bleu 2.png"
+          "/images/dar-tiflet-2026/room-blue-1.webp",
+          "/images/dar-tiflet-2026/room-blue-2.webp",
+          "/images/dar-tiflet-2026/room-blue-3.webp"
         ]
       }
     ]
@@ -682,13 +682,13 @@
       "members": [
     {
       "id": "yassine",
-      "photo": "/images/person1.jpg",
+      "photo": "/images/dar-tiflet-2026/team-yassine.webp",
       "name": "Yassine",
       "bio": "Resident host and the true heartbeat of Dar Tiflet. A guardian of Berber traditions, always attentive to every guest. Passionate about rural souks… and a faithful reader of your reviews!"
     },
     {
       "id": "mohamed",
-      "photo": "/images/Screenshot 2025-11-26 161604.png",
+      "photo": "/images/dar-tiflet-2026/team-mohamed.webp",
       "name": "Mohamed",
       "bio": "Discreet, attentive, and incredibly gentle. Always present with a sincere smile, he offers a special welcome to families and younger travelers."
     },

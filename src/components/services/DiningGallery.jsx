@@ -26,12 +26,12 @@ export default function DiningGallery({ images = [] }) {
   const items = images.length
     ? images
     : [
-      { src: "/images/Services01.png", alt: "Terrace" },
-      { src: "/images/Services02.png", alt: "Terrace" },
-      { src: "/images/Services03.png", alt: "Terrace" },
-      { src: "/images/Services04.png", alt: "Terrace" },
-      { src: "/images/Services05.png", alt: "Tagine" },
-      { src: "/images/Services06.png", alt: "Terrace" },
+      { src: "/images/dar-tiflet-2026/services-menu.webp", alt: "Menu de Dar Tiflet" },
+      { src: "/images/dar-tiflet-2026/services-reception.webp", alt: "Accueil sur la terrasse" },
+      { src: "/images/dar-tiflet-2026/services-dining-room.webp", alt: "Salle à manger de Dar Tiflet" },
+      { src: "/images/dar-tiflet-2026/services-sunset.webp", alt: "Coucher de soleil depuis la terrasse" },
+      { src: "/images/dar-tiflet-2026/services-breakfast.webp", alt: "Petit déjeuner de Dar Tiflet" },
+      { src: "/images/dar-tiflet-2026/services-rooftop.webp", alt: "Terrasse de Dar Tiflet" },
       ];
 
   return (
