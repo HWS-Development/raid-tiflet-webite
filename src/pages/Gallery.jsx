@@ -6,6 +6,14 @@ import GalleryGrid from "../components/gallery/GalleryGrid";
 import Lightbox from "../components/gallery/Lightbox";
 import CurveBand from "../components/ui/CurveBand"; 
 
+const IMAGE_DIMENSIONS = {
+  "gallery-img-6265.webp": [1559, 2078],
+  "gallery-dsc7829.webp": [2000, 3554],
+  "gallery-img-6269.webp": [2000, 2667],
+  "gallery-dsc7826.webp": [2000, 3554],
+  "gallery-18-janv-2026-a-18-22-45-2.webp": [1600, 1066],
+};
+
 const CLIENT_IMAGES = [
   "gallery-dsc7614-hdr.webp",
   "gallery-dsc1495.webp",
@@ -40,12 +48,17 @@ const CLIENT_IMAGES = [
   "gallery-dsc1416-hdr.webp",
   "gallery-dsc7793-hdr.webp",
   "gallery-dsc7654-hdr.webp",
-  "gallery-dsc8161-hdr.webp",
-].map((name, index) => ({
-  id: `client-${index + 1}`,
-  src: `/images/dar-tiflet-2026/${name}`,
-  alt: `Dar Tiflet ${index + 1}`,
-}));
+].map((name, index) => {
+  const [width, height] = IMAGE_DIMENSIONS[name] || [2000, 1125];
+
+  return {
+    id: `client-${index + 1}`,
+    src: `/images/dar-tiflet-2026/${name}`,
+    alt: `Dar Tiflet ${index + 1}`,
+    width,
+    height,
+  };
+});
 
 export default function Gallery() {
   const allImages = CLIENT_IMAGES;
@@ -78,10 +91,10 @@ export default function Gallery() {
 
   return (
     <>
-    <main id="gallery" className="pb-10 sm:pb-12">
+    <main id="gallery">
       <GalleryHero />
 
-      <section className="py-8 sm:py-10 bg-ec">
+      <section className="bg-ec pt-8 sm:pt-10">
         <div className="container-grid">
           {/* <GalleryFilters
             categories={categories}

@@ -10,6 +10,8 @@ export default function GalleryGrid({ images, onImageClick }) {
           <img
             src={img.src}
             alt={img.alt || ""}
+            width={img.width}
+            height={img.height}
             loading="lazy"
             className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           />
