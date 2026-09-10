@@ -1,17 +1,17 @@
 // components/gallery/GalleryGrid.jsx
 export default function GalleryGrid({ images, onImageClick }) {
   return (
-    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+    <div className="columns-2 gap-4 md:columns-3">
       {(images || []).map((img, i) => (
         <figure
           key={img.id || i}
-          className="group relative aspect-[4/3] w-full overflow-hidden rounded-[32px] bg-[#e8e2d8] shadow-sm ring-1 ring-black/5 transition-shadow duration-500 hover:shadow-xl"
+          className="group relative mb-4 block w-full break-inside-avoid overflow-hidden rounded-[32px]"
         >
           <img
             src={img.src}
             alt={img.alt || ""}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           />
           {/* category chip */}
           {/* {img.category_label && (
