@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img" aria-labelledby="title">
+  <title id="title">Booking.com 9,7 sur 10 — Riad Dar Tiflet Marrakech</title>
+  <rect width="480" height="480" fill="#fffcf4"/>
+  <text x="240" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" letter-spacing="-3"><tspan fill="#0b2c91">Booking</tspan><tspan fill="#199ce0">.com</tspan></text>
+  <rect x="156" y="156" width="168" height="159" rx="24" fill="#0731a5"/>
+  <text x="240" y="250" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700">9,7</text>
+  <text x="240" y="293" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="27">sur 10</text>
+  <g fill="#111" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="600">
+    <text x="240" y="366" font-size="40">Riad Dar Tiflet</text>
+    <text x="240" y="409" font-size="36">Marrakech</text>
+  </g>
+</svg>
