@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hws/cookie-consent": "file:hws-cookie-consent-1.0.0.tgz",
     "i18next": "^25.3.4",
     "i18next-browser-languagedetector": "^8.2.0",
     "react": "^19.1.1",
